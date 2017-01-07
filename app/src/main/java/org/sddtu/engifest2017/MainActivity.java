@@ -19,20 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
         videoView = (VideoView) findViewById(R.id.video1);
 
-//        String uriPath = "android.resource://com.android.AndroidVideoPlayer/"+R.raw.engi_festlogo;
-//        Uri uri = Uri.parse(uriPath);
-//        videoView.setVideoURI(uri);
-//        videoView.requestFocus();
-//        videoView.start();
-//
-//        MediaController mediaController = new MediaController(this);
-//        mediaController.setAnchorView(videoView);
-//        videoView.setMediaController(mediaController);
-//        videoView.setKeepScreenOn(true);
-//        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.engi_festlogo));
-//        videoView.start();
-//        videoView.requestFocus();
-
         String uripath = "android.resource://" + getPackageName() + "/" + R.raw.engi_festlogo;
         Uri uri = Uri.parse(uripath);
 
@@ -45,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCompletion(MediaPlayer mp) {
                 finish();
-                startActivity(new Intent(MainActivity.this,EventList.class));
+                startActivity(new Intent(MainActivity.this,HomeActivity.class));
             }
         });
 
