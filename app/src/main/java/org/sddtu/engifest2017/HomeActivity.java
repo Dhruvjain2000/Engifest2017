@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,16 +14,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 import se.emilsjolander.flipview.FlipView;
+import se.emilsjolander.flipview.OverFlipMode;
 
-public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     FlipView flipView;
-
-    String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS"};
-    int[] flipviewdata = {R.drawable.home,R.drawable.foodcity,R.drawable.oat,R.drawable.home,R.drawable.foodcity,R.drawable.pepsi};
+    boolean b = false;
+    LinearLayout home,events,places,schedule,sponsors,about;
+    String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS",""};
+    String[] buttontext = {"ABOUT ENGIFEST","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS",""};
+    int[] flipviewdata = {R.drawable.home,R.drawable.foodcity,R.drawable.oat,R.drawable.home,R.drawable.foodcity,R.drawable.pepsi,0};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,26 +40,32 @@ public class HomeActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         flipView = (FlipView) findViewById(R.id.flip_view);
-
         FlipAdapter flipAdapter = new FlipAdapter(getApplicationContext(),R.layout.custom_flip_layout);
         flipView.setAdapter(flipAdapter);
 
-        for(int i=0;i<flipTitles.length;i++)
+        for(int i=0;i<7;i++)
         {
-            FlipViewData data = new FlipViewData(flipTitles[i],flipviewdata[i]);
+            FlipViewData data = new FlipViewData(flipTitles[i],flipviewdata[i],buttontext[i]);
             flipAdapter.add(data);
         }
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                Intent intent = new Intent(HomeActivity.this,EventList.class);
-                startActivity(intent);
-            }
-        });
+        home = (LinearLayout) findViewById(R.id.lin_home);
+        events = (LinearLayout) findViewById(R.id.lin_event);
+        places = (LinearLayout) findViewById(R.id.lin_place);
+        schedule = (LinearLayout) findViewById(R.id.lin_schedule);
+        sponsors = (LinearLayout) findViewById(R.id.lin_sponsor);
+        about = (LinearLayout) findViewById(R.id.lin_about);
+
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//                Intent intent = new Intent(HomeActivity.this,EventList.class);
+//                startActivity(intent);
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
