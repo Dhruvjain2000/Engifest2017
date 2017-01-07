@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +30,7 @@ public class FlipAdapter extends ArrayAdapter {
     static class Data {
         TextView title;
         ImageView background;
+        TextView exptext;
     }
 
     @Override
@@ -60,6 +63,7 @@ public class FlipAdapter extends ArrayAdapter {
             d = new Data();
             d.title = (TextView) row.findViewById(R.id.flip_text);
             d.background = (ImageView)row.findViewById(R.id.background_work);
+            d.exptext = (TextView) row.findViewById(R.id.exp_button);
             row.setTag(d);
         }
         else {
@@ -69,6 +73,42 @@ public class FlipAdapter extends ArrayAdapter {
         FlipViewData flipViewData = (FlipViewData) this.getItem(position);
         d.title.setText(flipViewData.getPlace());
         d.background.setImageResource(flipViewData.getImagesrc());
+        d.exptext.setText(flipViewData.getButtext());
+
+        row.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView textView = (TextView) v.findViewById(R.id.exp_button);
+                String s = textView.getText().toString();
+                switch (s) {
+                    case "ABOUT ENGIFEST" : {
+                        Toast.makeText(getContext(),"EngiData here",Toast.LENGTH_LONG).show();
+                        break;
+                    }
+                    case "VIEW EVENTS":{
+                        Toast.makeText(getContext(),"Events here",Toast.LENGTH_LONG).show();
+                        break;
+                    }
+                    case "EXPLORE PLACES" : {
+                        Toast.makeText(getContext(),"Places here",Toast.LENGTH_LONG).show();
+                        break;
+                    }
+                    case "CHECK OUT THE SCHEDULE" : {
+                        Toast.makeText(getContext(),"Schedule here",Toast.LENGTH_LONG).show();
+                        break;
+                    }
+                    case "CLICK TO KNOW US" : {
+                        Toast.makeText(getContext(),"About us here",Toast.LENGTH_LONG).show();
+                        break;
+                    }
+                    case "MORE SPONSORS" : {
+                        Toast.makeText(getContext(),"Sponsors here",Toast.LENGTH_LONG).show();
+                        break;
+                    }
+                }
+            }
+        });
+
         return row;
     }
 }
