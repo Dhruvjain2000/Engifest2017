@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.sddtu.engifest2017.AboutUs;
 import org.sddtu.engifest2017.AllEvents;
 import org.sddtu.engifest2017.EngiActivity;
 import org.sddtu.engifest2017.EventList;
@@ -89,39 +90,42 @@ public class FlipAdapter extends ArrayAdapter {
                 String s = textView.getText().toString();
                 switch (s) {
                     case "ABOUT ENGIFEST" : {
-                        Toast.makeText(getContext(),"EngiData here",Toast.LENGTH_LONG).show();
+                      //  Toast.makeText(getContext(),"EngiData here",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(getContext(),EngiActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         getContext().startActivity(intent);
                         break;
                     }
                     case "VIEW EVENTS":{
-                        Toast.makeText(getContext(),"Events here",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getContext(),"Events here",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(getContext(),AllEvents.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         getContext().startActivity(intent);
                         break;
                     }
                     case "EXPLORE PLACES" : {
-                        Toast.makeText(getContext(),"Places here",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getContext(),"Places here",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(getContext(),PlacesActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         getContext().startActivity(intent);
                         break;
                     }
                     case "CHECK OUT THE SCHEDULE" : {
-                        Toast.makeText(getContext(),"Schedule here",Toast.LENGTH_LONG).show();
+                      //  Toast.makeText(getContext(),"Schedule here",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(getContext(),EventList.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         getContext().startActivity(intent);
                         break;
                     }
                     case "CLICK TO KNOW US" : {
-                        Toast.makeText(getContext(),"About us here",Toast.LENGTH_LONG).show();
+                       // Toast.makeText(getContext(),"About us here",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(getContext(), AboutUs.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        getContext().startActivity(intent);
                         break;
                     }
                     case "MORE SPONSORS" : {
-                        Toast.makeText(getContext(),"Sponsors here",Toast.LENGTH_LONG).show();
+                       // Toast.makeText(getContext(),"Sponsors here",Toast.LENGTH_LONG).show();
                         break;
                     }
                 }

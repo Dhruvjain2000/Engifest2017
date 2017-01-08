@@ -29,7 +29,7 @@
             android:layout_weight="1"
             ></View>
         <Button
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="35dp"
             android:text="Register"
             android:id="@+id/regg_btn"
@@ -37,7 +37,7 @@
             android:layout_weight="1"
             android:elevation="10dp"
             android:background="@drawable/shape_button"
-            android:backgroundTint="#d9700a"
+            android:backgroundTint="#e53f3f"
             android:textColor="#fff"
             />
         <View
