@@ -10,6 +10,8 @@ import org.sddtu.engifest2017.DataProviders.EventData;
 
 import java.util.ArrayList;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class AllEvents extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -25,6 +27,9 @@ public class AllEvents extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_events);
+
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
 
         recyclerView = (RecyclerView) findViewById(R.id.recyc_events);
         int i = 0;

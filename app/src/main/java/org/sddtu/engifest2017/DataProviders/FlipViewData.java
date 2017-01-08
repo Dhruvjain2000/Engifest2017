@@ -9,13 +9,13 @@ import se.emilsjolander.flipview.FlipView;
 public class FlipViewData {
 
     private String place;
-    private int imagesrc;
+    //private int imagesrc;
     private String buttext;
 
-    public FlipViewData(String place,int imagesrc,String buttext)
+    public FlipViewData(String place,String buttext)
     {
         this.place = place;
-        this.imagesrc = imagesrc;
+      //  this.imagesrc = imagesrc;
         this.buttext = buttext;
     }
 
@@ -27,17 +27,17 @@ public class FlipViewData {
         this.buttext = buttext;
     }
 
-    public int getImagesrc() {
-        return imagesrc;
-    }
+//    public int getImagesrc() {
+//        return imagesrc;
+//    }
 
     public String getPlace() {
         return place;
     }
 
-    public void setImagesrc(int imagesrc) {
-        this.imagesrc = imagesrc;
-    }
+//    public void setImagesrc(int imagesrc) {
+//        this.imagesrc = imagesrc;
+//    }
 
     public void setPlace(String place) {
         this.place = place;

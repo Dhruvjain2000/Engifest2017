@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 
 import org.sddtu.engifest2017.R;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link day2#newInstance} factory method to
@@ -60,6 +62,8 @@ public class day2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Calligrapher calligrapher = new Calligrapher(getActivity());
+        calligrapher.setFont(getActivity(), "fonts/RobotoCondensed-Light.ttf", true);
         return inflater.inflate(R.layout.fragment_day2, container, false);
     }
 

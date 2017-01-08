@@ -1,6 +1,7 @@
 package org.sddtu.engifest2017.Adapters;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,6 +38,11 @@ public class PlaceCard extends RecyclerView.Adapter<PlaceCard.RecyclerViewHolder
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
         PlaceCardData placeCardData = arrayList.get(position);
+        Typeface tf = Typeface.createFromAsset(context.getAssets(),"fonts/OpenSans-Regular.ttf");
+
+        holder.textView1.setTypeface(tf);
+        holder.textView2.setTypeface(tf);
+
         holder.textView1.setText(placeCardData.getPlace());
         holder.textView2.setText(placeCardData.getInfo());
         holder.imageView.setImageResource(placeCardData.getSrc());

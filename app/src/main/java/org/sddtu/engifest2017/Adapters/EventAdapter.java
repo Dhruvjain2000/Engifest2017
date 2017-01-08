@@ -1,6 +1,7 @@
 package org.sddtu.engifest2017.Adapters;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,6 +38,11 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.RecyclerView
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
         EventData eventData = arrayList.get(position);
+
+        Typeface tf = Typeface.createFromAsset(context.getAssets(),"fonts/RobotoCondensed-Regular.ttf");
+
+        holder.textView1.setTypeface(tf);
+
         holder.textView1.setText(eventData.getName());
         holder.imageView.setImageResource(eventData.getImage());
     }

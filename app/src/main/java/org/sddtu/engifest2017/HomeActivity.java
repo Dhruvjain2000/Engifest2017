@@ -1,6 +1,12 @@
 package org.sddtu.engifest2017;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -9,11 +15,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import org.sddtu.engifest2017.Adapters.FlipAdapter;
 import org.sddtu.engifest2017.DataProviders.FlipViewData;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
 import se.emilsjolander.flipview.FlipView;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -24,13 +38,80 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS",""};
     String[] buttontext = {"ABOUT ENGIFEST","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS",""};
     int[] flipviewdata = {R.drawable.home,R.drawable.foodcity,R.drawable.oat,R.drawable.home,R.drawable.foodcity,R.drawable.pepsi,0};
+    int[] arr = {R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five,R.drawable.six};
+    FloatingActionButton fabplus,fabfb,fabwapp,fabtwit;
+    Animation fabopen,fabclose,rotateclock,rotateanti;
+    Button button;
+    //ImageView imageView;
+    CoordinatorLayout coordinatorLayout;
+    RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/RobotoCondensed-Regular.ttf", true);
+
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinator_layout1);
+        relativeLayout = (RelativeLayout)findViewById(R.id.content_home);
+
+//        imageView = (ImageView)findViewById(R.id.image_view1);
+
+//        for(int i = 0;i<20;i++) {
+//            new LoadAnim().execute();
+//        }
+
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        button = (Button) findViewById(R.id.regg_btn);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"WebView will come here",Toast.LENGTH_LONG).show();
+                try {
+                    getApplicationContext().getPackageManager().getPackageInfo("com.facebook.katana", 0);
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/" + "https://www.facebook.com/engifest/?fref=ts")));
+                } catch (Exception e) {
+                }
+            }
+        });
+
+        fabplus = (FloatingActionButton) findViewById(R.id.plusbutt);
+        fabfb = (FloatingActionButton) findViewById(R.id.fbbutt);
+        fabwapp = (FloatingActionButton) findViewById(R.id.wappbutt);
+        fabtwit = (FloatingActionButton) findViewById(R.id.twitbutt);
+        fabopen = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fab_open);
+        fabclose = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fab_close);
+        rotateclock = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_clockwise);
+        rotateanti = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_anticlockwise);
+        fabplus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(b) {
+                    fabfb.startAnimation(fabclose);
+                    fabwapp.startAnimation(fabclose);
+                    fabtwit.startAnimation(fabclose);
+                    fabplus.startAnimation(rotateanti);
+                    fabtwit.setClickable(false);
+                    fabwapp.setClickable(false);
+                    fabfb.setClickable(false);
+                    b = false;
+                } else {
+                    fabfb.startAnimation(fabopen);
+                    fabwapp.startAnimation(fabopen);
+                    fabtwit.startAnimation(fabopen);
+                    fabplus.startAnimation(rotateclock);
+                    fabtwit.setClickable(true);
+                    fabwapp.setClickable(true);
+                    fabfb.setClickable(true);
+                    b = true;
+                }
+            }
+        });
 
         flipView = (FlipView) findViewById(R.id.flip_view);
         FlipAdapter flipAdapter = new FlipAdapter(getApplicationContext(),R.layout.custom_flip_layout);
@@ -38,7 +119,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         for(int i=0;i<7;i++)
         {
-            FlipViewData data = new FlipViewData(flipTitles[i],flipviewdata[i],buttontext[i]);
+            FlipViewData data = new FlipViewData(flipTitles[i],buttontext[i]);
             flipAdapter.add(data);
         }
 
@@ -49,6 +130,54 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         sponsors = (LinearLayout) findViewById(R.id.lin_sponsor);
         about = (LinearLayout) findViewById(R.id.lin_about);
 
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,EngiActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,AllEvents.class);
+                startActivity(intent);
+            }
+        });
+
+        places.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,PlacesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,EventList.class);
+                startActivity(intent);
+            }
+        });
+
+        sponsors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,SponsorsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,AboutUs.class);
+                startActivity(intent);
+            }
+        });
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -126,5 +255,34 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    class LoadAnim extends AsyncTask<Void,Integer,Integer> {
+
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                //relativeLayout.setBackground(values[0]);
+                //imageView.setImageResource(values[0]);
+            }
+        }
+
+        @Override
+        protected Integer doInBackground(Void... params) {
+
+            for (int i = 0; i < 5; i++) {
+                publishProgress(arr[i]);
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                //return null;
+            }
+            return arr[0];
+        }
+
+
     }
 }
