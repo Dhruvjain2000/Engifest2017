@@ -5,6 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import org.sddtu.engifest2017.Adapters.ViewPagerAdapter;
 import org.sddtu.engifest2017.Fragments.day1;
 import org.sddtu.engifest2017.Fragments.day2;
 import org.sddtu.engifest2017.Fragments.day3;

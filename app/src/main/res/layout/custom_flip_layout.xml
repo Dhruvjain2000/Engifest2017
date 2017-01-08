@@ -27,12 +27,13 @@
         android:layout_height="30dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:textColor="#000"
+        android:layout_marginBottom="100dp"
+        android:textColor="#fff"
         android:textStyle="bold"
         android:gravity="center"
         android:text="EXPLORE"
         android:id="@+id/exp_button"
+        android:backgroundTint="#d9700a"
         android:background="@drawable/shape_button"
         />
 </RelativeLayout>

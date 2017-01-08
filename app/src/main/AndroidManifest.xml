@@ -27,7 +27,18 @@
             android:name=".EngiActivity"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme2" />
-        <activity android:name=".PlacesActivity"></activity>
+        <activity android:name=".PlacesActivity"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme2"
+            />
+        <activity android:name=".AllEvents"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme2"
+            />
+        <activity android:name=".AboutUs"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme2"
+            ></activity>
     </application>
 
 </manifest>
