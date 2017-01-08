@@ -1,4 +1,4 @@
-package org.sddtu.engifest2017;
+package org.sddtu.engifest2017.Adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

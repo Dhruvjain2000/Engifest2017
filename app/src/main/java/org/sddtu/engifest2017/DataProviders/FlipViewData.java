@@ -1,4 +1,4 @@
-package org.sddtu.engifest2017;
+package org.sddtu.engifest2017.DataProviders;
 
 import se.emilsjolander.flipview.FlipView;
 

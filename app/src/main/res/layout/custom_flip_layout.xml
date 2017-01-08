@@ -23,16 +23,17 @@
         android:id="@+id/flip_text"
         />
     <TextView
-        android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:textColor="#000"
+        android:layout_marginBottom="100dp"
+        android:textColor="#fff"
         android:textStyle="bold"
         android:gravity="center"
         android:text="EXPLORE"
         android:id="@+id/exp_button"
+        android:backgroundTint="#e53f3f"
         android:background="@drawable/shape_button"
         />
 </RelativeLayout>

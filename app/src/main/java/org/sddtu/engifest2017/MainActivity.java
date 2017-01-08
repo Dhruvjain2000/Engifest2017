@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         videoView = (VideoView) findViewById(R.id.video1);
 
-        String uripath = "android.resource://" + getPackageName() + "/" + R.raw.engi_festlogo;
+        String uripath = "android.resource://" + getPackageName() + "/" + R.raw.engisplash;
         Uri uri = Uri.parse(uripath);
 
         videoView.setVideoURI(uri);

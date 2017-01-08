@@ -1,4 +1,4 @@
-package org.sddtu.engifest2017;
+package org.sddtu.engifest2017.DataProviders;
 
 /**
  * Created by mohitkumar on 07/01/17.

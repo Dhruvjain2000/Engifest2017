@@ -21,6 +21,7 @@ public class EngiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_engi);
         textView1 = (TextView) findViewById(R.id.web_url);
+        navigate = (FloatingActionButton) findViewById(R.id.nav_button);
         Linkify.addLinks(textView1,Linkify.WEB_URLS);
 
         navigate.setOnClickListener(new View.OnClickListener() {
