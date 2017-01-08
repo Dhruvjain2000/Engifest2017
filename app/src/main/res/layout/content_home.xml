@@ -9,6 +9,13 @@
     tools:context="org.sddtu.engifest2017.HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_view1"
+        />
+
+
     <se.emilsjolander.flipview.FlipView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:flipview="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -16,12 +23,14 @@
         android:id="@+id/flip_view"
         flipview:orientation="vertical"
         flipview:overFlipMode="glow" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="170dp"
+        android:layout_marginBottom="230dp"
         android:orientation="horizontal"
+        android:elevation="1dp"
         >
         <View
             android:layout_width="150dp"
@@ -46,5 +55,52 @@
             android:layout_weight="1"
             ></View>
     </LinearLayout>
-
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/fb"
+    app:backgroundTint="#3B5998"
+        android:id="@+id/fbbutt"
+        android:elevation="1dp"
+        android:visibility="invisible"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        app:backgroundTint="#48c139"
+        android:id="@+id/wappbutt"
+        android:elevation="1dp"
+        android:visibility="invisible"
+        android:src="@drawable/whatsapp"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/plusbutt"
+        app:backgroundTint="#fff"
+        android:elevation="1dp"
+        android:src="@drawable/plusb"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/twitter"
+        app:backgroundTint="#fff"
+        android:visibility="invisible"
+        android:elevation="1dp"
+        android:id="@+id/twitbutt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        />
 </RelativeLayout>

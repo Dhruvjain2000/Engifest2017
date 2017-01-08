@@ -10,6 +10,8 @@ import org.sddtu.engifest2017.DataProviders.AboutUsData;
 
 import java.util.ArrayList;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class AboutUs extends AppCompatActivity {
 
     RecyclerView recyclerView;
@@ -27,6 +29,9 @@ public class AboutUs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
+
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
 
         recyclerView  =(RecyclerView)findViewById(R.id.recyc_about);
         int i=0;

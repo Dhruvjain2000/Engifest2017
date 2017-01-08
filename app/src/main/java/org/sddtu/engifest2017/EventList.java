@@ -10,6 +10,8 @@ import org.sddtu.engifest2017.Fragments.day1;
 import org.sddtu.engifest2017.Fragments.day2;
 import org.sddtu.engifest2017.Fragments.day3;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class EventList extends AppCompatActivity {
 
 
@@ -19,6 +21,10 @@ public class EventList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_list);
+
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/RobotoCondensed-Light.ttf", true);
+
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.AddFragments(new day1());

@@ -10,6 +10,8 @@ import org.sddtu.engifest2017.DataProviders.PlaceCardData;
 
 import java.util.ArrayList;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class PlacesActivity extends AppCompatActivity {
 
 
@@ -27,6 +29,9 @@ public class PlacesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_places);
+
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
 
         recyclerView = (RecyclerView) findViewById(R.id.recyc_places);
         int i = 0;

@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class EngiActivity extends AppCompatActivity {
 
 
@@ -20,6 +22,10 @@ public class EngiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_engi);
+
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
+
         textView1 = (TextView) findViewById(R.id.web_url);
         navigate = (FloatingActionButton) findViewById(R.id.nav_button);
         Linkify.addLinks(textView1,Linkify.WEB_URLS);

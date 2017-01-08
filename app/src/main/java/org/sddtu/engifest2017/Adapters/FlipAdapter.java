@@ -2,6 +2,7 @@ package org.sddtu.engifest2017.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -19,6 +20,7 @@ import org.sddtu.engifest2017.EventList;
 import org.sddtu.engifest2017.DataProviders.FlipViewData;
 import org.sddtu.engifest2017.PlacesActivity;
 import org.sddtu.engifest2017.R;
+import org.sddtu.engifest2017.SponsorsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +39,7 @@ public class FlipAdapter extends ArrayAdapter {
 
     static class Data {
         TextView title;
-        ImageView background;
+       // ImageView background;
         TextView exptext;
     }
 
@@ -70,7 +72,7 @@ public class FlipAdapter extends ArrayAdapter {
             row = layoutInflater.inflate(R.layout.custom_flip_layout,parent,false);
             d = new Data();
             d.title = (TextView) row.findViewById(R.id.flip_text);
-            d.background = (ImageView)row.findViewById(R.id.background_work);
+          //  d.background = (ImageView)row.findViewById(R.id.background_work);
             d.exptext = (TextView) row.findViewById(R.id.exp_button);
             row.setTag(d);
         }
@@ -80,10 +82,18 @@ public class FlipAdapter extends ArrayAdapter {
 
         FlipViewData flipViewData = (FlipViewData) this.getItem(position);
         d.title.setText(flipViewData.getPlace());
-        d.background.setImageResource(flipViewData.getImagesrc());
+        //d.background.setImageResource(flipViewData.getImagesrc());
         d.exptext.setText(flipViewData.getButtext());
 
-        row.setOnClickListener(new View.OnClickListener() {
+        Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/RobotoCondensed-Regular.ttf");
+
+        Typeface tf1 = Typeface.createFromAsset(getContext().getAssets(),"fonts/OpenSans-Light.ttf");
+
+
+        d.title.setTypeface(tf1);
+        d.exptext.setTypeface(tf);
+
+        row.findViewById(R.id.exp_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TextView textView = (TextView) v.findViewById(R.id.exp_button);
@@ -125,6 +135,9 @@ public class FlipAdapter extends ArrayAdapter {
                         break;
                     }
                     case "MORE SPONSORS" : {
+                        Intent intent = new Intent(getContext(), SponsorsActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        getContext().startActivity(intent);
                        // Toast.makeText(getContext(),"Sponsors here",Toast.LENGTH_LONG).show();
                         break;
                     }
