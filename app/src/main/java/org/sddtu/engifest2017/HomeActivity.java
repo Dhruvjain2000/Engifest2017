@@ -1,6 +1,9 @@
 package org.sddtu.engifest2017;
 
+import android.content.ComponentName;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -22,6 +25,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.sddtu.engifest2017.Adapters.FlipAdapter;
@@ -37,6 +41,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     LinearLayout home,events,places,schedule,sponsors,about;
     String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS",""};
     String[] buttontext = {"ABOUT ENGIFEST","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS",""};
+    String[] flipto = {"Swipe Up for more","","","","","",""};
     int[] flipviewdata = {R.drawable.home,R.drawable.foodcity,R.drawable.oat,R.drawable.home,R.drawable.foodcity,R.drawable.pepsi,0};
     int[] arr = {R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five,R.drawable.six};
     FloatingActionButton fabplus,fabfb,fabwapp,fabtwit;
@@ -45,6 +50,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     //ImageView imageView;
     CoordinatorLayout coordinatorLayout;
     RelativeLayout relativeLayout;
+    TextView swipeup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,13 +119,74 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
+        fabfb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try
+                {
+                    // TODO: This part does not work properly based on my test
+                    Intent fbIntent = new Intent(Intent.ACTION_SEND);
+                    fbIntent.setType("text/plain");
+                    fbIntent.putExtra(Intent.EXTRA_TEXT, "#EngifestInfinity");
+                    fbIntent.putExtra(Intent.EXTRA_STREAM,"");
+                    fbIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+                    fbIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                            | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+                    fbIntent.setComponent(new ComponentName("com.facebook.katana",
+                            "com.facebook.composer.shareintent.ImplicitShareIntentHandler"));
+
+                    startActivity(fbIntent);
+                    return;
+                }
+                catch (Exception e)
+                {
+                    // User doesn't have Facebook app installed. Try sharing through browser.
+                }
+
+                // If we failed (not native FB app installed), try share through SEND
+                //String sharerUrl = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+              //  SupportUtils.doShowUri(HomeActivity.this, sharerUrl);
+            }
+        });
+
+        fabtwit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Twitter Share",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        fabwapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PackageManager pm=getPackageManager();
+                try {
+
+                    Intent waIntent = new Intent(Intent.ACTION_SEND);
+                    waIntent.setType("text/plain");
+                    String text = "YOUR TEXT HERE";
+
+                    PackageInfo info=pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
+                    //Check if package exists or not. If not then code
+                    //in catch block will be called
+                    waIntent.setPackage("com.whatsapp");
+
+                    waIntent.putExtra(Intent.EXTRA_TEXT, text);
+                    startActivity(Intent.createChooser(waIntent, "Share with"));
+
+                } catch (PackageManager.NameNotFoundException e) {
+                    Toast.makeText(HomeActivity.this, "WhatsApp not Installed", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
         flipView = (FlipView) findViewById(R.id.flip_view);
         FlipAdapter flipAdapter = new FlipAdapter(getApplicationContext(),R.layout.custom_flip_layout);
         flipView.setAdapter(flipAdapter);
 
         for(int i=0;i<7;i++)
         {
-            FlipViewData data = new FlipViewData(flipTitles[i],buttontext[i]);
+            FlipViewData data = new FlipViewData(flipTitles[i],buttontext[i],flipto[i]);
             flipAdapter.add(data);
         }
 
@@ -171,6 +238,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
+      //  new LoadAnim().execute();
+
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -178,6 +247,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
             }
         });
+
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -262,10 +332,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         @Override
         protected void onProgressUpdate(Integer... values) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                 //relativeLayout.setBackground(values[0]);
+                if (values[0]%2 == 0) {
+                    swipeup.setVisibility(View.VISIBLE);
+                } else {
+                    swipeup.setVisibility(View.INVISIBLE);
+                }
                 //imageView.setImageResource(values[0]);
-            }
         }
 
         @Override
@@ -274,13 +347,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             for (int i = 0; i < 5; i++) {
                 publishProgress(arr[i]);
                 try {
-                    Thread.sleep(300);
+                    Thread.sleep(500);
+                    return i;
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 //return null;
             }
-            return arr[0];
+            return 0;
         }
 
 

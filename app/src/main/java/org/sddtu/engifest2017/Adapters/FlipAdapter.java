@@ -41,6 +41,7 @@ public class FlipAdapter extends ArrayAdapter {
         TextView title;
        // ImageView background;
         TextView exptext;
+        TextView swipe;
     }
 
     @Override
@@ -74,6 +75,7 @@ public class FlipAdapter extends ArrayAdapter {
             d.title = (TextView) row.findViewById(R.id.flip_text);
           //  d.background = (ImageView)row.findViewById(R.id.background_work);
             d.exptext = (TextView) row.findViewById(R.id.exp_button);
+            d.swipe = (TextView)row.findViewById(R.id.swipe_text);
             row.setTag(d);
         }
         else {
@@ -85,6 +87,8 @@ public class FlipAdapter extends ArrayAdapter {
         //d.background.setImageResource(flipViewData.getImagesrc());
         d.exptext.setText(flipViewData.getButtext());
 
+        d.swipe.setText(flipViewData.getSwipetext());
+
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/RobotoCondensed-Regular.ttf");
 
         Typeface tf1 = Typeface.createFromAsset(getContext().getAssets(),"fonts/OpenSans-Light.ttf");
@@ -92,6 +96,7 @@ public class FlipAdapter extends ArrayAdapter {
 
         d.title.setTypeface(tf1);
         d.exptext.setTypeface(tf);
+        d.swipe.setTypeface(tf1);
 
         row.findViewById(R.id.exp_button).setOnClickListener(new View.OnClickListener() {
             @Override

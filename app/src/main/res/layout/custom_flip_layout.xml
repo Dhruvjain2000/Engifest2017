@@ -8,7 +8,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/home"
         android:id="@+id/background_work"
         />
     <TextView
@@ -23,11 +22,20 @@
         android:id="@+id/flip_text"
         />
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:id="@+id/swipe_text"
+        android:text="Swipe Up for Events"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        />
+    <TextView
         android:layout_width="280dp"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="200dp"
         android:textColor="#fff"
         android:gravity="center"
         android:text="EXPLORE"

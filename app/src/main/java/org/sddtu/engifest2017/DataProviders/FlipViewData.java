@@ -11,16 +11,26 @@ public class FlipViewData {
     private String place;
     //private int imagesrc;
     private String buttext;
+    private String swipetext;
 
-    public FlipViewData(String place,String buttext)
+    public FlipViewData(String place,String buttext,String swipetext)
     {
         this.place = place;
       //  this.imagesrc = imagesrc;
         this.buttext = buttext;
+        this.swipetext = swipetext;
     }
 
     public String getButtext() {
         return buttext;
+    }
+
+    public String getSwipetext() {
+        return swipetext;
+    }
+
+    public void setSwipetext(String swipetext) {
+        this.swipetext = swipetext;
     }
 
     public void setButtext(String buttext) {
