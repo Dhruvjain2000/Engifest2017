@@ -23,6 +23,7 @@ public class EngiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_engi);
 
+        getSupportActionBar().setTitle("About Engifest Infinity");
         Calligrapher calligrapher = new Calligrapher(this);
         calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
 
