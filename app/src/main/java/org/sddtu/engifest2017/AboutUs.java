@@ -30,6 +30,8 @@ public class AboutUs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
 
+        getSupportActionBar().setTitle("Team Engi");
+
         Calligrapher calligrapher = new Calligrapher(this);
         calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
 

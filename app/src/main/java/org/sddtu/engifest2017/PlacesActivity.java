@@ -30,6 +30,8 @@ public class PlacesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_places);
 
+        getSupportActionBar().setTitle("Explore DTU");
+
         Calligrapher calligrapher = new Calligrapher(this);
         calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
 

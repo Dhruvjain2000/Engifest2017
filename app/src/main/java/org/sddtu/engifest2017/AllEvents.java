@@ -28,6 +28,7 @@ public class AllEvents extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_events);
 
+        getSupportActionBar().setTitle("Event Description");
         Calligrapher calligrapher = new Calligrapher(this);
         calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
 

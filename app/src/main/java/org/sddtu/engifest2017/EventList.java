@@ -22,6 +22,8 @@ public class EventList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_list);
 
+        getSupportActionBar().setTitle("Schedule");
+
         Calligrapher calligrapher = new Calligrapher(this);
         calligrapher.setFont(this, "fonts/RobotoCondensed-Light.ttf", true);
 
