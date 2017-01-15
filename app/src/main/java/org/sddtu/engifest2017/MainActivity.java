@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setTitle("");
+
         videoView = (VideoView) findViewById(R.id.video1);
 
         String uripath = "android.resource://" + getPackageName() + "/" + R.raw.engisplash;

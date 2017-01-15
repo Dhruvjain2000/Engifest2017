@@ -1,6 +1,7 @@
 package org.sddtu.engifest2017.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.sddtu.engifest2017.DataProviders.EventData;
+import org.sddtu.engifest2017.MasterEventActivity;
 import org.sddtu.engifest2017.R;
 
 import java.util.ArrayList;
@@ -52,7 +54,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.RecyclerView
         return arrayList.size();
     }
 
-    public class RecyclerViewHolder extends RecyclerView.ViewHolder {
+    public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView textView1;
         ImageView imageView;
@@ -64,6 +66,15 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.RecyclerView
             this.arrayList = arrayList;
             textView1 = (TextView)itemView.findViewById(R.id.event_name);
             imageView = (ImageView)itemView.findViewById(R.id.image_event);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+
+            Intent intent = new Intent(context, MasterEventActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
 
         }
     }

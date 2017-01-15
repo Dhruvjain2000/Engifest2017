@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="80dp"
     android:background="#000"
     tools:context="org.sddtu.engifest2017.Fragments.day2">
 
@@ -10,10 +9,17 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="DAY 2"
+        android:id="@+id/day_2"
         android:textColor="#fff"
         android:textSize="40dp"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/list_view_2"
+        ></ListView>
 </FrameLayout>

@@ -1,12 +1,17 @@
 package org.sddtu.engifest2017.Fragments;
 
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TextView;
 
+import org.sddtu.engifest2017.Adapters.ListViewAdapter;
+import org.sddtu.engifest2017.DataProviders.ListViewData;
 import org.sddtu.engifest2017.R;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
@@ -25,6 +30,13 @@ public class day2 extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    ListView listView;
+
+    String[] events = {"Film making","Spandan","Natya","Nukkad"};
+    String[] venue = {"OAT","BR AMBEDKAR AUDITORIUM","SPORTS COMPLEX","FOOD CITY"};
+    String[] time = {"10AM","12PM","2PM","4PM"};
+
 
 
     public day2() {
@@ -62,9 +74,23 @@ public class day2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        Calligrapher calligrapher = new Calligrapher(getActivity());
-        calligrapher.setFont(getActivity(), "fonts/RobotoCondensed-Light.ttf", true);
-        return inflater.inflate(R.layout.fragment_day2, container, false);
+        View v = inflater.inflate(R.layout.fragment_day2, container, false);
+//        Calligrapher calligrapher = new Calligrapher(getActivity());
+//        calligrapher.setFont(getActivity(), "fonts/RobotoCondensed-Light.ttf", true);
+
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),"fonts/OpenSans-Light.ttf");
+
+        TextView textView = (TextView) v.findViewById(R.id.day_2);
+        textView.setTypeface(tf);
+        listView = (ListView) v.findViewById(R.id.list_view_2);
+        ListViewAdapter listViewAdapter = new ListViewAdapter(getActivity(),R.layout.custom_listview);
+        listView.setAdapter(listViewAdapter);
+        for(int i=0;i<events.length;i++)
+        {
+            ListViewData data = new ListViewData(events[i],venue[i],time[i]);
+            listViewAdapter.add(data);
+        }
+        return v;
     }
 
 }
