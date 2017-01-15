@@ -5,6 +5,7 @@
     android:id="@+id/activity_engi"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     tools:context="org.sddtu.engifest2017.EngiActivity">
 
     <ScrollView
@@ -15,13 +16,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-
         >
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="204dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/engi_poster"
+        android:scaleType="fitXY"
         android:src="@drawable/maxresdefault"
         />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
     <TextView
         android:layout_width="match_parent"
         android:paddingRight="10dp"
@@ -38,6 +45,7 @@
           android:paddingLeft="10dp"
           android:paddingRight="10dp"
           android:paddingBottom="10dp"
+          android:textColor="#fff"
           android:text="It's time to fulfill the promises made.\n
 Promises of the unimaginable, the unforgettable and the un-tamable.\n
 Promises of the Infinities.\n
@@ -54,6 +62,7 @@ We present to you, your chance to be a part of the Engifest family and experienc
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="DATE"
+             android:textColor="#e53f3f"
              android:textSize="11dp"
              android:gravity="center"
              android:layout_weight="1"
@@ -62,7 +71,7 @@ We present to you, your chance to be a part of the Engifest family and experienc
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="TIME"
-
+             android:textColor="#e53f3f"
              android:gravity="center"
              android:layout_weight="1"
              />
@@ -79,7 +88,7 @@ We present to you, your chance to be a part of the Engifest family and experienc
                 android:text="18-20th Feb 2017"
                 android:gravity="center"
                 android:textSize="15dp"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:layout_weight="0.6"
                 />
             <TextView
@@ -87,7 +96,7 @@ We present to you, your chance to be a part of the Engifest family and experienc
                 android:layout_height="wrap_content"
                 android:text="10AM - 12AM"
                 android:textSize="15dp"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:gravity="center"
                 android:layout_weight="1"
                 />
@@ -112,12 +121,13 @@ We present to you, your chance to be a part of the Engifest family and experienc
                 android:layout_height="wrap_content"
                 android:textSize="11dp"
                 android:text="Venue"
+                android:textColor="#e53f3f"
                 />
              <TextView
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:text="Delhi Technological University"
-                 android:textColor="#000"
+                 android:textColor="#fff"
                  android:textSize="17dp"
                  />
          </LinearLayout>
@@ -134,6 +144,7 @@ We present to you, your chance to be a part of the Engifest family and experienc
         <TextView
             android:padding="10dp"
             android:textSize="11dp"
+            android:textColor="#e53f3f"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Official Link"
@@ -145,9 +156,10 @@ We present to you, your chance to be a part of the Engifest family and experienc
             android:layout_marginBottom="10dp"
             android:autoLink="web"
             android:id="@+id/web_url"
-            android:text="www.urlwillcomehere.com"
+            android:text="EnfiFest Infinity"
             android:textColor="#4c7093"
             />
+    </LinearLayout>
     </LinearLayout>
     </ScrollView>
 </RelativeLayout>

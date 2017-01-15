@@ -25,7 +25,7 @@ public class EventList extends AppCompatActivity {
         getSupportActionBar().setTitle("Schedule");
 
         Calligrapher calligrapher = new Calligrapher(this);
-        calligrapher.setFont(this, "fonts/RobotoCondensed-Light.ttf", true);
+        calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());

@@ -30,7 +30,7 @@
             android:layout_weight="1"
             ></View>
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="280dp"
             android:layout_height="35dp"
             android:text="Register"
             android:id="@+id/regg_btn"
