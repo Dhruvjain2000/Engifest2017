@@ -10,6 +10,24 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_sponsors">SponsorsActivity</string>
-
-
+    <string name="film_Making">Parchhayi, the photography and film-making society of DTU is going to organise a
+short film making competition. Selected entries will be screened at the venue with the presence of the judges.
+\n\n
+1  Team size: Maximum 15 members (including the actors)
+\n 2.  Time Limit: Upto 15 minutes
+\n 3.  Theme: To Be Announced(One month before Engifest ’17)
+\n 4.  Judging Criteria:
+\n Editing, Cinematography, Script, Acting, Sound design and Overall impact.
+\n 5.  General Rules:
+\n The movies should be either in Hindi or English or both.
+\n If you choose to make a film in Hindi, it must contain English subtitles. No other languages will be allowed.
+\n Please note that we will not be responsible for postal delays, losses or damages–
+\n make sure you send in entries sufficiently before the deadline.
+\n\nYou may use any video camera you deem suitable for shooting the movie. However, we strongly discourage low-resolution cameras, including webcams and mobile-phone cameras.
+\n\n The content of the movie should be appropriate for public screening and thus should have no vulgarity.
+\n\n Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification.
+\n\n Entries must be the original work of the entrants and must not infringe third-party's rights.
+\n\n Please avoid photo slideshows, remixes, spoofs and advertisements. Plagiarism is strictly prohibited.
+\n Sound track can be borrowed, but with due credit.
+</string>
 </resources>
