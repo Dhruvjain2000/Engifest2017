@@ -41,7 +41,7 @@
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:textColor="#000"
-                android:text="@string/film_Making"
+                android:text="@string/Anusanthan"
                 />
             <LinearLayout
                 android:layout_width="match_parent"

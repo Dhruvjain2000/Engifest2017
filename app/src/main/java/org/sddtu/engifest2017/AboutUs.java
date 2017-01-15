@@ -19,7 +19,7 @@ public class AboutUs extends AppCompatActivity {
     RecyclerView.LayoutManager layoutManager;
     ArrayList<AboutUsData> arrayList = new ArrayList<AboutUsData>();
 
-    String[] name = {"Krishna Rai","Nikhil Pandey","Ashish Kumar","Mohit Kumar","Saksham Sandhu","Kabir Singh","Rohit Kumar"};
+    String[] name = {"Nalin Chaudharuy","Gunik Goel","Arpit Nagpal","Akriti Tewari","Shikhar Sachdeva","d","Rohit Kumar"};
     String[] designaton = {"Chairperson  SD-DTU","BackBone SD-DTU","Head Android Development SD-DTU","Co-Head Android Development SD_DTU","Head of Management","Head of Designing SD-DTU","Logistics Head SD-DTU"};
     String[] email = {"krishna@sddtu.org","nikhil.pandey@sddtu.org","ashish@sddtu.org","kumar.mohit983@gmail.com","saksham@sddtu.org","kabir@sddtu.org","rohit@sddtu.org"};
     String[] mobile = {"9999777779","9999777879","9999777879","9999777879","9999777879","9999777879","9999777879"};
