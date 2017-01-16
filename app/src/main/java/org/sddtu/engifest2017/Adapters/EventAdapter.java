@@ -1,15 +1,19 @@
 package org.sddtu.engifest2017.Adapters;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import org.sddtu.engifest2017.BeforeMaster;
 import org.sddtu.engifest2017.DataProviders.EventData;
 import org.sddtu.engifest2017.MasterEventActivity;
 import org.sddtu.engifest2017.R;
@@ -47,6 +51,12 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.RecyclerView
 
         holder.textView1.setText(eventData.getName());
         holder.imageView.setImageResource(eventData.getImage());
+        holder.textView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override
@@ -55,6 +65,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.RecyclerView
     }
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+
+        CharSequence[] chars = {"Spandan", "Anushthaan", "Switch the funk up"};
 
         TextView textView1;
         ImageView imageView;
@@ -72,10 +84,40 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.RecyclerView
         @Override
         public void onClick(View v) {
 
-            Intent intent = new Intent(context, MasterEventActivity.class);
+            String s = textView1.getText().toString();
+            Intent intent = new Intent(context, BeforeMaster.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(intent);
+            if(s.equals("Dance")) {
+                intent.putExtra("Choose","Dance");
+                context.startActivity(intent);
+            } else if(s.equals("Music")) {
+                intent.putExtra("Choose","Music");
+                context.startActivity(intent);
 
+            } else if(s.equals("Literary")) {
+                intent.putExtra("Choose","Literary");
+                context.startActivity(intent);
+
+            } else if(s.equals("Pro Night")) {
+                intent.putExtra("Choose","Pro Night");
+                context.startActivity(intent);
+
+            } else if(s.equals("Drama")) {
+                intent.putExtra("Choose","Drama");
+                context.startActivity(intent);
+
+            } else if(s.equals("Fashion")) {
+                intent.putExtra("Choose","Fashion");
+                context.startActivity(intent);
+
+            } else if(s.equals("Informal")) {
+                intent.putExtra("Choose","Informal");
+                context.startActivity(intent);
+
+            } else if(s.equals("Miscellaneous")) {
+                intent.putExtra("Choose","Miscellaneous");
+                context.startActivity(intent);
+            }
         }
     }
 }
