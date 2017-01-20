@@ -11,7 +11,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_sponsors">SponsorsActivity</string>
 
-    <string name="twoAShow">Two's A Show (Duet)/n
+    <string name="twoAShow">Two is A Show (Duet)/n
 
 /n
 /nThe most beautiful things in the world cannot be seen or touched, they are felt with the/n
@@ -63,9 +63,9 @@ have to be brought by the participants./n
 /n
 /nJUDGING CRITERIA: Vocal dynamics, originality, creativity, coordination and overall impact./n
 </string>
-    <string name="title_activity_sponsors">SponsorsActivity</string>
-    <string name="title_activity_sponsors">SponsorsActivity</string>
-    <string name="title_activity_sponsors">SponsorsActivity</string>
+    <string name="Paridhan">SponsorsActivity</string>
+    <string name="xyz">SponsorsActivity</string>
+    <string name="uvs">SponsorsActivity</string>
 
     <string name="EngiIdol">Engi-Idol (Indian Vocals- Solo)/n
 Does music run through your veins and beat in your chest? Is singing the passion you live for? Yes? Then bring out the performer in you at Engi-Idol and mesmerize the audience with your voice./n
@@ -169,84 +169,85 @@ Participants can register both online and offline (on the spot). Please note: On
 /n</string>
 
 
-    <string name="STFU">o The two participants be on opposite sides of the stage./n
-    o The songs played during the battle would be randomly played by the DJ./n
-    o There would be two rounds of performances during each battle./n
-    o There would not be any point system in the battle round. The winner would be announced after each battle by the judge’s discretion./n
-    o The time given to each contestant in the preliminary rounds would be approx. 30 seconds./n
-    o In the finals, the time limit for each performer in each round will be approx. 1 minute./n
-    o The judging criteria for the popping will be based on-/n
+    <string name="STFU">The two participants be on opposite sides of the stage./n
+    The songs played during the battle would be randomly played by the DJ./n
+     There would be two rounds of performances during each battle./n
+     There would not be any point system in the battle round. The winner would be announced after each battle by the judge’s discretion./n
+     The time given to each contestant in the preliminary rounds would be approx. 30 seconds./n
+     In the finals, the time limit for each performer in each round will be approx. 1 minute./n
+     The judging criteria for the popping will be based on-/n
 
-    /n§ ORIGINAL POPPING MOVEMENTS (Foundation, Techniques and Variations of styles ex: Popping, Boogaloo, Tutting, Animation, Snaking etc...)/n
-    § CHARACTER and CHARISMA (Eye contact and Interaction with environment)/n
-    § MUSICALITY (Pure Funk, Improvisation and Interaction with the music)/n
-    § STYLE and GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
-    § ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
-    § FLOOR WORK (Within the Popping vocabulary)/n
-    § STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
-    § CREATIVITY (....Add your flavor, Be Extraordinary)/n
+    /n ORIGINAL POPPING MOVEMENTS (Foundation, Techniques and Variations of styles ex: Popping, Boogaloo, Tutting, Animation, Snaking etc...)/n
+     CHARACTER and CHARISMA (Eye contact and Interaction with environment)/n
+     MUSICALITY (Pure Funk, Improvisation and Interaction with the music)/n
+     STYLE and GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
+     ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
+     FLOOR WORK (Within the Popping vocabulary)/n
+     STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
+     CREATIVITY (....Add your flavor, Be Extraordinary)/n
 
     /n
     /n· TWO ON TWO POPPING BATTLES/n
 
     /no All preliminary rounds would be two rounds each and each performer would get approx. 30 seconds to perform./n
-    o In the final would, there would be 3 rounds./n
-    o The time limit for each performer during preliminary rounds would be approx. 30 seconds./n
-    o The time limit for each performer during the finals would be approx. 1 minute./n
-    o The music played by the DJ would be random and would feature funk, rap, break beats, electronica etc./n
-    o The judging would be non-point based and the sole discretion of the judge would decide who wins the round./n
-    o The result would depend upon the combined performance of both the team members./n
+     In the final would, there would be 3 rounds./n
+     The time limit for each performer during preliminary rounds would be approx. 30 seconds./n
+     The time limit for each performer during the finals would be approx. 1 minute./n
+     The music played by the DJ would be random and would feature funk, rap, break beats, electronica etc./n
+     The judging would be non-point based and the sole discretion of the judge would decide who wins the round./n
+     The result would depend upon the combined performance of both the team members./n
 
     /nONE ON ONE BREAKING BATTLE :/n
 
     /no The two participants be on opposite sides of the stage./n
-    o The songs played during the battle would be randomly played by the DJ./n
-    o There would be two rounds of performances during each battle./n
-    o There would not be any point system in the battle round. The winner would be announced after each battle by the judge’s discretion./n
-    o The time given to each contestant in the preliminary rounds would be approx. 30 seconds./n
-    o In the finals, the time limit for each performer in each round will be approx. 1 minute./n
-    o The judging criteria for the popping will be based on-/n
-    § CHARACTER and CHARISMA (Eye contact and Interaction with environment)/n
-    § MUSICALITY ( Improvisation and Interaction with the music)/n
-    § STYLE and GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
-    § ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
-    § FLOOR WORK (Within the Breaking vocabulary)/n
-    § STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
-    § CREATIVITY (....Add your flavor, Be Extraordinary)/n
+     The songs played during the battle would be randomly played by the DJ./n
+     There would be two rounds of performances during each battle./n
+     There would not be any point system in the battle round. The winner would be announced after each battle by the judge’s discretion./n
+     The time given to each contestant in the preliminary rounds would be approx. 30 seconds./n
+     In the finals, the time limit for each performer in each round will be approx. 1 minute./n
+     The judging criteria for the popping will be based on-/n
+     CHARACTER and CHARISMA (Eye contact and Interaction with environment)/n
+     MUSICALITY ( Improvisation and Interaction with the music)/n
+     STYLE and GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
+     ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
+     FLOOR WORK (Within the Breaking vocabulary)/n
+     STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
+     CREATIVITY (....Add your flavor, Be Extraordinary)/n
 
     /nTWO ON TWO BREAKING BATTLES/n
 
     /no All preliminary rounds would be two rounds each and each performer would get approx. 30 seconds to perform./n
-    o In the final would, there would be 3 rounds./n
-    o The time limit for each performer during preliminary rounds would be approx. 30 seconds./n
-    o The time limit for each performer during the finals would be approx. 1 minute./n
-    o The music played by the DJ would be random and would feature funk, rap, break beats, electronica etc./n
-    o The judging would be non-point based and the sole discretion of the judge would decide who wins the round./n
-    o The result would depend upon the combined performance of both the team members./n
-    o The judging criteria for the popping will be based on-/n
-    § CHARACTER & CHARISMA (Eye contact and Interaction with environment)/n
-    § MUSICALITY ( Improvisation & Interaction with the music)/n
-    § STYLE & GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
-    § ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
-    § FLOOR WORK (Within the Breaking vocabulary)/n
-    § STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
-    § CREATIVITY (....Add your flavor, Be Extraordinary)/n
+     In the final would, there would be 3 rounds./n
+     The time limit for each performer during preliminary rounds would be approx. 30 seconds./n
+     The time limit for each performer during the finals would be approx. 1 minute./n
+     The music played by the DJ would be random and would feature funk, rap, break beats, electronica etc./n
+     The judging would be non-point based and the sole discretion of the judge would decide who wins the round./n
+     The result would depend upon the combined performance of both the team members./n
+     The judging criteria for the popping will be based on-/n
+     CHARACTER  and CHARISMA (Eye contact and Interaction with environment)/n
+     MUSICALITY ( Improvisation and Interaction with the music)/n
+     STYLE GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
+     ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
+     FLOOR WORK (Within the Breaking vocabulary)/n
+     STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
+     CREATIVITY (....Add your flavor, Be Extraordinary)/n
 
     /n
     /n· FOUR ON FOUR All styles BATTLE/n
 
     /no The number of members in the crew should be 4./n
-    o Total time duration for the preliminary rounds would be 6 minutes./n
-    o The changeover between the crews would be done at a gap of 30 seconds./n
-    o The finals would feature a total time duration of 8 minutes./n
-    o Elements of breaking must be incorporated in the performance namely toprock, downrock, freezes and power moves along with other dance forms of hip hop./n
-    o The judging would not be point based and would be done on the discretion of the judge based on overall team performance./n
+     Total time duration for the preliminary rounds would be 6 minutes./n
+     The changeover between the crews would be done at a gap of 30 seconds./n
+     The finals would feature a total time duration of 8 minutes./n
+     Elements of breaking must be incorporated in the performance namely toprock, downrock, freezes and power moves along with other dance forms of hip hop./n
+     The judging would not be point based and would be done on the discretion of the judge based on overall team performance./n
 
     /n
     /n
     /nThe rules and regulations are subject to change based on the discretion of the organizers. Kindly keep checking the official site of the ENGIFEST and STFU for any changes in the rules and procedures./n
 
     /nInformation on the registration procedure, registration fee, and deadline for registration, prizes and venue would be put up separately./n
+    </string>
 <string name="Anusanthan">GROUP
 \n1.   For folk, teams have to perform one of the following dance forms:
 \n  Alkap, Bhangra, Bhavai, Bihu, Cheraw (bamboo dance) , Chhau, Dhap, Dumhal, Gambhira, Garba(dandiya), Gaur dance, Ghoomar, Ghumura, Giddha, Gondhal, Jawara ,Jhoomer, Kalbelia, Karakattam, Koli, Lavani, Naga dance, Odissi, Padhar, Raas.
