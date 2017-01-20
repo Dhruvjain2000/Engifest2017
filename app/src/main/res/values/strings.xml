@@ -10,7 +10,244 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_sponsors">SponsorsActivity</string>
-    <string name="Anusanthan">GROUP
+
+    <string name="twoAShow">Two's A Show (Duet)/n
+
+/n
+/nThe most beautiful things in the world cannot be seen or touched, they are felt with the/n
+heart./n
+If you’re the pair whose melodies can resonate in the hearts of the masses, give it what you’ve got at Two’s a Show!/n
+
+/n
+/nREGISTRATION:/n
+Participants can register both online and offline (on the spot). Please note: Only one person from the pair should register./n
+
+/n
+/nRULES:/n
+1. Each pair is allotted a total of 7 minutes including setup./n
+2. There should be exactly 2 members in a team./n
+3. Any number of instruments can be played by the participants./n
+4. An acoustic guitar, a synthesizer and drum kit will be provided. The participants can bring any other instrument required./n
+5. Beat boxing is allowed./n
+6. Use of loopers and digital rhythm patterns is strictly prohibited. However use of digital effects is allowed./n
+7. Vocals (if any) must be in either English or Hindi or both./n
+7. Maximum 2 pairs are allowed per college./n
+
+/n
+/nPlease note: Performers have freedom to perform as they wish. Any combination of instruments or vocals or both is allowed./n
+
+/n
+/nJUDGING CRITERIA: Originality, creativity, coordination and overall impact. /n
+
+/n</string>
+    <string name="Acoustic">Acoustic Alchemy (Unplugged)/n
+
+/n
+/nCan you experiment with raw tunes and sing in a langue etrangere?/n
+Create a mind-blowing musical reaction with the languages you love and show us your chemistry as Acoustic Alchemy will be your laboratory!/n
+
+/n
+/nREGISTRATION:/n
+Participants can register both online and offline (on the spot). Please note: Only one person from the team should register./n
+
+/n
+/nRULES:/n
+1. The song choice maybe in any language  EXCEPT Hindi or English./n
+2. Each group is allotted a total of 8 minutes./n
+3. The number of members in one group can range between 2 and 6 including one vocalist (compulsory)./n
+4. All required instruments besides keyboard, acoustic guitar and drum kit (provided)/n
+have to be brought by the participants./n
+5. All instruments should be acoustic except keyboard (only piano) and bass guitar./n
+6. Maximum 2 teams are allowed per college./n
+
+/n
+/nJUDGING CRITERIA: Vocal dynamics, originality, creativity, coordination and overall impact./n
+</string>
+    <string name="title_activity_sponsors">SponsorsActivity</string>
+    <string name="title_activity_sponsors">SponsorsActivity</string>
+    <string name="title_activity_sponsors">SponsorsActivity</string>
+
+    <string name="EngiIdol">Engi-Idol (Indian Vocals- Solo)/n
+Does music run through your veins and beat in your chest? Is singing the passion you live for? Yes? Then bring out the performer in you at Engi-Idol and mesmerize the audience with your voice./n
+
+/n
+/nREGISTRATION:/n
+Registration has to be done ONLINE ONLY. There will be NO on the spot registration./n
+
+/n
+/nONLINE PRELIMS:/n
+Send your recording (audio/video) or the link to your YouTube video along with your contact details to madhurima.indian@gmail.com./n
+
+/n
+/nRULES:/n
+1. Each participant is allotted a total of 6 minutes including setup./n
+2. One accompanying instrument is allowed./n
+3. Karaoke track can be used./n
+4. All required instruments besides acoustic guitar and synthesizer have to be brought by the participants./n
+5. Genre for the performance should be light classical. Purely classical songs are prohibited./n
+6. Only the participants shortlisted after the online prelims can participate in the finals to/n
+be held on campus./n
+
+/n
+/nJUDGING CRITERIA: Quality of singing, creativity, vocal range, clarity in lyrics and overall impact. /n
+
+/n</string>
+    <string name="Vocalicious">Vocalicious (Western Vocals- Solo)/n
+
+/n
+/nIf music is your language, and the stage is your world, then grab the microphone and/n
+get ready to enchant everyone with your vocals. Come, be a part of Vocalicious. The stage awaits you./n
+
+/n
+/nREGISTRATION:/n
+Registration has to be done ONLINE ONLY. There will be NO on the spot registration./n
+
+/n
+/nONLINE PRELIMS: Send your recording (audio/video) or the link to your YouTube video along with your contact details to madhurima.western@gmail.com./n
+
+/n
+/nRULES:/n
+1. Each participant is allotted a total of 6 minutes including setup./n
+2. One accompanying instrument is allowed./n
+3. Karaoke or Backing track is strictly prohibited./n
+4. All required instruments besides acoustic guitar and synthesizer have to be brought by the participants./n
+5. Rap is not allowed./n
+6. All song choices should be in English./n
+7. Only the participants shortlisted after the online prelims can participate in the finals to be held on campus./n
+
+/n
+/nJUDGING CRITERIA: Quality of singing, creativity, vocal range, clarity in lyrics and overall impact. /n
+
+/n
+</string>
+    <string name="Balladeers"> Balladeers (Western Vocals- Acapella Group)/n
+
+/n
+/nMusic is, certainly, the strongest form of magic- one that transcends all boundaries. So/n
+gather up your best wizards and bewitch the audience with your symphonies! Cast your spell at Balladeers!/n
+
+/n
+/nREGISTRATION:/n
+Participants can register both online and offline (on the spot). Please note: Only one person from a group should register./n
+
+/n
+/nRULES:/n
+1. Each group is allotted a total of 12 minutes including sound check./n
+2. The number of members in one group can range between 5 and 25./n
+3. Use of instruments is not permitted at any time during the performance./n
+4. Beat boxing is allowed./n
+5. All song choices should be in English./n
+6. Only one group is allowed to participate from one college./n
+
+/n
+/nJUDGING CRITERIA: Vocal dynamics, originality, creativity, coordination and overall impact. /n
+
+/n</string>
+    <string name="Vrind">Vrind (Indian Vocals- Group)/n
+
+/n
+/nMusic is well said to be the speech of angels. If yours is the team that can create a/n
+heaven with your voices, get ready with your bandish, and take the stage at Vrind!/n
+
+/n
+/nREGISTRATION:/n
+Participants can register both online and offline (on the spot). Please note: Only one person from a group should register./n
+
+/n
+/nRULES:/n
+1. Each group is allotted a total of 12 minutes including setup./n
+2. The number of members in one group cannot exceed 20 including accompanists./n
+3. Maximum three accompanying instruments are allowed./n
+4. A synthesizer and acoustic guitar will be provided. The participants must bring any other instruments needed./n
+5. Beat boxing is allowed./n
+6. Genre for the performance should be Hindustani classical./n
+7. Only one group is allowed to participate from one college./n
+
+/n
+/nJUDGING CRITERIA: Vocal dynamics, originality, creativity, coordination and overall impact. /n
+
+/n</string>
+
+
+    <string name="STFU">o The two participants be on opposite sides of the stage./n
+    o The songs played during the battle would be randomly played by the DJ./n
+    o There would be two rounds of performances during each battle./n
+    o There would not be any point system in the battle round. The winner would be announced after each battle by the judge’s discretion./n
+    o The time given to each contestant in the preliminary rounds would be approx. 30 seconds./n
+    o In the finals, the time limit for each performer in each round will be approx. 1 minute./n
+    o The judging criteria for the popping will be based on-/n
+
+    /n§ ORIGINAL POPPING MOVEMENTS (Foundation, Techniques and Variations of styles ex: Popping, Boogaloo, Tutting, Animation, Snaking etc...)/n
+    § CHARACTER and CHARISMA (Eye contact and Interaction with environment)/n
+    § MUSICALITY (Pure Funk, Improvisation and Interaction with the music)/n
+    § STYLE and GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
+    § ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
+    § FLOOR WORK (Within the Popping vocabulary)/n
+    § STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
+    § CREATIVITY (....Add your flavor, Be Extraordinary)/n
+
+    /n
+    /n· TWO ON TWO POPPING BATTLES/n
+
+    /no All preliminary rounds would be two rounds each and each performer would get approx. 30 seconds to perform./n
+    o In the final would, there would be 3 rounds./n
+    o The time limit for each performer during preliminary rounds would be approx. 30 seconds./n
+    o The time limit for each performer during the finals would be approx. 1 minute./n
+    o The music played by the DJ would be random and would feature funk, rap, break beats, electronica etc./n
+    o The judging would be non-point based and the sole discretion of the judge would decide who wins the round./n
+    o The result would depend upon the combined performance of both the team members./n
+
+    /nONE ON ONE BREAKING BATTLE :/n
+
+    /no The two participants be on opposite sides of the stage./n
+    o The songs played during the battle would be randomly played by the DJ./n
+    o There would be two rounds of performances during each battle./n
+    o There would not be any point system in the battle round. The winner would be announced after each battle by the judge’s discretion./n
+    o The time given to each contestant in the preliminary rounds would be approx. 30 seconds./n
+    o In the finals, the time limit for each performer in each round will be approx. 1 minute./n
+    o The judging criteria for the popping will be based on-/n
+    § CHARACTER and CHARISMA (Eye contact and Interaction with environment)/n
+    § MUSICALITY ( Improvisation and Interaction with the music)/n
+    § STYLE and GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
+    § ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
+    § FLOOR WORK (Within the Breaking vocabulary)/n
+    § STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
+    § CREATIVITY (....Add your flavor, Be Extraordinary)/n
+
+    /nTWO ON TWO BREAKING BATTLES/n
+
+    /no All preliminary rounds would be two rounds each and each performer would get approx. 30 seconds to perform./n
+    o In the final would, there would be 3 rounds./n
+    o The time limit for each performer during preliminary rounds would be approx. 30 seconds./n
+    o The time limit for each performer during the finals would be approx. 1 minute./n
+    o The music played by the DJ would be random and would feature funk, rap, break beats, electronica etc./n
+    o The judging would be non-point based and the sole discretion of the judge would decide who wins the round./n
+    o The result would depend upon the combined performance of both the team members./n
+    o The judging criteria for the popping will be based on-/n
+    § CHARACTER & CHARISMA (Eye contact and Interaction with environment)/n
+    § MUSICALITY ( Improvisation & Interaction with the music)/n
+    § STYLE & GRACE (Execution and Demonstration of body control through balance, strength and range of motion)/n
+    § ATTITUDE (No fear Confidence, High energy, Good sportsmanship. Ability to experiment through improvisation and making any mistakes into something, Focus on the music...not moves or worries!)/n
+    § FLOOR WORK (Within the Breaking vocabulary)/n
+    § STAGE PRESENCE (Entertainment quality/Performance/Audience connection)/n
+    § CREATIVITY (....Add your flavor, Be Extraordinary)/n
+
+    /n
+    /n· FOUR ON FOUR All styles BATTLE/n
+
+    /no The number of members in the crew should be 4./n
+    o Total time duration for the preliminary rounds would be 6 minutes./n
+    o The changeover between the crews would be done at a gap of 30 seconds./n
+    o The finals would feature a total time duration of 8 minutes./n
+    o Elements of breaking must be incorporated in the performance namely toprock, downrock, freezes and power moves along with other dance forms of hip hop./n
+    o The judging would not be point based and would be done on the discretion of the judge based on overall team performance./n
+
+    /n
+    /n
+    /nThe rules and regulations are subject to change based on the discretion of the organizers. Kindly keep checking the official site of the ENGIFEST and STFU for any changes in the rules and procedures./n
+
+    /nInformation on the registration procedure, registration fee, and deadline for registration, prizes and venue would be put up separately./n
+<string name="Anusanthan">GROUP
 \n1.   For folk, teams have to perform one of the following dance forms:
 \n  Alkap, Bhangra, Bhavai, Bihu, Cheraw (bamboo dance) , Chhau, Dhap, Dumhal, Gambhira, Garba(dandiya), Gaur dance, Ghoomar, Ghumura, Giddha, Gondhal, Jawara ,Jhoomer, Kalbelia, Karakattam, Koli, Lavani, Naga dance, Odissi, Padhar, Raas.
 \n If team wants to perform a form other than those mentioned above, they are required to contact the coordinators well in advance.
@@ -171,6 +408,7 @@ Infinite doses of jokes and insults.
 \n 5. Any Form of music is not allowed during the performance.
 \n 6. Since the participants are called upon in a random order, each is required to be present at least 5 minutes prior to the start. Organisers will not be responsible if you are unable to show up on time and miss your slot.
 </string>
+
     <string name="Spandan">\nDance is the language of the soul and ENGIFEST17 gives every soul a beautiful platform
 to express, a competitive environment for every dancer to showcase their talent!
 \n
