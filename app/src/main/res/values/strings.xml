@@ -10,7 +10,90 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_sponsors">SponsorsActivity</string>
+    <string name="nukkad">
+        PRELIMS/ELIMINATIONS:/n
 
+/n
+/nAll the participating teams must mail a short synopsis (50-100 words) of their scripts and the/n
+script to  pratibimb.dtu@gmail.com/n
+15 teams will be shortlisted on basis of script, past performances (preference will be given to teams registering first)/n
+
+/n
+/nFINALS:/n
+
+/n
+/nTeam size: No restrictions/n
+Time limit: 22+2 minutes (empty stage to empty stage)/n
+Teams must perform the same street play which was mentioned in the script eliminations./n
+Judging Criteria:/n
+Acting, Voice (sync, modulation, diction), Screenplay, Script, Crowd interaction and/n
+Overall impact./n
+
+/n
+/nGeneral Rules:/n
+
+/n1.  The team size represents the number of people registered as a team. Only these shall be allowed to perform the street play./n
+2.  Minimum of 8 actors are to be included in the team./n
+3.  Music accompanists are included in the team number stated above./n
+4.  Teams are expected to perform at an open air venue, on a circular stage with audience all around./n
+5.  No electrical appliances shall be allowed during the performance, whether inside or outside the circle of performance./n
+6.  Only live music is allowed. Teams will have to bring their own instruments - no instrument shall be provided./n
+7.  Language of the performance should be Hindi/English or both. However short sub passages in other languages are allowed. /n
+
+/n
+/n8.  Any kind of fluid, live animals, flame, heavy object or any material which has a/n
+possibility of damaging the stage is not allowed./n
+9.  Dry colours may be used during the play, but the teams have to clean the stage after their performance and the cleaning time will be included in the performance time./n
+10. Teams will be heavily penalised if they exceed the time limit./n
+11. Plays can be based on any theme but since performance is being held at public venues, any content directed against a certain political group or religious community is strictly prohibited./n
+12. Obscenity (at the discretion of judges) of any kind is not allowed and may lead to disqualification./n
+13. Any kind of plagiarism and profanity will lead to immediate disqualification./n
+14. The decision of the judges will be final and binding./n
+    </string>
+    <string name="natya">
+        PRELIMS/ELIMINATIONS:/n
+Team Size: No restrictions/n
+Eliminations:/n
+Registered teams will be called for eliminations in case of large number of entries teams will be selected for prelims on the basis of script and video./n
+
+/n
+/nA summary of a play or a relevant part bringing out the essence of the play must be performed in Hindi/English or both. However short sub passages in other languages are allowed. The teams are required to submit a short synopsis (not more than 70 words) of the script of their play before the eliminations./n
+
+/n
+/nTime Limit: 10-15 minutes (including the stage set up and clearance time)/n
+
+/n
+/nFINALS:/n
+Number of teams to be selected:-6-8/n
+The complete version of the same play should be performed./n
+TIME LIMIT: 35 - 50 minutes (including the stage set up and clearance time)/n
+Production material provided:/n
+4 chairs, 2 tables/n
+Any other production material has to be brought by the teams themselves but the organizers hold the discretion of allowing its inclusion on stage./n
+Judging Criteria:/n
+Screenplay, Direction, Script, Acting and Overall Impact./n
+
+/n
+/nGeneral Rules:/n
+
+/n1.  Performance should be in Hindi or English or both. However short sub - passages in other languages are allowed./n
+2.  Stage Play comprises of multiple scenes and may have blackouts./n
+3.  Backstage voiceovers and narrations are allowed during the performance./n
+4.  Pre-recorded music is allowed and should be brought in a CD/DVD or a pen drive in .cda or .mp3 format only. (Other FORMATs may not be supported on the computer – use them at your own risk)./n
+5.  Participants will be provided with a laptop and are expected to appoint someone to operate the laptop during the performance./n
+6.  Music may also be played live. However, no amplifiers or plug-points will be provided for this purpose. /n
+
+/n
+/n7.  Participants will be provided a light control box, using which the lighting on the/n
+stage can be controlled. (Teams need to have a CA for this purpose within Team/n
+Size limit)./n
+8.  Any kind of fluid, flame, live animals, heavy objects or any kind of material that damages the stage is strictly NOT allowed and may lead to disqualification./n
+9.  Obscenity (at the discretion of the judges) of any kind is NOT allowed and will lead to immediate disqualification./n
+10. Inappropriate content, blasphemy or content defaming any political or religious group is strictly prohibited./n
+11. Time Limit should be strictly followed. Participants will be penalized by judges for not doing so. The time duration for prelims and finals includes performance time and stage setting time. The given time duration is from empty stage to empty stage./n
+12. The decision of the judges will be final and binding/n
+
+    </string>
     <string name="twoAShow">Two is A Show (Duet)/n
 
 /n
@@ -522,7 +605,7 @@ short film making competition. Selected entries will be screened at the venue wi
 \n\n Please avoid photo slideshows, remixes, spoofs and advertisements. Plagiarism is strictly prohibited.
 \n Sound track can be borrowed, but with due credit.
 </string>
-    <string name="syahi">\nFORMAL EVENTS
+    <string name="WOW">\nFORMAL EVENTS
 \n
 \n1. WAR OF WORDS
 \n
@@ -534,8 +617,9 @@ If you think quick wit and impeccable English is your forte, then War of Words i
 \nii.       Format of the debate and exact rules will be declared on the date of the competition.
 \n
 \n
-\n
-\n2. CREATIVE WRITING
+\n</string>
+    <string name="creative">
+\n CREATIVE WRITING
 \n
 SYAAHI17 the annual Literary fest in collaboration with ENGIFEST15 of Delhi Technological University(Formerly Delhi College OF engineering) invites you to the SAGA of \nwords, where words define you , CREATIVE WRITING, A rendezvous with thoughts- khayalon se mulakat.
 \n
@@ -550,8 +634,9 @@ In the rush of our monotonous lives, we breathe but forget to live. It is time t
 \n
 \n
 \nSo with these pretty rules, come up with your amazing thoughts and conquer the event of all times.
-\n
-\n3. MIXED BAG
+\n</string>
+    <string name="mixedbag">
+\n MIXED BAG
 \n
 A WORD GAMES event, Mixed Bag is the ultimate amalgamation of literary, lingual and logical hurdles for all the masters of all trades out there! So wear your thinking \ncaps and get along with one of the most celebrated events of all time.
 \n
@@ -561,8 +646,9 @@ i.	The event comprises of only one round, which will be in the form of a 2 hours
 \n
 \nThis is the event where you battle for the title of the Ultimate Master of Words!
 \n
-\n
-\n4. काव्ाजना:
+\n</string>
+    <string name="Hindilit">
+\n काव्ाजना:
 \n
 यह वह मौका है जहा आप अपनी छिपी रचनात्मकता छिखा सकत हैं, अपन अन्दर िपी काव्य प्रछतभा को प्रकट कर सकत हैं | प्रछतभाछियो को एक वास्तछवक \nस्वरछचत छहन्दी कछवता प्रस्तत करनी होिी | यह एक व्यक्तिित प्रछतयोछिता है |
 \n
@@ -576,8 +662,9 @@ i.	The event comprises of only one round, which will be in the form of a 2 hours
 \nचरण २:
 \n
 चरण १ में चयछनत प्रछतभाछियो को िशको के सामन मच पर अपनी कछवता का वाचन करना होिा | प्रस्तछत सस्वर-वाचन और कछवता में छनछहत छवचारो के आधार \nपर छनणायको द्वारा छवजता छनणीत होि।
-\n
-\n5. JAM
+\n</string>
+    <string name="jam">
+\nJAM
 \n
 \nGet ready for this fast paced, 60 second linguistic thriller! This battle tests your quick thinking, speaking ability and command over the English language.
 \nYou got a minute to win it!
@@ -595,8 +682,9 @@ ii.      The participants will be divided into groups of 12 for the preliminary 
 \niii.      Any issues or discrepancies shall be resolved by the JAM master. iv.      The JAM master shall have the final verdict in all matters.
 \nv.      Keep in mind, that audibility and clarity of speech is key in this competition.
 \n
-\n
-\n6.  दृष्टिकोण
+\n</string>
+    <string name="hindilit2">
+\n  दृष्टिकोण
 \n
 \nयह एक मौक्तखक प्रछतयोछिता है, छजसम आप को छिए िए छवषय पर आधाररत एक छचत्र  के सम्बन्ध में अल्प-
 \nसमय में सोचकर एक सरल और ताछकक तरीक में अपन छवचारो को व्यि करना होिा|
@@ -613,57 +701,58 @@ ii.      The participants will be divided into groups of 12 for the preliminary 
 \nअन्य अछतररि एव नय छनयम और छिशाछनिश प्रछतयोछिता के समय स्पि छकय जायि |
 \n
 \n
-\n
-\nINFORMALS
-\n
-\n7. GAME OF SHOWS
-\n
-\nPerhaps, YOU KNOW NOTHING.
-\nIf you do, THERES NOTHING MORE DECEPTIVE THAN OBVIOUS FACTS.
-\nNOT KNOWING IS PART OF THE FUN, that was certainly not the motto at our college! Because knowledge is LEGEND-WAIT FOR IT- DARY!
-\n
-\nDelhi Technological Universitys Engifest, in collaboration with Syaahi, the Literary Fest of
-\nDTU presents GAME OF SHOWS!
-\n
-\nAre you guilty of binge-watching show after show through the nights? Has your sleep been a victim of your inability to let go without watching the next episode?
-\nSyaahi announces GAME OF SHOWS in collabration with Engifest, DTU
-\nto reward you for giving it to all your temptations.
-\nFrom Sherlock Homes to How I met your mother, from Game of Thrones to FRIENDS; see how well you know some of the greatest ever TV shows.
-\n
-\nRULES:
-\n1. A team limit of 2 has been set for the event. More than one team from the same college can register for it.
-\n2. The prelims and the finals will be conducted on the same day. Six teams with the highest score in the prelims shall proceed to the finals.
-\n3. Use of cellphones is strictly prohibited. Any sort of unfair means will lead to
-\ndisqualification from the event.
-\n
-\n
-\n8. PYRAMIDS
-\n
-This game features a team of two whose objective is to attempt to guess a series of words or phrases based on descriptions given by the teammate. (Similar to the game \non FRIENDS)
-\n
-\nRULES:
-\n
-\n*Dont play it like Joey tribbiani-that is any direct reference to the word will lead to disqualification.
-\n
-\n*The teams will get to choose from a pyramid of different topics.
-\n
-\n*The teams will attempt to guess the maximum number of words in the given time frame.
-\n
-\n* More information will be provided on the day of the event.
-\n
-\n
-\n9. HARRY POTTER QUIZ
-\n
-\nExpecto Patronum…….. Alhamora…….. Accio…….
-\nBrackium Emendo………
-\n
-Which Potterhead would not be familiar with these magical words? So, do you wish to explore the magical corridors of Hogwarts, the changing staircases with the \ntalking pictures? Here is the call for all the Potterheads out there.
-\n
-Wear your thinking caps and show us your extravagating knowledge. So brush up your skills and come to one of the biggest quizzes of all time as Syaahi, Literary Fest \nof DTU along with Engifest, presents you with ultimate Harry Potter quizzing event.
-\n
-The Potter family is a very old one, but it was never at the very forefront of wizarding history, contenting itself with a solid and comfortable existence in the \nbackwaters.
-\n
-\nTake a walk through the exciting rounds and become the champ of the modern era. Be that muggle who conquer all the wizards though your knowledge.
+\n</string>
+<string name="paridhan">/nMade with sugar and spice and everything nice!/n
 
+/nWatch beautiful and glamourous girls & tall and handsome boys set the stage aflame as they walk down that aisle in their splendid attires and exciting themes./n
+
+/nParidhan is a celebration of style, confidence and elegance. The participants will captivate your heart, take your breath away and leave you speechless with their flawless beauty and grace!/n
+
+/nSo, let the unparalleled aura of Paridhan enrapture you at Engifest Infinity! /n
+/n
+/n
+
+/nCampus Princess:
+/nEngifest Infinity presents Campus Princess Femina Miss India- Your ticket to the World of Glamour. Your chance you dazzle the world with your beauty, oomph and glamour.
+/nAn opportunity you can’t afford to miss!/n
+
+/nBe there to witness  talented, young and beautiful girls take on the stage with their to-die-for attitude!</string>
+<string name="livewire">/nYour feet won't touch the ground
+/nYour head won't stay still
+/nYour hands won't stop swaying
+/nYour vocal chords won't stop roaring
+/nYour body won't stop moving
+/nAll this and more!/n
+
+/nGet ready to be enthralled at Live Wire-The Star Night as the energy of a popular artist reverberates in the crowd./n
+
+/nHaving featured stars like Vishal and Shekhar and Mohit Chauhan in the previous years, Live Wire at Engifest Infinity will surely be a night of making of infinite college memories!</string>
+<string name="EDM">/nAdhbudh. Anokha. Aelaan.
+/nAkkad Bakkad Bambe Bo.
+/nEngi main dekho aa gaya woh.
+/nAaja thoda Chennai Bass bajva de.
+/nBass Rani ke saath Raja Baja bhi bulva de.
+/nAao Engifest ka Scene Set Karwa De!
+/nEngifest 2017 and Pokerbaazi.com present to you one of the most exciting, experimental and engaging electronic music producers in the Indian Scene – NUCLEYA!
+/nThis 20th February, get ready to groove, get ready to headbang at Engifest, DTU. GET READY TO EXPERIENCE THE INFINITE!</string>
+<string name="rock">
+    /n"One good thing about music, when it hits you, you feel no pain."
+/n-Bob Marley/n
+
+/nEngifest Infinity brings to you the biggest celebration of Rock Music in the North of India. Feel the base pounding in your chest, feel the blood rushing in your veins, for this will make you fall in love with music over and over again./n
+
+/nExperience the night's magnificence and grandeur as the nationwide famous Rock stars set the stage on fire./n
+
+/nYou don't want to miss it, not now, not ever. Infinite is all that we guarantee./n
 </string>
+<string name="standup">
+    /nThe witty ones know their way with words and sometimes all that comedy needs is words placed in wrong order. /n
+
+/nFor the first time ever, Engifest will feature a popular Stand-Up Comedian who will make you laugh till your jaw hurts, eyes water and stomach aches, and then some more. Gear up for some entertaining, light-hearted comedy with the best in the industry at Engifest Infinity. /n
+</string>
+<string name="photographia">We also bring to you  Fotographia- an Online Photography Competition. It provides a great stage for young and creative minds with a zeal of photography to showcase their skills to a larger audience.
+</string>
+    <string name="Kaleidoscope">Kaleidoscope- The Annual Film Festival of Delhi Technological University.
+    </string>
+<string name=""
 </resources>
