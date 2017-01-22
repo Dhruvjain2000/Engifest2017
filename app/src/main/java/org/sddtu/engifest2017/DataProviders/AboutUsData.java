@@ -8,12 +8,11 @@ import org.sddtu.engifest2017.AboutUs;
 
 public class AboutUsData {
 
-    private String name,designation,mobile,contact;
+    private String name,designation,mobile;
     private int imgsrc;
 
-    public AboutUsData(String name,String designation,String mobile,String contact,int imgsrc) {
+    public AboutUsData(String name,String designation,String mobile,int imgsrc) {
         this.setName(name);
-        this.setContact(contact);
         this.setDesignation(designation);
         this.setMobile(mobile);
         this.setImgsrc(imgsrc);
@@ -24,10 +23,6 @@ public class AboutUsData {
     }
     public String getName() {
         return name;
-    }
-
-    public String getContact() {
-        return contact;
     }
 
     public String getDesignation() {
@@ -44,10 +39,6 @@ public class AboutUsData {
 
     public void setMobile(String mobile) {
         this.mobile = mobile;
-    }
-
-    public void setContact(String contact) {
-        this.contact = contact;
     }
 
     public void setDesignation(String designation) {

@@ -19,9 +19,8 @@ public class AboutUs extends AppCompatActivity {
     RecyclerView.LayoutManager layoutManager;
     ArrayList<AboutUsData> arrayList = new ArrayList<AboutUsData>();
 
-    String[] name = {"Nalin Chaudharuy","Gunik Goel","Arpit Nagpal","Akriti Tewari","Shikhar Sachdeva","d","Rohit Kumar"};
-    String[] designaton = {"Chairperson  SD-DTU","BackBone SD-DTU","Head Android Development SD-DTU","Co-Head Android Development SD_DTU","Head of Management","Head of Designing SD-DTU","Logistics Head SD-DTU"};
-    String[] email = {"krishna@sddtu.org","nikhil.pandey@sddtu.org","ashish@sddtu.org","kumar.mohit983@gmail.com","saksham@sddtu.org","kabir@sddtu.org","rohit@sddtu.org"};
+    String[] name = {"Amit Phogat","Snehal Toppo","Nalin Choudharuy","Aseem Bansal","Gunik Goel","Arpit Nagpal","Akriti Tewari","Dhruv Dua","Shikhar Sachdeva","Piyush Sharma","Sheikh Farhan Raza","Sarthak Rastogi","Divyendu Thakur"};
+    String[] designaton = {"President, Student Association","Student Advisor, Student Association","Cultural Advisor","Student Advisor, Student Association","Cultural Secretary","Joint Cultural Secretary","Joint Cultural Secretary","Treasurer","Joint Treasurer","PG Coordinator","Vice President","General Secretary","Joint Secretary"};
     String[] mobile = {"9999777779","9999777879","9999777879","9999777879","9999777879","9999777879","9999777879"};
     int[] images = {R.drawable.mohit,R.drawable.mohit,R.drawable.mohit,R.drawable.mohit,R.drawable.mohit,R.drawable.mohit,R.drawable.mohit};
 
@@ -38,7 +37,7 @@ public class AboutUs extends AppCompatActivity {
         recyclerView  =(RecyclerView)findViewById(R.id.recyc_about);
         int i=0;
         for(String n:name) {
-            AboutUsData aboutUsData = new AboutUsData(name[i],designaton[i],email[i],mobile[i],images[i]);
+            AboutUsData aboutUsData = new AboutUsData(name[i],designaton[i],mobile[i],images[i]);
             arrayList.add(aboutUsData);
             i++;
         }
