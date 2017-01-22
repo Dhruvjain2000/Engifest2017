@@ -81,10 +81,10 @@ public class SponsorsActivity extends AppCompatActivity {
         int[] covers = new int[]{
                 R.drawable.pepsico,
                 R.drawable.logo,
-                R.drawable.NTPC_Logo,
-                R.drawable.Intex_logo,
-                R.drawable.logo_fadf8cd3950729a681c61d003f6a63be6fc2b2556bd037d85fb3ed9cba49c621,
-                R.drawable.pokerbaazi_logo,
+                R.drawable.ntpcogo,
+                R.drawable.intexlogo,
+                R.drawable.red,
+                R.drawable.poker,
                 R.drawable.slap
         };
 
@@ -92,31 +92,22 @@ public class SponsorsActivity extends AppCompatActivity {
         SponsorData a = new SponsorData("Pepsi",covers[0]);
         arrayList.add(a);
 
-        a = new SponsorData("Pepsi",covers[1]);
+        a = new SponsorData("Coding Ninja",covers[1]);
         arrayList.add(a);
 
-        a = new SponsorData("Pepsi",covers[2]);
+        a = new SponsorData("NTPC",covers[2]);
         arrayList.add(a);
 
-        a = new SponsorData("Pepsi",covers[3]);
+        a = new SponsorData("Intex",covers[3]);
         arrayList.add(a);
 
-        a = new SponsorData("Pepsi",covers[4]);
+        a = new SponsorData("Red Carpet",covers[4]);
         arrayList.add(a);
 
-        a = new SponsorData("Pepsi",covers[5]);
+        a = new SponsorData("PokerBaazi",covers[5]);
         arrayList.add(a);
 
-        a = new SponsorData("Pepsi",covers[6]);
-        arrayList.add(a);
-
-        a = new SponsorData("Pepsi",covers[7]);
-        arrayList.add(a);
-
-        a = new SponsorData("Pepsi",covers[8]);
-        arrayList.add(a);
-
-        a = new SponsorData("Pepsi",covers[9]);
+        a = new SponsorData("#Slap",covers[6]);
         arrayList.add(a);
 
         adapter.notifyDataSetChanged();
