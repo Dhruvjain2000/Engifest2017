@@ -741,9 +741,9 @@ ii.      The participants will be divided into groups of 12 for the preliminary 
 
 /nEngifest Infinity brings to you the biggest celebration of Rock Music in the North of India. Feel the base pounding in your chest, feel the blood rushing in your veins, for this will make you fall in love with music over and over again./n
 
-/nExperience the night's magnificence and grandeur as the nationwide famous Rock stars set the stage on fire./n
+/nExperience the nights magnificence and grandeur as the nationwide famous Rock stars set the stage on fire./n
 
-/nYou don't want to miss it, not now, not ever. Infinite is all that we guarantee./n
+/nYou dont want to miss it, not now, not ever. Infinite is all that we guarantee./n
 </string>
 <string name="standup">
     /nThe witty ones know their way with words and sometimes all that comedy needs is words placed in wrong order. /n
@@ -754,5 +754,41 @@ ii.      The participants will be divided into groups of 12 for the preliminary 
 </string>
     <string name="Kaleidoscope">Kaleidoscope- The Annual Film Festival of Delhi Technological University.
     </string>
+<string name="shakedown">
+    /nThe whirr of tyres speeding down the tracks; the feel of vintage bikes driving by you… Yes! SHAKEDOWN, the most anticipated event of Engifest’17 is here!
+/nPresented by Souls of Speed, Shakedown is one-of-a-kind roadshow- a spectacle which would leave you enticed. Jaws will drop and eyes will widen, as daredevil stunts are pulled off with ease and style!
+/nDate: 18 Feb
+/nTime: 12:00 pm
+/nVenue: Hostel Road
+    /nAseem Bansal - 9582920037
+</string>
+    <string name="futureoffashion">
+        /nFor all those who have an eye for designs, we present this event. Put on your creative caps and get set to modify and redesign existing apparel provided and modernize it with your imaginations. Within a limited time you will be given the accessories to go with your idea. Further the participant has to present themselves with that unique apparel./n
+/n
 
+/nJudging Criteria
+/nOverall appeal of the modification, Creativity, Style, Use of materials and Finishing./n
+
+/nRules
+/n1. It is a team event. A maximum of four participants can form a team.
+/n2. Registration can be done online.
+/n3. Materials would be given by organizers prior to event and any other materials can be brought by the participants(Remember the apparel can be anything so choose wisely)
+/n4. The materials provided by organizers MUST be used during modification.
+/n5. Time limit is 3 hours.
+/n6. One of the team members shall wear that apparel after completion.
+/n7. Decision of judges shall be final and binding.
+/nMehul (PR Representative) - 9599436329
+/nKumar Sourabh - 9031769519
+/nSnober Nisar - 9717832128
+    </string>
+    <string name="selfiebrag">
+        /nNow its time to brag about your selfies. All you have to do is to click selfies before us and post it on our facebook page in front of us with a suitable quote or caption                        /n
+
+/nJudging Criteria:
+/nThe best selfie wins./n
+
+/nRules:
+/n1. Free registration on the spot!
+/n2. More information will be conveyed at the spot.
+    </string>
 </resources>
