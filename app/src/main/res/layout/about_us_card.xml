@@ -69,20 +69,8 @@
                android:orientation="vertical"
                android:layout_margin="5dp"
                >
-             <TextView
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="Email "
-                 android:textSize="10dp"
-                 />
-              <TextView
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:textColor="#000"
-                  android:id="@+id/about_card_email"
-                  android:text="kumar.mohit983@gmail.com"
-                  />
-              <TextView
+
+               <TextView
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:text="Contact"

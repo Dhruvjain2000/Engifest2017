@@ -46,13 +46,10 @@ public class AboutUsAdapter extends RecyclerView.Adapter<AboutUsAdapter.Recycler
         holder.textView1.setTypeface(tf);
         holder.textView2.setTypeface(tf);
         holder.textView3.setTypeface(tf);
-        holder.textView4.setTypeface(tf);
-
 
         holder.textView1.setText(aboutUsData.getName());
         holder.textView2.setText(aboutUsData.getDesignation());
         holder.textView3.setText(aboutUsData.getMobile());
-        holder.textView4.setText(aboutUsData.getContact());
         holder.imageView.setImageResource(aboutUsData.getImgsrc());
     }
 
@@ -63,7 +60,7 @@ public class AboutUsAdapter extends RecyclerView.Adapter<AboutUsAdapter.Recycler
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textView1,textView2,textView3,textView4;
+        TextView textView1,textView2,textView3;
         ImageView imageView;
         Context context;
         ArrayList<AboutUsData> arrayList = new ArrayList<AboutUsData>();
@@ -73,8 +70,7 @@ public class AboutUsAdapter extends RecyclerView.Adapter<AboutUsAdapter.Recycler
             this.arrayList = arrayList;
             textView1 = (TextView) itemView.findViewById(R.id.about_card_name);
             textView2 = (TextView) itemView.findViewById(R.id.desig_about_card);
-            textView3 = (TextView) itemView.findViewById(R.id.about_card_email);
-            textView4 = (TextView) itemView.findViewById(R.id.about_card_mob);
+            textView3 = (TextView) itemView.findViewById(R.id.about_card_mob);
             imageView = (ImageView)itemView.findViewById(R.id.img);
         }
     }
