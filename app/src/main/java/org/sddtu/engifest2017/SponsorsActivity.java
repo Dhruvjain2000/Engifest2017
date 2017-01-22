@@ -80,16 +80,14 @@ public class SponsorsActivity extends AppCompatActivity {
     private void prepareAlbums() {
         int[] covers = new int[]{
                 R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico,
-                R.drawable.pepsico};
+                R.drawable.logo,
+                R.drawable.NTPC_Logo,
+                R.drawable.Intex_logo,
+                R.drawable.logo_fadf8cd3950729a681c61d003f6a63be6fc2b2556bd037d85fb3ed9cba49c621,
+                R.drawable.pokerbaazi_logo,
+                R.drawable.slap
+        };
+
 
         SponsorData a = new SponsorData("Pepsi",covers[0]);
         arrayList.add(a);
