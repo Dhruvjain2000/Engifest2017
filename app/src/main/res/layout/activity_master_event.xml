@@ -42,6 +42,7 @@
                 android:paddingBottom="10dp"
                 android:textColor="#000"
                 android:text="@string/Anusanthan"
+                android:id="@+id/rules_details"
                 />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,6 +83,7 @@
                     android:textSize="15dp"
                     android:textColor="#000"
                     android:layout_weight="0.6"
+                    android:id="@+id/eventdate"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -91,6 +93,7 @@
                     android:textColor="#000"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:id="@+id/eventtime"
                     />
             </LinearLayout>
             <LinearLayout
@@ -114,6 +117,8 @@
                         android:textSize="11dp"
                         android:text="Venue"
                         android:textColor="#e53f3f"
+                        android:id="@+id/eventvenue"
+
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -154,9 +159,10 @@
                 android:gravity="center"
                 android:layout_marginBottom="10dp"
                 android:autoLink="web"
-                android:id="@+id/web_url"
                 android:text="EnfiFest Infinity"
                 android:textColor="#4c7093"
+                android:id="@+id/eventlink"
+
                 />
         </LinearLayout>
     </ScrollView>
