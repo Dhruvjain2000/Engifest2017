@@ -28,7 +28,7 @@ public class MasterEventActivity extends AppCompatActivity {
         s="xyz";
         if(s.equals("film")){
 
-            
+
         }
 
     }

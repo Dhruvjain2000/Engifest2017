@@ -34,16 +34,7 @@
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textColor="#e53f3f"
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:textColor="#000"
-                android:text="@string/Anusanthan"
-                android:id="@+id/rules_details"
-                />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -166,4 +157,18 @@
                 />
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:text="@string/Anusanthan"
+        android:id="@+id/rules_details"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="537dp"
+        android:layout_marginStart="537dp" />
 </RelativeLayout>
