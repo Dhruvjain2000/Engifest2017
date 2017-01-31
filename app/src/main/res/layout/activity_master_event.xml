@@ -12,18 +12,39 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true">
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="125dp"
         android:scaleType="fitXY"
+        android:id="@+id/image_master"
         android:src="@drawable/engievents"
         />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="About Event"
+             android:textAppearance="?android:textAppearanceLarge"
+             android:paddingRight="10dp"
+             android:paddingLeft="10dp"
+             android:paddingTop="10dp"
+             android:paddingBottom="2dp"
+             android:textColor="#e53f3f"
+             />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="2dp"
+                android:id="@+id/about_event"
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:paddingRight="10dp"
@@ -34,7 +55,14 @@
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textColor="#e53f3f"
                 />
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="2dp"
+                android:id="@+id/rules_event"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -123,18 +151,9 @@
                         android:layout_height="wrap_content"
                         android:textColor="#000"
                         android:text="BR Ambedkar Auditorium"
-                        android:id="@+id/full_venue"
+                        android:id="@+id/master_venue"
                         />
                 </LinearLayout>
-                <android.support.design.widget.FloatingActionButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    app:backgroundTint="#e53f3f"
-                    android:layout_marginBottom="2dp"
-                    android:src="@drawable/nav"
-                    android:id="@+id/nav_button"
-                    />
             </LinearLayout>
             <TextView
                 android:padding="10dp"
