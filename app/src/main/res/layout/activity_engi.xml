@@ -160,7 +160,7 @@ We present to you, your chance to be a part of the Engifest family and experienc
             android:layout_marginBottom="10dp"
             android:autoLink="web"
             android:id="@+id/web_url"
-            android:text="EnfiFest Infinity"
+            android:text="Engifest Infinity"
             android:textColor="#4c7093"
             />
     </LinearLayout>

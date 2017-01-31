@@ -30,6 +30,8 @@ Acting, Voice (sync, modulation, diction), Screenplay, Script, Crowd interaction
 Overall impact./n
 
 /n
+        </string>
+    <string name="nukkadrules">
 /nGeneral Rules:/n
 
 /n1.  The team size represents the number of people registered as a team. Only these shall be allowed to perform the street play./n
@@ -73,7 +75,8 @@ Any other production material has to be brought by the teams themselves but the 
 Judging Criteria:/n
 Screenplay, Direction, Script, Acting and Overall Impact./n
 
-/n
+/n</string>
+    <string name="natyarules">
 /nGeneral Rules:/n
 
 /n1.  Performance should be in Hindi or English or both. However short sub - passages in other languages are allowed./n
@@ -104,7 +107,9 @@ If you’re the pair whose melodies can resonate in the hearts of the masses, gi
 /n
 /nREGISTRATION:/n
 Participants can register both online and offline (on the spot). Please note: Only one person from the pair should register./n
+</string>
 
+    <string name="twoashowrules">
 /n
 /nRULES:/n
 1. Each pair is allotted a total of 7 minutes including setup./n
@@ -134,6 +139,8 @@ Create a mind-blowing musical reaction with the languages you love and show us y
 Participants can register both online and offline (on the spot). Please note: Only one person from the team should register./n
 
 /n
+        </string>
+    <string name="acousticrules">
 /nRULES:/n
 1. The song choice maybe in any language  EXCEPT Hindi or English./n
 2. Each group is allotted a total of 8 minutes./n
@@ -161,7 +168,9 @@ Registration has to be done ONLINE ONLY. There will be NO on the spot registrati
 /nONLINE PRELIMS:/n
 Send your recording (audio/video) or the link to your YouTube video along with your contact details to madhurima.indian@gmail.com./n
 
-/n
+</string>
+
+    <string name="engiidolrules">
 /nRULES:/n
 1. Each participant is allotted a total of 6 minutes including setup./n
 2. One accompanying instrument is allowed./n
@@ -188,6 +197,8 @@ Registration has to be done ONLINE ONLY. There will be NO on the spot registrati
 /n
 /nONLINE PRELIMS: Send your recording (audio/video) or the link to your YouTube video along with your contact details to madhurima.western@gmail.com./n
 
+        </string>
+    <string name="vocaliciousrules">
 /n
 /nRULES:/n
 1. Each participant is allotted a total of 6 minutes including setup./n
@@ -213,7 +224,9 @@ gather up your best wizards and bewitch the audience with your symphonies! Cast 
 /nREGISTRATION:/n
 Participants can register both online and offline (on the spot). Please note: Only one person from a group should register./n
 
+        </string>
 /n
+    <string name="Balladeersrules">
 /nRULES:/n
 1. Each group is allotted a total of 12 minutes including sound check./n
 2. The number of members in one group can range between 5 and 25./n
@@ -236,6 +249,8 @@ heaven with your voices, get ready with your bandish, and take the stage at Vrin
 /nREGISTRATION:/n
 Participants can register both online and offline (on the spot). Please note: Only one person from a group should register./n
 
+        </string>
+    <string name="Vrindrules">
 /n
 /nRULES:/n
 1. Each group is allotted a total of 12 minutes including setup./n
@@ -327,6 +342,8 @@ Participants can register both online and offline (on the spot). Please note: On
 
     /n
     /n
+        </string>
+    <string name="stfurules">
     /nThe rules and regulations are subject to change based on the discretion of the organizers. Kindly keep checking the official site of the ENGIFEST and STFU for any changes in the rules and procedures./n
 
     /nInformation on the registration procedure, registration fee, and deadline for registration, prizes and venue would be put up separately./n
@@ -412,17 +429,6 @@ If a participant wants to perform a form other than those mentioned above, they 
 \nIf these lines instantly remind you of a deep, husky low-pitched growl, you have arrived at the right spot.
 \nEngifest 17, the annual cultural festival of Delhi Technological University invites you to an ear-shattering Arpeggio - Battle of the Bands. Let the cymbals clank, the guitars strum and the screams rattle Delhi-42!
 \n
-\nRULES
-\n1. Obscenity (At the discretion of the judges) of any kind is not allowed
-\n2. Exceeding the time limit may affect judging criterion
-\n3. The participants are required to carry along with them their instruments and gears which include guitars, keyboards, processors, cymbals and stands
-\n4. A standard 5-piece drum kit, keyboard stand, cables and Microphones will be
-provided
-\n5. Vocal Processors are not allowed; any band using vocal processors will be disqualified straightaway
-\n6. The decision of the judges would be final and irreversible
-\n
-\n
-\n
 \n
 \nEVENT DETAILS
 \n
@@ -455,6 +461,17 @@ provided
         \n
 \nThe winner will be opening for the Rock Night.
 </string>
+    <string name="bobrules">
+        nRULES
+\n1. Obscenity (At the discretion of the judges) of any kind is not allowed
+\n2. Exceeding the time limit may affect judging criterion
+\n3. The participants are required to carry along with them their instruments and gears which include guitars, keyboards, processors, cymbals and stands
+\n4. A standard 5-piece drum kit, keyboard stand, cables and Microphones will be
+provided
+\n5. Vocal Processors are not allowed; any band using vocal processors will be disqualified straightaway
+\n6. The decision of the judges would be final and irreversible
+\n
+    </string>
     <string name="StandUp">\n Engifest Infinity brings to you Infinite bouts of laughter, Infinite spurts of comedy,
 Infinite doses of jokes and insults.
 \n All of it will leave you rolling on the floor with your tummy aching!
@@ -480,10 +497,10 @@ Infinite doses of jokes and insults.
 \n
 \n Time Limit: 4-5 minutes.
 \n
-\n
-\n
-\n Rules and Regulations:
-\n 1. Mono-acting, puppetry, musicals are not allowed though ventriloquism is allowed
+</string>
+
+<string name="StandUpRules"> Rules and Regulations:
+\n 1. Mono-acting, puppetry, musicals are not allowed though ventriloquism is allowed.
 \n 2. Use of props is allowed, brought in by the participant himself. The organizers hold the discretion of allowing it on stage.
 \n
 \n
@@ -499,9 +516,8 @@ to express, a competitive environment for every dancer to showcase their talent!
 \n(a) SOLO: Calling out to all dance enthusiasts to dance their hearts out. Whatever your style be - jazz, hip hop, contemporary, classical or freestyle, SPANDAN gives you a chance to showcase your hidden talent and passion.
 \n
 \n(b) GROUP: Dancing together is different feet moving to the same beats. We invite you to a fleeting moment where you feel alive, to enchant the crowd with your vibrant rhythm and to claim the Spandan crown.
-\n
-\nRULES:
-\n
+\n</string>
+  <string name="SpandanRules">
 \n(a) SOLO:
 \n
 \nNumber of rounds: 2
@@ -592,7 +608,8 @@ short film making competition. Selected entries will be screened at the venue wi
 \n 2.  Time Limit: Upto 15 minutes
 \n 3.  Theme: To Be Announced(One month before Engifest ’17)
 \n 4.  Judging Criteria:
-\n Editing, Cinematography, Script, Acting, Sound design and Overall impact.
+\n Editing, Cinematography, Script, Acting, Sound design and Overall impact.</string>
+    <string name="filmmakingrules">
 \n 5.  General Rules:
 \n The movies should be either in Hindi or English or both.
 \n If you choose to make a film in Hindi, it must contain English subtitles. No other languages will be allowed.
@@ -610,7 +627,8 @@ short film making competition. Selected entries will be screened at the venue wi
 \n1. WAR OF WORDS
 \n
 If you think quick wit and impeccable English is your forte, then War of Words is a good enough challenge for you. Conventional, Turncoat, Parliamentary Debate- you \nname it. War of words is going to put your intellect and your command over the lingua franca of the cosmos.
-\n
+\n</string>
+    <string name="WOWrules">
 \nRULES
 \n
 \ni.	The events will be divided into different rounds depending on the number of participants.
@@ -626,7 +644,8 @@ SYAAHI17 the annual Literary fest in collaboration with ENGIFEST15 of Delhi Tech
 \n
 In the rush of our monotonous lives, we breathe but forget to live. It is time to give Voice to our Turbulent sea of emotions and dance above the surface of the world \nand let our thoughts lift our quills into creativity that is not hampered by opinion
 \n
-\n
+\n</string>
+    <string name="Creativerules">
 \nRULES
 \n
 \ni.	First the participants need to send their entries via mail and thereby short listing will take place
@@ -669,6 +688,8 @@ i.	The event comprises of only one round, which will be in the form of a 2 hours
 \nGet ready for this fast paced, 60 second linguistic thriller! This battle tests your quick thinking, speaking ability and command over the English language.
 \nYou got a minute to win it!
 \n
+        </string>
+    <string name="jamrules">
 \nRULES
 \ni.	This is an individual event. However, more than one person from any college can participate.
 ii.      The participants will be divided into groups of 12 for the preliminary round. iii.      Top 12 scorers from the preliminary round will qualify for the final \nround.
@@ -787,7 +808,8 @@ ii.      The participants will be divided into groups of 12 for the preliminary 
 
 /nJudging Criteria
 /nOverall appeal of the modification, Creativity, Style, Use of materials and Finishing./n
-
+</string>
+    <string name="futurefashionrules">
 /nRules
 /n1. It is a team event. A maximum of four participants can form a team.
 /n2. Registration can be done online.
@@ -805,7 +827,7 @@ ii.      The participants will be divided into groups of 12 for the preliminary 
 
 /nJudging Criteria:
 /nThe best selfie wins./n
-
+</string><string name="selfierules">
 /nRules:
 /n1. Free registration on the spot!
 /n2. More information will be conveyed at the spot.

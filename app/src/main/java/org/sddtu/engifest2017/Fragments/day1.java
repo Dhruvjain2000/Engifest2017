@@ -1,17 +1,21 @@
 package org.sddtu.engifest2017.Fragments;
 
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import org.sddtu.engifest2017.Adapters.ListViewAdapter;
 import org.sddtu.engifest2017.DataProviders.ListViewData;
+import org.sddtu.engifest2017.MasterEventActivity;
 import org.sddtu.engifest2017.R;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
@@ -33,9 +37,9 @@ public class day1 extends Fragment {
 
 
     ListView listView;
-    String[] events = {"Film making","Spandan","Natya","Nukkad"};
-    String[] venue = {"OAT","BR AMBEDKAR AUDITORIUM","SPORTS COMPLEX","FOOD CITY"};
-    String[] time = {"10AM","12PM","2PM","4PM"};
+    String[] events = {"Balladeers","Shoe Painting","Anushtaan","Drishtikon","Shakedown","Vocalicious","Mixed Bag","StandUp Comedy","Live Wire"};
+    String[] venue = {"Convo Hall","EduSat Hall","Auditorium","SPS Hall","Hostel Road","Convo Hall","SPS Hall","Auditorium","Sports Complex"};
+    String[] time = {"9am","10am","10am","10am - 2pm","12pm","2pm","2pm - 4pm","5pm - 7pm","7pm onwards"};
 
     public day1() {
         // Required empty public constructor
@@ -86,6 +90,19 @@ public class day1 extends Fragment {
             ListViewData data = new ListViewData(events[i],venue[i],time[i]);
             listViewAdapter.add(data);
         }
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                view = parent.getChildAt(position);
+                TextView textView1 = (TextView) view.findViewById(R.id.list_event);
+                String a = textView1.getText().toString();
+                Log.d("A",a);
+                Intent intent = new Intent(getActivity(), MasterEventActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return v;
 
     }

@@ -1,17 +1,21 @@
 package org.sddtu.engifest2017.Fragments;
 
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import org.sddtu.engifest2017.Adapters.ListViewAdapter;
 import org.sddtu.engifest2017.DataProviders.ListViewData;
+import org.sddtu.engifest2017.MasterEventActivity;
 import org.sddtu.engifest2017.R;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
@@ -33,9 +37,11 @@ public class day2 extends Fragment {
 
     ListView listView;
 
-    String[] events = {"Film making","Spandan","Natya","Nukkad"};
-    String[] venue = {"OAT","BR AMBEDKAR AUDITORIUM","SPORTS COMPLEX","FOOD CITY"};
-    String[] time = {"10AM","12PM","2PM","4PM"};
+    String[] events = {"Vrind","Spandan","Nukkad","Film Making - KaleidoScope","Art & Furious","Kavyanjana","Engi-Idol","Creative Writing",
+           "Paridhan","Kavi Sammelan","Rock Night"};
+    String[] venue = {"Convo Hall","Solo(OAT) Group(Audi)","MechC Parking PreLims(14th Feb)","SPS 13","EduSat Hall","SPS Hall","Convo Hall","SPS Hall","Sports Complex","OAT"
+            ,"Sports Complex"};
+    String[] time = {"9am","10am","10am","10am","11am","11am-1pm","2pm","3pm - 5pm","4pm","4pm","7pm onwards"};
 
 
 
@@ -80,7 +86,7 @@ public class day2 extends Fragment {
 
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(),"fonts/OpenSans-Light.ttf");
 
-        TextView textView = (TextView) v.findViewById(R.id.day_2);
+        final TextView textView = (TextView) v.findViewById(R.id.day_2);
         textView.setTypeface(tf);
         listView = (ListView) v.findViewById(R.id.list_view_2);
         ListViewAdapter listViewAdapter = new ListViewAdapter(getActivity(),R.layout.custom_listview);
@@ -90,6 +96,19 @@ public class day2 extends Fragment {
             ListViewData data = new ListViewData(events[i],venue[i],time[i]);
             listViewAdapter.add(data);
         }
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                view = parent.getChildAt(position);
+                TextView textView1 = (TextView) view.findViewById(R.id.list_event);
+                String a = textView1.getText().toString();
+                Log.d("A",a);
+                Intent intent = new Intent(getActivity(), MasterEventActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return v;
     }
 

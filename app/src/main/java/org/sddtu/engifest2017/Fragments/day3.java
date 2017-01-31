@@ -1,17 +1,21 @@
 package org.sddtu.engifest2017.Fragments;
 
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import org.sddtu.engifest2017.Adapters.ListViewAdapter;
 import org.sddtu.engifest2017.DataProviders.ListViewData;
+import org.sddtu.engifest2017.MasterEventActivity;
 import org.sddtu.engifest2017.R;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
@@ -33,9 +37,10 @@ public class day3 extends Fragment {
 
     ListView listView;
 
-    String[] events = {"Film making","Spandan","Natya","Nukkad"};
-    String[] venue = {"OAT","BR AMBEDKAR AUDITORIUM","SPORTS COMPLEX","FOOD CITY"};
-    String[] time = {"10AM","12PM","2PM","4PM"};
+    String[] events = {"Two's A Show","Switch the funk up","War of Words","JAM(Just a Minute)","Natya","3 Dimensional Art","Acoustic Alchemy"
+            ,"EDM Night- NUCLEYA"};
+    String[] venue = {"Convo Hall","OAT","SPS Hall","SPS Hall","Auditorium","Edusat Hall","Wind Point","Sports Complex"};
+    String[] time = {"10am","10am","10am - 5pm","10am - 5pm","10am","11am","2pm","7pm Onwards"};
 
 
 
@@ -88,6 +93,19 @@ public class day3 extends Fragment {
             ListViewData data = new ListViewData(events[i],venue[i],time[i]);
             listViewAdapter.add(data);
         }
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                view = parent.getChildAt(position);
+                TextView textView1 = (TextView) view.findViewById(R.id.list_event);
+                String a = textView1.getText().toString();
+                Log.d("A",a);
+                Intent intent = new Intent(getActivity(), MasterEventActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return v;
     }
 
