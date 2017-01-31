@@ -20,7 +20,7 @@ public class AllEvents extends AppCompatActivity {
     ArrayList<EventData> arrayList = new ArrayList<EventData>();
 
 
-    String[] events = {"Dance","Music","Drama","Fashion","Pro Nights","Literary","Art(SpectRang)","Miscellaneous","Informal Events"};
+    String[] events = {"Dance","Music","Drama","Fashion","Pro Night","Literary","Art(SpectRang)","Miscellaneous","Informal Events"};
     int[] images = {R.drawable.dance,R.drawable.brambedkaraudi,R.drawable.sportc,R.drawable.funfest,R.drawable.engievents,
             R.drawable.danxe1,R.drawable.foodcity,R.drawable.brambedkaraudi,R.drawable.sportc};
 
