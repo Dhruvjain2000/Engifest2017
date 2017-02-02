@@ -61,7 +61,7 @@ public class ListViewAdapter extends ArrayAdapter {
             LayoutInflater layoutInflater = (LayoutInflater)this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = layoutInflater.inflate(R.layout.custom_listview,parent,false);
             d = new Data();
-            d.eventname = (TextView)view.findViewById(R.id.list_event);
+            d.eventname = (TextView)view.findViewById(R.id.list_name);
             d.venue = (TextView)view.findViewById(R.id.venue);
             d.time = (TextView)view.findViewById(R.id.time1);
             view.setTag(d);

@@ -39,7 +39,7 @@ public class BeforeMaster extends AppCompatActivity {
             time = new String[]{"2pm","2pm","9am","9am","10am","2pm"};
             date = new String[]{"19 Feb'17","18 Feb'17","18 Feb'17","19 Feb'17","20 Feb'17","20 Feb'17"};
         } else if(s.equals("Miscellaneous")) {
-            events = new String[]{"Film-Making Kaleidoscope","ShakeDown","Stand Up Comedy","Kavi Sammelan","Arte Fotographia"};
+            events = new String[]{"Film-Making Kaleidoscope","ShakeDown","StandUp Comedy","Kavi Sammelan","Arte Fotographia"};
             venue = new String[]{"SPS 13","Hostel Road","Auditorium","OAT",""};
             time = new String[]{"10am","12pm","5pm - 7pm","4pm",""};
             date = new String[]{"19 Feb'17","18 Feb'17","18 Feb'17","19 Feb'17",""};

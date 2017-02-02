@@ -98,10 +98,11 @@ public class day3 extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 view = parent.getChildAt(position);
-                TextView textView1 = (TextView) view.findViewById(R.id.list_event);
+                TextView textView1 = (TextView) view.findViewById(R.id.list_name);
                 String a = textView1.getText().toString();
                 Log.d("A",a);
                 Intent intent = new Intent(getActivity(), MasterEventActivity.class);
+                intent.putExtra("Chosen",a);
                 startActivity(intent);
             }
         });

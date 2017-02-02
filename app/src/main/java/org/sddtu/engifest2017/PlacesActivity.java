@@ -21,8 +21,8 @@ public class PlacesActivity extends AppCompatActivity {
     ArrayList<PlaceCardData> arrayList = new ArrayList<PlaceCardData>();
 
     String[] places = {"Open Air Theatre(OAT)","Food City","Sports Complex","BR Ambedkar Auditorium"};
-    String s = "It is rightly said that garden must be beautiful as he always picks the best.";
-    String[] info = {s,s,s,s};
+    String[] s = {"Hub of all events under the sky roof.","Hot to cold , Made and Sold.","Run.Smash.Loft.Aim.Win","Stage is set.Lights are flashing. Are you?"};
+    //String[] info = {s,s,s,s};
     int[] imagesrc = {R.drawable.bigoat,R.drawable.funfest,R.drawable.sportc,R.drawable.brambedkaraudi};
 
     @Override
@@ -37,8 +37,8 @@ public class PlacesActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recyc_places);
         int i = 0;
-        for(String n : info) {
-            PlaceCardData placeCardData = new PlaceCardData(places[i],s,imagesrc[i]);
+        for(String n : places) {
+            PlaceCardData placeCardData = new PlaceCardData(places[i],s[i],imagesrc[i]);
             arrayList.add(placeCardData);
             i++;
         }
