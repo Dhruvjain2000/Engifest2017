@@ -67,7 +67,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setText("https://docs.google.com/forms/d/e/1FAIpQLSev8bTXZFsaXf3MJvtp02buMZmwRLZ_EKiOV95d_FiWu3UofQ/viewform?c=0&w=1\n");
             textView6.setText(R.string.stfurules);
         } else if(s.equals("Engi-Idol")){
-            imageView.setImageResource(R.drawable.engi);
+            imageView.setImageResource(R.drawable.doremipa1);
             textView1.setText(R.string.EngiIdol);
             textView2.setText("19 Feb'17");
             textView3.setText("2pm");
@@ -75,7 +75,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setText("https://goo.gl/forms/wOkab01SW0mKD0pb2");
             textView6.setText(R.string.engiidolrules);
         } else if(s.equals("Vocalicious")){
-            imageView.setImageResource(R.drawable.engi);
+            imageView.setImageResource(R.drawable.doremipa1);
             textView1.setText(R.string.Vocalicious);
             textView2.setText("18 Feb'17");
             textView3.setText("2pm");
@@ -83,7 +83,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setText("https://goo.gl/forms/HQl47owDBb2P3VqS2");
             textView6.setText(R.string.vocaliciousrules);
         }else if(s.equals("BallaDeers")){
-            imageView.setImageResource(R.drawable.engi);
+            imageView.setImageResource(R.drawable.doremipa1);
             textView1.setText(R.string.Balladeers);
             textView2.setText("18 Feb'17");
             textView3.setText("9am");
@@ -91,7 +91,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setText("https://goo.gl/forms/Y1FV6mG1HIohE5Si2");
             textView6.setText(R.string.Balladeersrules);
         }else if(s.equals("Vrind")){
-            imageView.setImageResource(R.drawable.engi);
+            imageView.setImageResource(R.drawable.doremipa1);
             textView1.setText(R.string.Vrind);
             textView2.setText("19 Feb'17");
             textView3.setText("9am");
@@ -99,7 +99,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setText("https://goo.gl/forms/24wp6CcgVbFikP9E3");
             textView6.setText(R.string.Vrindrules);
         }else if(s.equals("Two's A Show")){
-            imageView.setImageResource(R.drawable.engi);
+            imageView.setImageResource(R.drawable.doremipa1);
             textView1.setText(R.string.twoAShow);
             textView2.setText("20 Feb'17");
             textView3.setText("10am");
@@ -107,7 +107,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setText("https://goo.gl/forms/edJPZQ8Dvw7UDyNw1");
             textView6.setText(R.string.twoashowrules);
         }else if(s.equals("Acoustic Alchemy")){
-            imageView.setImageResource(R.drawable.engi);
+            imageView.setImageResource(R.drawable.doremipa1);
             textView1.setText(R.string.Acoustic);
             textView2.setText("20 Feb'17");
             textView3.setText("2pm");
@@ -207,33 +207,33 @@ public class MasterEventActivity extends AppCompatActivity {
             textView1.setText(R.string.hindilit2);
             textView2.setText("18 Feb'17");
             textView3.setText("10am - 2pm");
-            textView4.setText("Solo(OAT) Group(Auditorium)");
+            textView4.setText("");
             textView5.setText("https://goo.gl/forms/pJdnF23No4IcBHRl1");
             textView6.setVisibility(View.GONE);
         }else if(s.equals("Film-Making Kaleidoscope")){
-            imageView.setImageResource(R.drawable.);
-            textView1.setText(R.string.Spandan);
+            imageView.setImageResource(R.drawable.engievents);
+            textView1.setText(R.string.film_Making);
             textView2.setText("19 Feb'17");
-            textView3.setText("10am");
-            textView4.setText("Solo(OAT) Group(Auditorium)");
-            textView5.setText("https://goo.gl/forms/RQBcfs4IKT0ZwnyN2");
-            textView6.setText(R.string.SpandanRules);
-        }else if(s.equals("Spandan")){
-            imageView.setImageResource(R.drawable.spandan);
-            textView1.setText(R.string.Spandan);
-            textView2.setText("19 Feb'17");
-            textView3.setText("10am");
-            textView4.setText("Solo(OAT) Group(Auditorium)");
-            textView5.setText("https://goo.gl/forms/RQBcfs4IKT0ZwnyN2");
-            textView6.setText(R.string.SpandanRules);
-        }else if(s.equals("Spandan")){
-            imageView.setImageResource(R.drawable.spandan);
-            textView1.setText(R.string.Spandan);
-            textView2.setText("19 Feb'17");
-            textView3.setText("10am");
-            textView4.setText("Solo(OAT) Group(Auditorium)");
-            textView5.setText("https://goo.gl/forms/RQBcfs4IKT0ZwnyN2");
-            textView6.setText(R.string.SpandanRules);
+            textView3.setText("10am onwards");
+            textView4.setText("SPS 13");
+            textView5.setText("https://goo.gl/S7umWT");
+            textView6.setText(R.string.filmmakingrules);
+        }else if(s.equals("ShakeDown")){
+            imageView.setImageResource(R.drawable.engi);
+            textView1.setText(R.string.shakedown);
+            textView2.setText("18 Feb'17");
+            textView3.setText("12pm");
+            textView4.setText("Hostel Road");
+            textView5.setVisibility(View.GONE);
+            textView6.setVisibility(View.GONE);
+        }else if(s.equals("Arte Fotographia")){
+            imageView.setImageResource(R.drawable.engi);
+            textView1.setText("Event description: Arte fotographia is the official Online photography competition of engifest conducted by parchhayi, the photography and film making society of DTU.\n");
+            textView2.setText("TBA");
+            textView3.setText("TBA");
+            textView4.setText("");
+            textView6.setText("");
+            textView5.setText("https://goo.gl/1W47bp");
         }
 
     }

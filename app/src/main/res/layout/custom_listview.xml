@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Event Name"
         android:textColor="#fff"
-        android:id="@+id/list_event"
+        android:id="@+id/list_name"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1"

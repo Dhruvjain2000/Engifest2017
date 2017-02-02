@@ -42,8 +42,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS",""};
     String[] buttontext = {"ABOUT ENGIFEST","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS",""};
     String[] flipto = {"Swipe Up for more","","","","","",""};
-    int[] flipviewdata = {R.drawable.home,R.drawable.foodcity,R.drawable.oat,R.drawable.home,R.drawable.foodcity,R.drawable.pepsi,0};
-    int[] arr = {R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five,R.drawable.six};
     FloatingActionButton fabplus,fabfb,fabwapp,fabtwit;
     Animation fabopen,fabclose,rotateclock,rotateanti;
     Button button;
@@ -327,36 +325,36 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    class LoadAnim extends AsyncTask<Void,Integer,Integer> {
+//    class LoadAnim extends AsyncTask<Void,Integer,Integer> {
+//
+//
+//        @Override
+//        protected void onProgressUpdate(Integer... values) {
+//                //relativeLayout.setBackground(values[0]);
+//                if (values[0]%2 == 0) {
+//                    swipeup.setVisibility(View.VISIBLE);
+//                } else {
+//                    swipeup.setVisibility(View.INVISIBLE);
+//                }
+//                //imageView.setImageResource(values[0]);
+//        }
+//
+//        @Override
+//        protected Integer doInBackground(Void... params) {
+//
+//            for (int i = 0; i < 5; i++) {
+//                publishProgress(arr[i]);
+//                try {
+//                    Thread.sleep(500);
+//                    return i;
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//                //return null;
+//            }
+//            return 0;
+//        }
 
 
-        @Override
-        protected void onProgressUpdate(Integer... values) {
-                //relativeLayout.setBackground(values[0]);
-                if (values[0]%2 == 0) {
-                    swipeup.setVisibility(View.VISIBLE);
-                } else {
-                    swipeup.setVisibility(View.INVISIBLE);
-                }
-                //imageView.setImageResource(values[0]);
-        }
-
-        @Override
-        protected Integer doInBackground(Void... params) {
-
-            for (int i = 0; i < 5; i++) {
-                publishProgress(arr[i]);
-                try {
-                    Thread.sleep(500);
-                    return i;
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                //return null;
-            }
-            return 0;
-        }
-
-
-    }
+//    }
 }

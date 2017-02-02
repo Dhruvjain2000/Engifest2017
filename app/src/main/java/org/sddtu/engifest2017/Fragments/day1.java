@@ -37,7 +37,7 @@ public class day1 extends Fragment {
 
 
     ListView listView;
-    String[] events = {"Balladeers","Shoe Painting","Anushtaan","Drishtikon","Shakedown","Vocalicious","Mixed Bag","StandUp Comedy","Live Wire"};
+    String[] events = {"BallaDeers","Shoe Painting","Anushtaan","DrishtiKon","ShakeDown","Vocalicious","Mixed Bag","StandUp Comedy","Live Wire"};
     String[] venue = {"Convo Hall","EduSat Hall","Auditorium","SPS Hall","Hostel Road","Convo Hall","SPS Hall","Auditorium","Sports Complex"};
     String[] time = {"9am","10am","10am","10am - 2pm","12pm","2pm","2pm - 4pm","5pm - 7pm","7pm onwards"};
 
@@ -95,11 +95,40 @@ public class day1 extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 view = parent.getChildAt(position);
-                TextView textView1 = (TextView) view.findViewById(R.id.list_event);
+                TextView textView1 = (TextView) view.findViewById(R.id.list_name);
                 String a = textView1.getText().toString();
                 Log.d("A",a);
                 Intent intent = new Intent(getActivity(), MasterEventActivity.class);
-                startActivity(intent);
+                switch (a){
+                    case "BallaDeers":
+                        intent.putExtra("Chosen","BallaDeers");
+                        break;
+                    case "Shoe Painting":
+                        intent.putExtra("Chosen","Shoe Painting");
+                        break;
+                    case "Anushtaan":
+                        intent.putExtra("Chosen","Anushtaan");
+                        break;
+                    case "DrishtiKon":
+                        intent.putExtra("Chosen","DrishtiKon");
+                        break;
+                    case "ShakeDown":
+                        intent.putExtra("Chosen","ShakeDown");
+                        break;
+                    case "Vocalicious":
+                        intent.putExtra("Chosen","Vocalicious");
+                        break;
+                    case "Mixed Bag":
+                        intent.putExtra("Chosen","Mixed Bag");
+                        break;
+                    case "StandUp Comedy":
+                        intent.putExtra("Chosen","StandUp Comedy");
+                        break;
+                    case "Live Wire":
+                        intent.putExtra("Chosen","Live Wire");
+                        break;
+                }
+                getActivity().startActivity(intent);
             }
         });
 
