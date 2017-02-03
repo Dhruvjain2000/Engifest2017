@@ -63,7 +63,7 @@ public class BeforeMaster extends AppCompatActivity {
             venue = new String[]{"Sports Complex","",""};
             time = new String[]{"4pm","",""};
             date = new String[]{"19 Feb'17","",""};
-        } else if(s.equals("Art(SpectRang")) {
+        } else if(s.equals("Art(SpectRang)")) {
             events = new String[]{"Shoe painting","Art & Furious","3 Dimensional Art"};
             venue = new String[]{"Edusat Hall","Edusat Hall","Edusat Hall"};
             time = new String[]{"10am","11am","11am"};
