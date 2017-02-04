@@ -97,16 +97,40 @@ public class day3 extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                view = parent.getChildAt(position);
+                // view = parent.getChildAt(position);
                 TextView textView1 = (TextView) view.findViewById(R.id.list_name);
                 String a = textView1.getText().toString();
                 Log.d("A",a);
                 Intent intent = new Intent(getActivity(), MasterEventActivity.class);
-                intent.putExtra("Chosen",a);
+                switch (position){
+                    case 0:
+                        intent.putExtra("Chosen","Two's A Show");
+                        break;
+                    case 1:
+                        intent.putExtra("Chosen","Switch the funk up");
+                        break;
+                    case 2:
+                        intent.putExtra("Chosen","War of Words");
+                        break;
+                    case 3:
+                        intent.putExtra("Chosen","JAM(Just a Minute)");
+                        break;
+                    case 4:
+                        intent.putExtra("Chosen","Natya");
+                        break;
+                    case 5:
+                        intent.putExtra("Chosen","3 Dimensional Art");
+                        break;
+                    case 6:
+                        intent.putExtra("Chosen","Acoustic Alchemy");
+                        break;
+                    case 7:
+                        intent.putExtra("Chosen","EDM Night-NUCLEYA");
+                        break;
+                }
                 startActivity(intent);
             }
         });
-
         return v;
     }
 

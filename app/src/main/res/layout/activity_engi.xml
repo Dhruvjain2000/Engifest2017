@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/engi_poster"
             android:scaleType="fitXY"
-            android:src="@drawable/maxresdefault"
+            android:src="@drawable/eninfi"
             />
 
         <LinearLayout
@@ -53,7 +53,7 @@
           android:text="It's time to fulfill the promises made.\n
 Promises of the unimaginable, the unforgettable and the un-tamable.\n
 Promises of the Infinities.\n
-We present to you, your chance to be a part of the Engifest family and experience the exceptional journey, as we make Engifest 2017 bigger than ever, through the Engifest Infinity Orientation!"
+We present to you, your chance to be a part of the Engifest family and experience the exceptional journey, as we make Engifest 2017 bigger than ever."
           />
         <LinearLayout
             android:layout_width="match_parent"
@@ -151,7 +151,7 @@ We present to you, your chance to be a part of the Engifest family and experienc
             android:textColor="#e53f3f"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Official Link"
+            android:text="Accomodation Link"
             />
         <TextView
             android:layout_width="match_parent"

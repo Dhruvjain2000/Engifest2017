@@ -15,6 +15,7 @@ public class MasterEventActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_master_event);
 
         TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7;

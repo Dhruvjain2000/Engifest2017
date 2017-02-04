@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class DevBy extends AppCompatActivity {
 
 
@@ -15,6 +17,10 @@ public class DevBy extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dev_by);
+
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
+
 
         git1 = (FloatingActionButton) findViewById(R.id.mohit_git);
         git2 = (FloatingActionButton) findViewById(R.id.krishna_git);

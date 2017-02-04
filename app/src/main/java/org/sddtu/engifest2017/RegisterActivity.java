@@ -16,6 +16,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_register);
         textView = (TextView) findViewById(R.id.steps);
         textView.setText(R.string.register);

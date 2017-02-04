@@ -31,6 +31,7 @@ public class EngiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_engi);
 
         imageView = (ImageView) findViewById(R.id.engi_poster);
@@ -89,6 +90,13 @@ public class EngiActivity extends AppCompatActivity {
         textView1 = (TextView) findViewById(R.id.web_url);
         navigate = (FloatingActionButton) findViewById(R.id.nav_button);
         Linkify.addLinks(textView1,Linkify.WEB_URLS);
+        textView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfDE9DQu8k-7vUop34rlmCDzLWTV5Xiyb2fmGZpfbPCr3YKKQ/viewform"));
+                startActivity(intent);
+            }
+        });
 
         navigate.setOnClickListener(new View.OnClickListener() {
             @Override

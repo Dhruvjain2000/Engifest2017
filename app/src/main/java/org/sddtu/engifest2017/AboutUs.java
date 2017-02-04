@@ -27,6 +27,7 @@ public class AboutUs extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_about_us);
 
         getSupportActionBar().setTitle("Team Engi");

@@ -16,6 +16,7 @@ public class AfterPlace extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_place);
+        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         listView = (ListView) findViewById(R.id.list_venue);
 
 
