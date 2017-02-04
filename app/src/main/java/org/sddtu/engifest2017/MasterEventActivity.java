@@ -19,7 +19,7 @@ public class MasterEventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_master_event);
 
-        TextView textView1,textView2,textView3,textView4,textView5,textView6;
+        TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7;
         ImageView imageView;
         imageView = (ImageView)findViewById(R.id.image_master);
         textView1 = (TextView)findViewById(R.id.about_event);
@@ -27,11 +27,13 @@ public class MasterEventActivity extends AppCompatActivity {
         textView3= (TextView)findViewById(R.id.eventtime);
         textView4= (TextView)findViewById(R.id.master_venue);
         textView5= (TextView)findViewById(R.id.eventlink);
+        textView7 = (TextView)findViewById(R.id.rulesregul);
         textView6 = (TextView)findViewById(R.id.rules_event);
         Linkify.addLinks(textView5,Linkify.WEB_URLS);
 
 
         String s = getIntent().getStringExtra("Chosen");
+        getSupportActionBar().setTitle(s);
 
         if(s.equals("Spandan")){
             imageView.setImageResource(R.drawable.spandan);
@@ -54,6 +56,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView1.setText(R.string.Anusanthan);
             textView2.setText("18 Feb'17");
             textView3.setText("10am");
+            textView7.setVisibility(View.GONE);
             textView4.setText("BR Ambedkar Auditorium)");
             textView5.setText("https://goo.gl/forms/3vyaN0YukfkJOVim1");
             textView6.setVisibility(View.GONE);
@@ -138,11 +141,12 @@ public class MasterEventActivity extends AppCompatActivity {
             textView4.setText("Sports Complex");
             textView5.setText("https://goo.gl/forms/dDkRYD4abwoWhwjf1");
             textView6.setVisibility(View.GONE);
+            textView7.setVisibility(View.GONE);
         }else if(s.equals("The Future of Fashion")){
             imageView.setImageResource(R.drawable.fashion);
             textView1.setText(R.string.futureoffashion);
-            textView2.setText("");
-            textView3.setText("");
+            textView2.setText("TBA");
+            textView3.setText("TBA");
             textView5.setText("https://goo.gl/forms/Uzpun8s0SRHVdPYK2");
             textView4.setText("");
             textView6.setText(R.string.futurefashionrules);
@@ -162,6 +166,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView4.setText("Sports Complex");
             textView5.setVisibility(View.GONE);
             textView6.setVisibility(View.GONE);
+            textView7.setVisibility(View.GONE);
         }else if(s.equals("War of Words")){
             imageView.setImageResource(R.drawable.syaahi);
             textView1.setText(R.string.WOW);
@@ -186,6 +191,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView4.setText("SPS Hall");
             textView5.setText("https://goo.gl/forms/xt7I0CYeghtEvtRV2");
             textView6.setVisibility(View.INVISIBLE);
+            textView7.setVisibility(View.GONE);
         }else if(s.equals("Kavyanjana")){
             imageView.setImageResource(R.drawable.syaahi);
             textView1.setText(R.string.Hindilit);
@@ -194,6 +200,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView4.setText("SPS Hall");
             textView5.setText("https://goo.gl/forms/vro4gBaxSv4RBfKC2");
             textView6.setVisibility(View.GONE);
+            textView7.setVisibility(View.GONE);
         }else if(s.equals("JAM(Just a Minute)")){
             imageView.setImageResource(R.drawable.syaahi);
             textView1.setText(R.string.jam);
@@ -210,6 +217,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView4.setText("");
             textView5.setText("https://goo.gl/forms/pJdnF23No4IcBHRl1");
             textView6.setVisibility(View.GONE);
+            textView7.setVisibility(View.GONE);
         }else if(s.equals("Film-Making Kaleidoscope")){
             imageView.setImageResource(R.drawable.engievents);
             textView1.setText(R.string.film_Making);
@@ -226,6 +234,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView4.setText("Hostel Road");
             textView5.setVisibility(View.GONE);
             textView6.setVisibility(View.GONE);
+            textView7.setVisibility(View.GONE);
         }else if(s.equals("Arte Fotographia")){
             imageView.setImageResource(R.drawable.engi);
             textView1.setText("Event description: Arte fotographia is the official Online photography competition of engifest conducted by parchhayi, the photography and film making society of DTU.\n");
@@ -233,6 +242,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView3.setText("TBA");
             textView4.setText("");
             textView6.setText("");
+            textView7.setVisibility(View.GONE);
             textView5.setText("https://goo.gl/1W47bp");
         }
 
