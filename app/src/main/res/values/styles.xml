@@ -19,6 +19,12 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppTheme4" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">#0d1f2d</item>
+        <item name="colorPrimary">#2e6ca0</item>
+        <item name="colorAccent">#67afea</item>
+    </style>
+
     <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#e53f3f</item>
         <item name="colorPrimaryDark">#b81c1c</item>
