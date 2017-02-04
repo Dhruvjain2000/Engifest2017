@@ -37,8 +37,10 @@ public class day1 extends Fragment {
 
 
     ListView listView;
-    String[] events = {"BallaDeers","Shoe Painting","Anushtaan","DrishtiKon","ShakeDown","Vocalicious","Mixed Bag","StandUp Comedy","Live Wire"};
-    String[] venue = {"Convo Hall","EduSat Hall","Auditorium","SPS Hall","Hostel Road","Convo Hall","SPS Hall","Auditorium","Sports Complex"};
+    String[] events = {"BallaDeers","Shoe Painting","Anushtaan","DrishtiKon","ShakeDown","Vocalicious"
+            ,"Mixed Bag","StandUp Comedy","Live Wire"};
+    String[] venue = {"Convo Hall","EduSat Hall","Auditorium","SPS Hall","Hostel Road","Convo Hall","SPS Hall"
+            ,"Auditorium","Sports Complex"};
     String[] time = {"9am","10am","10am","10am - 2pm","12pm","2pm","2pm - 4pm","5pm - 7pm","7pm onwards"};
 
     public day1() {
@@ -91,86 +93,42 @@ public class day1 extends Fragment {
             listViewAdapter.add(data);
         }
 
-        listView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                view = parent.getChildAt(position);
-                TextView textView1 = (TextView) view.findViewById(R.id.list_name);
-                String a = textView1.getText().toString();
-                Log.d("A",a);
-                Intent intent = new Intent(getActivity(), MasterEventActivity.class);
-                switch (a){
-                    case "BallaDeers":
-                        intent.putExtra("Chosen","BallaDeers");
-                        break;
-                    case "Shoe Painting":
-                        intent.putExtra("Chosen","Shoe Painting");
-                        break;
-                    case "Anushtaan":
-                        intent.putExtra("Chosen","Anushtaan");
-                        break;
-                    case "DrishtiKon":
-                        intent.putExtra("Chosen","DrishtiKon");
-                        break;
-                    case "ShakeDown":
-                        intent.putExtra("Chosen","ShakeDown");
-                        break;
-                    case "Vocalicious":
-                        intent.putExtra("Chosen","Vocalicious");
-                        break;
-                    case "Mixed Bag":
-                        intent.putExtra("Chosen","Mixed Bag");
-                        break;
-                    case "StandUp Comedy":
-                        intent.putExtra("Chosen","StandUp Comedy");
-                        break;
-                    case "Live Wire":
-                        intent.putExtra("Chosen","Live Wire");
-                        break;
-                }
-                startActivity(intent);
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                view = parent.getChildAt(position);
+               // view = parent.getChildAt(position);
                 TextView textView1 = (TextView) view.findViewById(R.id.list_name);
                 String a = textView1.getText().toString();
                 Log.d("A",a);
                 Intent intent = new Intent(getActivity(), MasterEventActivity.class);
-                switch (a){
-                    case "BallaDeers":
+                switch (position){
+                    case 0:
                         intent.putExtra("Chosen","BallaDeers");
                         break;
-                    case "Shoe Painting":
+                    case 1:
                         intent.putExtra("Chosen","Shoe Painting");
                         break;
-                    case "Anushtaan":
+                    case 2:
                         intent.putExtra("Chosen","Anushtaan");
                         break;
-                    case "DrishtiKon":
+                    case 3:
                         intent.putExtra("Chosen","DrishtiKon");
                         break;
-                    case "ShakeDown":
+                    case 4:
                         intent.putExtra("Chosen","ShakeDown");
                         break;
-                    case "Vocalicious":
+                    case 5:
                         intent.putExtra("Chosen","Vocalicious");
                         break;
-                    case "Mixed Bag":
+                    case 6:
                         intent.putExtra("Chosen","Mixed Bag");
                         break;
-                    case "StandUp Comedy":
+                    case 7:
                         intent.putExtra("Chosen","StandUp Comedy");
                         break;
-                    case "Live Wire":
+                    case 8:
                         intent.putExtra("Chosen","Live Wire");
                         break;
                 }

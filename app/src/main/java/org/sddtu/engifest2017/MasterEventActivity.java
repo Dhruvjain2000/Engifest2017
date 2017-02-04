@@ -5,11 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.util.Linkify;
 import android.view.View;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MasterEventActivity extends AppCompatActivity {
@@ -235,7 +233,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setVisibility(View.GONE);
             textView6.setVisibility(View.GONE);
             textView7.setVisibility(View.GONE);
-        }else if(s.equals("Arte Fotographia")){
+        }else if(s.equals("Arte Fotographia")) {
             imageView.setImageResource(R.drawable.engi);
             textView1.setText("Event description: Arte fotographia is the official Online photography competition of engifest conducted by parchhayi, the photography and film making society of DTU.\n");
             textView2.setText("TBA");
@@ -244,6 +242,12 @@ public class MasterEventActivity extends AppCompatActivity {
             textView6.setText("");
             textView7.setVisibility(View.GONE);
             textView5.setText("https://goo.gl/1W47bp");
+        }
+            else if(s.equals("Shoe Painting")){
+            Toast.makeText(this, "Shoe", Toast.LENGTH_SHORT).show();
+        }
+        else if(s.equals("Live Wire")){
+            Toast.makeText(this, "Shoe", Toast.LENGTH_SHORT).show();
         }
 
     }

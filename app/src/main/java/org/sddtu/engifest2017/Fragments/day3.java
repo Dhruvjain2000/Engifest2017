@@ -37,8 +37,8 @@ public class day3 extends Fragment {
 
     ListView listView;
 
-    String[] events = {"Two's A Show","Switch the funk up","War of Words","JAM(Just a Minute)","Natya","3 Dimensional Art","Acoustic Alchemy"
-            ,"EDM Night- NUCLEYA"};
+    String[] events = {"Two's A Show","Switch the funk up","War of Words","JAM(Just a Minute)","Natya",
+            "3 Dimensional Art","Acoustic Alchemy","EDM Night- NUCLEYA"};
     String[] venue = {"Convo Hall","OAT","SPS Hall","SPS Hall","Auditorium","Edusat Hall","Wind Point","Sports Complex"};
     String[] time = {"10am","10am","10am - 5pm","10am - 5pm","10am","11am","2pm","7pm Onwards"};
 
