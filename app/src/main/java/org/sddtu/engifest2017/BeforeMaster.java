@@ -50,20 +50,20 @@ public class BeforeMaster extends AppCompatActivity {
             time = new String[]{"10am - 5pm","3pm - 5pm","2pm - 4pm","11am - 1pm","10am - 5pm","10am - 2pm",""};
             date = new String[]{"18 Feb'17","19 Feb'17","20 Feb'17","20 Feb'17","19 Feb'17","18 Feb'17",""};
         } else if(s.equals("Pro Night")){
-            events = new String[]{"Live Wire","EDM Night","Rock Night"};
+            events = new String[]{"Live Wire","EDM Night-NUCLEYA","Rock Night"};
             venue = new String[]{"Sports Complex","Sports Complex","Sports Complex","B R Ambedkar Auditorium","B R Ambedkar Auditorium","B R Ambedkar Auditorium"};
             time = new String[]{"7pm onwards","7pm onwards","7pm onwards","Tu daal dalle","Tu daal dalle","Tu daal dalle",""};
-            date = new String[]{"18 Feb'17","19 Feb'17","20 Feb'17","19 Feb'17","20 Feb'17","18 Feb'17",""};
+            date = new String[]{"18 Feb'17","20 Feb'17","19 Feb'17","19 Feb'17","20 Feb'17","18 Feb'17",""};
         } else if(s.equals("Drama")) {
             events = new String[]{"Nukkad","Natya",};
             venue = new String[]{"MechC Parking(Prelims - 14th Feb)","Auditorium"};
             time = new String[]{"10am","10am"};
             date = new String[]{"19 Feb'17","20 Feb'17"};
         } else if(s.equals("Fashion")){
-            events = new String[]{"Paridhan","The Future of Fashion","The Selfie Brag"};
-            venue = new String[]{"Sports Complex","",""};
-            time = new String[]{"4pm","",""};
-            date = new String[]{"19 Feb'17","",""};
+            events = new String[]{"Paridhan","The Selfie Brag"};
+            venue = new String[]{"Sports Complex",""};
+            time = new String[]{"4pm",""};
+            date = new String[]{"19 Feb'17",""};
         } else if(s.equals("Art(SpectRang)")) {
             events = new String[]{"Shoe painting","Art & Furious","3 Dimensional Art"};
             venue = new String[]{"Edusat Hall","Edusat Hall","Edusat Hall"};
@@ -71,7 +71,10 @@ public class BeforeMaster extends AppCompatActivity {
             date = new String[]{"18 Feb'17","19 Feb'17","20 Feb'17"};
         }
         else if(s.equals("Informal")) {
-            Toast.makeText(getApplicationContext(),"Content will be updated Soon",Toast.LENGTH_LONG).show();
+            events = new String[]{"Poker","Zorbing","Cricket Simulation","Vr Theatre","Paintball","Segway"};
+            venue = new String[]{"Funcity","Funcity","Funcity","Funcity","Funcity","Funcity"};
+            time = new String[]{"11am","11am","11am","11am","11am","11am"};
+            date = new String[]{"18-20 Feb'17","18-20 Feb'17","18-20 Feb'17","18-20 Feb'17","18-20 Feb'17","18-20 Feb'17"};
         }
 
         listView = (ListView)findViewById(R.id.list_event1);

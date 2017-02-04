@@ -20,9 +20,6 @@ import org.sddtu.engifest2017.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by mohitkumar on 08/01/17.
- */
 
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.RecyclerViewHolder> {
 

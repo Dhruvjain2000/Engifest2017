@@ -67,7 +67,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView6.setVisibility(View.GONE);
             //textView6.setText(R.string);
         } else if(s.equals("Switch the funk up")){
-            imageView.setImageResource(R.drawable.spandan);
+            imageView.setImageResource(R.drawable.eng);
             textView1.setText(R.string.STFU);
             textView2.setText("20 Feb'17");
             textView3.setText("10am");
@@ -165,7 +165,29 @@ public class MasterEventActivity extends AppCompatActivity {
             textView8.setVisibility(View.GONE);
             textView6.setText(R.string.selfierules);
         }else if(s.equals("EDM Night-NUCLEYA")){
-        }else if(s.equals("War of Words")){
+            imageView.setImageResource(R.drawable.pnight);
+            textView1.setText("Adhbudh. Anokha. Aelaan.\n" +
+                    "\n" +
+                    "Akkad Bakkad Bambe Bo.\n" +
+                    "Engi main dekho aa gaya woh.\n" +
+                    "Aaja thoda Chennai Bass bajva de.\n" +
+                    "Bass Rani ke saath Raja Baja bhi bulva de.\n" +
+                    "Aao Engifest ka Scene Set Karwa De!\n" +
+                    "\n" +
+                    "Engifest 2017 and Pokerbaazi.com present to you one of the most exciting, experimental and engaging electronic music producers in the Indian Scene – NUCLEYA! \n" +
+                    "\n" +
+                    "This 20th February, get ready to groove, get ready to headbang at Engifest, DTU. GET READY TO EXPERIENCE THE INFINITE!\n" +
+                    "\n" +
+                    "We are thankful to 7Entertainment for all the help and artist co-ordination.\n" +
+                    "\n" +
+                    "#EngifestInfinity #AaGayaWoh");
+            textView2.setText("20th February");
+            textView3.setText("7 PM");
+            textView4.setText("Sports Complex");
+            textView7.setVisibility(View.GONE);
+            textView5.setText("");
+            textView8.setVisibility(View.GONE);
+            }else if(s.equals("War of Words")){
             imageView.setImageResource(R.drawable.syaahi);
             textView1.setText(R.string.WOW);
             textView2.setText("18 Feb'17");
@@ -215,6 +237,17 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setText("https://goo.gl/forms/pJdnF23No4IcBHRl1");
             textView6.setVisibility(View.GONE);
             textView7.setVisibility(View.GONE);
+        }else if(s.equals("Rock Night")){
+            imageView.setImageResource(R.drawable.pnight);
+            textView1.setText("“Rock and roll is a nuclear blast of reality in a mundane world where no-one is allowed to be magnificent.” -Kim Fowley \n" +
+                    "Engifest’17 brings you Lagori for a sonically exhilarating experience that will leave your senses absolutely spellbound! You won’t be able to resist banging your heads to the powerful beats and tapping your feet with the intense music; so overwhelmingly influencing will be the aura at this event! \n");
+            textView2.setText("19th February");
+            textView3.setText("7 PM");
+            textView4.setText("Sports Complex");
+            textView5.setText("");
+            textView6.setVisibility(View.GONE);
+            textView7.setVisibility(View.GONE);
+            textView8.setVisibility(View.GONE);
         }else if(s.equals("Film-Making Kaleidoscope")){
             imageView.setImageResource(R.drawable.engievents);
             textView1.setText(R.string.film_Making);
@@ -262,7 +295,15 @@ public class MasterEventActivity extends AppCompatActivity {
             textView6.setVisibility(View.GONE);
             textView7.setVisibility(View.GONE);
         } else if(s.equals("Live Wire")){
-            //Toast.makeText(this, "Shoe", Toast.LENGTH_SHORT).show();
+            imageView.setImageResource(R.drawable.pnight);
+            textView1.setText("Sunidhi Chauhan is there to enrich your night with their presence. All gonna rock n roll their bodies and join them with zest and enthusiam. So put your hands up and welcome engi'17!");
+            textView2.setText("18th February");
+            textView3.setText("7 PM");
+            textView4.setText("Sports Complex");
+            textView7.setVisibility(View.GONE);
+            textView5.setText("");
+            textView8.setVisibility(View.GONE);
+
         }else if(s.equals("Art & Furious")){
             imageView.setImageResource(R.drawable.eng);
             textView1.setText(R.string.Artfurious);

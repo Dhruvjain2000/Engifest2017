@@ -157,7 +157,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
                     Intent waIntent = new Intent(Intent.ACTION_SEND);
                     waIntent.setType("text/plain");
-                    String text = "Welcome to ENGIFEST INFINITY" + "https://www.facebook.com/engifest/";
+                    String text = "Welcome to ENGIFEST INFINITY " + "https://www.facebook.com/engifest/";
 
                     PackageInfo info=pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
                     //Check if package exists or not. If not then code
