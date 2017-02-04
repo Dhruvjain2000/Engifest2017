@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 
 public class MasterEventActivity extends AppCompatActivity {
 
@@ -18,7 +20,10 @@ public class MasterEventActivity extends AppCompatActivity {
         this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_master_event);
 
-        TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7;
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
+
+        TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7,textView8;
         ImageView imageView;
         imageView = (ImageView)findViewById(R.id.image_master);
         textView1 = (TextView)findViewById(R.id.about_event);
@@ -28,6 +33,7 @@ public class MasterEventActivity extends AppCompatActivity {
         textView5= (TextView)findViewById(R.id.eventlink);
         textView7 = (TextView)findViewById(R.id.rulesregul);
         textView6 = (TextView)findViewById(R.id.rules_event);
+        textView8 = (TextView)findViewById(R.id.offlink);
         Linkify.addLinks(textView5,Linkify.WEB_URLS);
 
 
@@ -152,20 +158,13 @@ public class MasterEventActivity extends AppCompatActivity {
         }else if(s.equals("The Selfie Brag")){
             imageView.setImageResource(R.drawable.fashion);
             textView1.setText(R.string.selfiebrag);
-            textView2.setText("");
-            textView3.setText("");
+            textView2.setText("All 3 days");
+            textView3.setText("All time");
             textView4.setText("");
             textView5.setText("");
+            textView8.setVisibility(View.GONE);
             textView6.setText(R.string.selfierules);
         }else if(s.equals("EDM Night-NUCLEYA")){
-            imageView.setImageResource(R.drawable.engi);
-            textView1.setText("NUCLEYA");
-            textView2.setText("20 Feb'17");
-            textView3.setText("7pm onwards");
-            textView4.setText("Sports Complex");
-            textView5.setVisibility(View.GONE);
-            textView6.setVisibility(View.GONE);
-            textView7.setVisibility(View.GONE);
         }else if(s.equals("War of Words")){
             imageView.setImageResource(R.drawable.syaahi);
             textView1.setText(R.string.WOW);
@@ -189,8 +188,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView3.setText("2pm - 4pm");
             textView4.setText("SPS Hall");
             textView5.setText("https://goo.gl/forms/xt7I0CYeghtEvtRV2");
-            textView6.setVisibility(View.INVISIBLE);
-            textView7.setVisibility(View.GONE);
+            textView6.setText(R.string.mixedbagrules);
         }else if(s.equals("Kavyanjana")){
             imageView.setImageResource(R.drawable.syaahi);
             textView1.setText(R.string.Hindilit);
@@ -226,7 +224,7 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setText("https://goo.gl/S7umWT");
             textView6.setText(R.string.filmmakingrules);
         }else if(s.equals("ShakeDown")){
-            imageView.setImageResource(R.drawable.engi);
+            imageView.setImageResource(R.drawable.engif);
             textView1.setText(R.string.shakedown);
             textView2.setText("18 Feb'17");
             textView3.setText("12pm");
@@ -234,8 +232,9 @@ public class MasterEventActivity extends AppCompatActivity {
             textView5.setVisibility(View.GONE);
             textView6.setVisibility(View.GONE);
             textView7.setVisibility(View.GONE);
+            textView8.setVisibility(View.GONE);
         }else if(s.equals("Arte Fotographia")) {
-            imageView.setImageResource(R.drawable.engi);
+            imageView.setImageResource(R.drawable.eng);
             textView1.setText("Event description: Arte fotographia is the official Online photography competition of engifest conducted by parchhayi, the photography and film making society of DTU.\n");
             textView2.setText("TBA");
             textView3.setText("TBA");
@@ -243,13 +242,43 @@ public class MasterEventActivity extends AppCompatActivity {
             textView6.setText("");
             textView7.setVisibility(View.GONE);
             textView5.setText("https://goo.gl/1W47bp");
+        } else if(s.equals("Kavi Sammelan")) {
+            imageView.setImageResource(R.drawable.eng);
+            textView1.setText(R.string.kavisammelan);
+            textView2.setText("20 Feb'17");
+            textView3.setText("4pm");
+            textView4.setText("OAT");
+            textView5.setVisibility(View.GONE);
+            textView8.setVisibility(View.GONE);
+            textView7.setVisibility(View.GONE);
+            textView6.setVisibility(View.GONE);
+        } else if(s.equals("Shoe painting")){
+            imageView.setImageResource(R.drawable.eng);
+            textView1.setText(R.string.shoepainting);
+            textView2.setText("18 Feb'17");
+            textView3.setText("10am");
+            textView4.setText("EduSat Hall");
+            textView5.setText("https://goo.gl/aKT2Rk");
+            textView6.setVisibility(View.GONE);
+            textView7.setVisibility(View.GONE);
+        } else if(s.equals("Live Wire")){
+            //Toast.makeText(this, "Shoe", Toast.LENGTH_SHORT).show();
+        }else if(s.equals("Art & Furious")){
+            imageView.setImageResource(R.drawable.eng);
+            textView1.setText(R.string.Artfurious);
+            textView2.setText("19 Feb'17");
+            textView3.setText("11am");
+            textView4.setText("EduSat Hall");
+            textView5.setText("https://goo.gl/eaa6As");
+            textView6.setText(R.string.artfuriousrules);
+        }else if(s.equals("3 Dimensional Art")){
+            imageView.setImageResource(R.drawable.eng);
+            textView1.setText(R.string.threedart);
+            textView2.setText("20 Feb'17");
+            textView3.setText("11am");
+            textView4.setText("EduSat Hall");
+            textView5.setText("https://goo.gl/5xLdsN");
+            textView6.setText(R.string.threedartrules);
         }
-            else if(s.equals("Shoe Painting")){
-            Toast.makeText(this, "Shoe", Toast.LENGTH_SHORT).show();
-        }
-        else if(s.equals("Live Wire")){
-            Toast.makeText(this, "Shoe", Toast.LENGTH_SHORT).show();
-        }
-
     }
 }

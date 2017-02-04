@@ -21,8 +21,8 @@ public class AllEvents extends AppCompatActivity {
 
 
     String[] events = {"Dance","Music","Drama","Fashion","Pro Night","Literary","Art(SpectRang)","Miscellaneous","Informal Events"};
-    int[] images = {R.drawable.dance,R.drawable.brambedkaraudi,R.drawable.sportc,R.drawable.funfest,R.drawable.engievents,
-            R.drawable.danxe1,R.drawable.foodcity,R.drawable.brambedkaraudi,R.drawable.sportc};
+    int[] images = {R.drawable.mus,R.drawable.mus1,R.drawable.dram,R.drawable.fash,R.drawable.pnight,
+            R.drawable.literary,R.drawable.art,R.drawable.brambedkaraudi,R.drawable.informal};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

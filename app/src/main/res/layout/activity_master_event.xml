@@ -160,6 +160,7 @@
                 android:padding="10dp"
                 android:textSize="11dp"
                 android:textColor="#e53f3f"
+                android:id="@+id/offlink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Official Link"

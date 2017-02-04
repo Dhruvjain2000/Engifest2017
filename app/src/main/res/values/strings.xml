@@ -659,8 +659,9 @@ In the rush of our monotonous lives, we breathe but forget to live. It is time t
 \n MIXED BAG
 \n
 A WORD GAMES event, Mixed Bag is the ultimate amalgamation of literary, lingual and logical hurdles for all the masters of all trades out there! So wear your thinking \ncaps and get along with one of the most celebrated events of all time.
-\n
-\nRULES
+\n</string>
+    <string name="mixedbagrules">
+\nRULES\n
 i.	The event comprises of only one round, which will be in the form of a 2 hours written test, where we test your word power and creativity with an array of out of \nthe box questions.
 \nii.      3 members are allowed maximum in a team. Lone wolves are allowed as well.
 \n
@@ -843,4 +844,31 @@ ii.      The participants will be divided into groups of 12 for the preliminary 
     
     <string name="registernote">\nNote : Unique Verification Email from Pokerbaazi.com will act as passes to the concert and provide entry into the campus!\n 
         Registrations only through this link will be considered.\n</string>
+    <string name="shoepainting">\nParticipants will be provided with a plain white shoe which they have to paint using their creativity, according to the theme that will be given to them on the spot. Poster colours and Acrylic colours will be provided as well.\n</string>
+    <string name="shoepaintrules">RULES:\n
+1. Contestants will be provided with a White Shoe and Painting Equipment.\n
+2. Time allotted for Competition is 3 hours only.\n
+3. Topic will be given on the spot.\n
+4. Contestants found with any unfair means or with layout reference during the competition will be disqualified.\n
+5. The judges result shall be final.\nNayan Lal - 9540669462 </string>
+    <string name="Artfurious">\nIn this event, contestants will be required to present their best creation out of the material provided to them. As we proceed with this competition, the challenges will keep getting tougher. Tougher themes and even tougher time restrictions. A marathon intended to test their creativity and imagination, with the completion of each stage, the contestants will be filtered until we have our Last Man Standing.\n</string>
+    <string name="artfuriousrules">\nRules:\n
+1. There will be 3 Rounds: The total time provided for completing all the rounds will be 3 hours.\n
+2. Required Materials will be provided.\n
+3. Activities along with topics will be given on the spot for each round.\n
+4. Contestants found with any unfair means or with layout reference during the competition will be disqualified.\n
+5. The judges result shall be final and binding.\nNayan Lal - 9540669462 \n</string>
+    <string name="threedart">\nContestants are required to sculpt a model using blades and sculpting tools, out of the material provided to them.\n</string>
+    <string name="threedartrules">\nRULES:\n
+1. The Duration of competition is of 3 hours.\n
+2. Required Materials will be provided.\n
+3. Topics will be given on the spot.\n
+4. Contestants found with any unfair means or with layout reference during the competition will be disqualified.\n
+5. The judges result shall be final and binding.\nNayan Lal - 9540669462\n</string>
+<string name="kavisammelan">\n
+    Maqbool. Gangs of Wasseypur. Pink. Tamasha. The stellar soundtrack of Gulaal, and the evergreen, award-winning number --Aarambh Hai Prachanda--.
+The genius that produced them all and made them shine amongst everything else, is all set to illuminate your hearts and minds this EngiFest.
+Piyush Mishra, one of NSDs most eminent luminaries shall be here at EngiFest Infinity, on the 20th of February, 4pm onwards.
+The OAT shall shine in the glory of his sharp wit and intellectual panache. Be there.
+</string>
 </resources>

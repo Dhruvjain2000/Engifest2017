@@ -78,10 +78,6 @@
             android:parentActivityName=".HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme2" />
-        <activity
-            android:name=".Accomodation"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme2"></activity>
         <activity android:name=".DevBy"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme4"
