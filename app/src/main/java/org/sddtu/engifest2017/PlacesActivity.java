@@ -23,7 +23,7 @@ public class PlacesActivity extends AppCompatActivity {
     String[] places = {"Open Air Theatre(OAT)","Food City","Sports Complex","BR Ambedkar Auditorium"};
     String[] s = {"Hub of all events under the sky roof.","Hot to cold , Made and Sold.","Run.Smash.Loft.Aim.Win","Stage is set.Lights are flashing. Are you?"};
     //String[] info = {s,s,s,s};
-    int[] imagesrc = {R.drawable.bigoat,R.drawable.funfest,R.drawable.sportc,R.drawable.brambedkaraudi};
+    int[] imagesrc = {R.drawable.bigoat,R.drawable.fcity,R.drawable.sportc,R.drawable.braudi};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

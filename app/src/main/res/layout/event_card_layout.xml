@@ -23,7 +23,6 @@
              android:padding="3dp"
              android:id="@+id/image_event"
              android:scaleType="fitXY"
-             android:src="@drawable/danxe1"
              />
 
     <TextView
