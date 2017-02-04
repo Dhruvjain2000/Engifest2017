@@ -30,7 +30,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mohit Kumar"
+        android:text="Krishna Rai"
         android:layout_weight="1"
         android:textColor="#2e6ca0"
         android:padding="10dp"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/github"
         app:backgroundTint="#fff"
-        android:id="@+id/mohit_git"
+        android:id="@+id/krishna_git"
         />
      <android.support.design.widget.FloatingActionButton
          android:layout_width="wrap_content"
@@ -49,7 +49,7 @@
          app:backgroundTint="#fff"
          android:layout_marginLeft="20dp"
          android:layout_gravity="right|end"
-         android:id="@+id/mohit_link"
+         android:id="@+id/krishna_link"
          android:src="@drawable/linkedin"
          />
     </LinearLayout>
@@ -62,7 +62,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Krishna Rai"
+                    android:text="Mohit Kumar"
                     android:layout_weight="1"
                     android:padding="10dp"
                     android:textColor="#2e6ca0"
@@ -73,13 +73,13 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/github"
                     app:backgroundTint="#fff"
-                    android:id="@+id/krishna_git"
+                    android:id="@+id/mohit_git"
                     />
                 <android.support.design.widget.FloatingActionButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:backgroundTint="#fff"
-                    android:id="@+id/krishna_link"
+                    android:id="@+id/mohit_link"
                     android:layout_marginLeft="20dp"
                     android:layout_gravity="right|end"
                     android:src="@drawable/linkedin"
@@ -126,7 +126,7 @@
             android:textSize="15dp"
             android:textColor="#0d1f2d"
             android:textStyle="bold"
-            android:text="For any Feedback or bug report,\nmail at mohit@sddtu.org"
+            android:text="For any Feedback or bug report,\nmail at contact@sddtu.org"
             />
         </LinearLayout>
     </ScrollView>
