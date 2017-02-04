@@ -75,12 +75,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"WebView will come here",Toast.LENGTH_LONG).show();
-                try {
-                    getApplicationContext().getPackageManager().getPackageInfo("com.facebook.katana", 0);
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/" + "https://www.facebook.com/engifest/?fref=ts")));
-                } catch (Exception e) {
-                }
+                Intent intent = new Intent(HomeActivity.this,RegisterActivity.class);
+                startActivity(intent);
             }
         });
 

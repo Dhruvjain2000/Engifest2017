@@ -68,11 +68,21 @@
             android:parentActivityName=".AllEvents"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme2" />
-        <activity android:name=".AfterPlace"
+        <activity
+            android:name=".AfterPlace"
+            android:parentActivityName=".PlacesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".Accomodation"
             android:theme="@style/AppTheme2"
             android:screenOrientation="portrait"
-            android:parentActivityName=".PlacesActivity"
-            ></activity>
+            >
+        </activity>
     </application>
 
 </manifest>

@@ -17,7 +17,6 @@
                 android:id="@+id/thumbnail"
                 android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
-                android:scaleType="fitXY"
                 android:layout_height="160dp"
                 />
             <TextView

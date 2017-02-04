@@ -226,7 +226,7 @@ gather up your best wizards and bewitch the audience with your symphonies! Cast 
 Participants can register both online and offline (on the spot). Please note: Only one person from a group should register.\n
 
         </string>
-\n
+    \n
     <string name="Balladeersrules">
 \nRULES:\n
 1. Each group is allotted a total of 12 minutes including sound check.\n
@@ -833,4 +833,14 @@ ii.      The participants will be divided into groups of 12 for the preliminary 
 \n1. Free registration on the spot!
 \n2. More information will be conveyed at the spot.
     </string>
+    <string name="register">
+        \n\n
+1. Click on "Register" and fill all the details.\n
+2. Enter Promo Code : ENGIFEST\n
+3. Enter OTP and register.\n
+4. Activate your account through email (usually found in Promotions/Spam.)\n
+    </string>
+    
+    <string name="registernote">\nNote : Unique Verification Email from Pokerbaazi.com will act as passes to the concert and provide entry into the campus!\n 
+        Registrations only through this link will be considered.\n</string>
 </resources>

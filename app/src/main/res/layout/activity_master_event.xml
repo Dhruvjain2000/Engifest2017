@@ -50,6 +50,7 @@
                 android:paddingRight="10dp"
                 android:paddingLeft="10dp"
                 android:paddingBottom="2dp"
+                android:id="@+id/rulesregul"
                 android:layout_height="wrap_content"
                 android:text="Rules And Regulations"
                 android:textAppearance="?android:textAppearanceLarge"
