@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     LinearLayout home,events,places,schedule,sponsors,about;
     String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS",""};
     String[] buttontext = {"ABOUT ENGIFEST","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS",""};
-    String[] flipto = {"Swipe Up for more","","","","","",""};
+    String[] flipto = {"Swipe Up for more","Swipe Up for more","Swipe Up for more","Swipe Up for more","Swipe Up for more","",""};
     FloatingActionButton fabplus,fabfb,fabwapp,fabtwit;
     Animation fabopen,fabclose,rotateclock,rotateanti;
     Button button;
