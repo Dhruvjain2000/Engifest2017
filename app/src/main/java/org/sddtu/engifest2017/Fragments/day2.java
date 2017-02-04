@@ -100,11 +100,46 @@ public class day2 extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                view = parent.getChildAt(position);
+                // view = parent.getChildAt(position);
                 TextView textView1 = (TextView) view.findViewById(R.id.list_name);
                 String a = textView1.getText().toString();
+                Log.d("A",a);
                 Intent intent = new Intent(getActivity(), MasterEventActivity.class);
-                intent.putExtra("Chosen",a);
+                switch (position){
+                    case 0:
+                        intent.putExtra("Chosen","Vrind");
+                        break;
+                    case 1:
+                        intent.putExtra("Chosen","Spandan");
+                        break;
+                    case 2:
+                        intent.putExtra("Chosen","Nukkad");
+                        break;
+                    case 3:
+                        intent.putExtra("Chosen","Film-Maing KaleidoScope");
+                        break;
+                    case 4:
+                        intent.putExtra("Chosen","Art & Furious");
+                        break;
+                    case 5:
+                        intent.putExtra("Chosen","Kavyanjana");
+                        break;
+                    case 6:
+                        intent.putExtra("Chosen","Engi-Idol");
+                        break;
+                    case 7:
+                        intent.putExtra("Chosen","Creative Writing");
+                        break;
+                    case 8:
+                        intent.putExtra("Chosen","Paridhan");
+                        break;
+                    case 9:
+                        intent.putExtra("Chosen","Kavi Sammelan");
+                        break;
+                    case 10:
+                        intent.putExtra("Chosen","Rock Night");
+                        break;
+                }
                 startActivity(intent);
             }
         });

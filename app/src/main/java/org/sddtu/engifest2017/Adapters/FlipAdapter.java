@@ -3,6 +3,7 @@ package org.sddtu.engifest2017.Adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -145,6 +146,10 @@ public class FlipAdapter extends ArrayAdapter {
                         getContext().startActivity(intent);
                        // Toast.makeText(getContext(),"Sponsors here",Toast.LENGTH_LONG).show();
                         break;
+                    }
+                    case "CLICK HERE" : {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfDE9DQu8k-7vUop34rlmCDzLWTV5Xiyb2fmGZpfbPCr3YKKQ/viewform"));
+                        getContext().startActivity(intent);
                     }
                 }
             }

@@ -39,9 +39,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     FlipView flipView;
     boolean b = false;
     LinearLayout home,events,places,schedule,sponsors,about;
-    String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS",""};
-    String[] buttontext = {"ABOUT ENGIFEST","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS",""};
-    String[] flipto = {"Swipe Up for more","Swipe Up for more","Swipe Up for more","Swipe Up for more","Swipe Up for more","",""};
+    String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS","ACCOMODATION",""};
+    String[] buttontext = {"ABOUT ENGIFEST","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS","CLICK HERE",""};
+    String[] flipto = {"Swipe Up for more","Swipe Up for more","Swipe Up for more","Swipe Up for more","Swipe Up for more","","",""};
     FloatingActionButton fabplus,fabfb,fabwapp,fabtwit;
     Animation fabopen,fabclose,rotateclock,rotateanti;
     Button button;
@@ -53,6 +53,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_home);
 
         Calligrapher calligrapher = new Calligrapher(this);
@@ -118,18 +119,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(View v) {
                 try
                 {
-                    // TODO: This part does not work properly based on my test
-                    Intent fbIntent = new Intent(Intent.ACTION_SEND);
-                    fbIntent.setType("text/plain");
-                    fbIntent.putExtra(Intent.EXTRA_TEXT, "#EngifestInfinity");
-                    fbIntent.putExtra(Intent.EXTRA_STREAM,"");
-                    fbIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-                    fbIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                            | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-                    fbIntent.setComponent(new ComponentName("com.facebook.katana",
-                            "com.facebook.composer.shareintent.ImplicitShareIntentHandler"));
-
-                    startActivity(fbIntent);
+                    Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/engifest/"));
+                    startActivity(intent);
                     return;
                 }
                 catch (Exception e)
@@ -146,7 +137,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         fabtwit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Twitter Share",Toast.LENGTH_LONG).show();
+                Uri path= Uri.parse("https://www.facebook.com/engifest/");
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Testing");
+                shareIntent.putExtra(Intent.EXTRA_STREAM, path);
+                shareIntent.setType("image/*");
+                shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                startActivity(Intent.createChooser(shareIntent, "Share Using"));
+
             }
         });
 
@@ -158,7 +157,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
                     Intent waIntent = new Intent(Intent.ACTION_SEND);
                     waIntent.setType("text/plain");
-                    String text = "YOUR TEXT HERE";
+                    String text = "Welcome to ENGIFEST INFINITY" + "https://www.facebook.com/engifest/";
 
                     PackageInfo info=pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
                     //Check if package exists or not. If not then code
