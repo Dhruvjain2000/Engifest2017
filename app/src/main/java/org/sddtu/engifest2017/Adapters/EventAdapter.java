@@ -107,7 +107,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.RecyclerView
                 intent.putExtra("Choose","Fashion");
                 context.startActivity(intent);
 
-            } else if(s.equals("Informal")) {
+            } else if(s.equals("Informal Events")) {
                 intent.putExtra("Choose","Informal");
                 context.startActivity(intent);
 
