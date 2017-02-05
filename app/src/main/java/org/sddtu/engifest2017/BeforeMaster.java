@@ -28,6 +28,7 @@ public class BeforeMaster extends AppCompatActivity {
         setContentView(R.layout.activity_before_master);
 
         String s = getIntent().getStringExtra("Choose");
+        getSupportActionBar().setTitle(s);
 
         if(s.equals("Dance")){
             events = new String[]{"Spandan","Anushtaan","Switch the funk up"};
@@ -95,6 +96,8 @@ public class BeforeMaster extends AppCompatActivity {
         Log.d("A",a);
         Intent intent = new Intent(BeforeMaster.this,MasterEventActivity.class);
         intent.putExtra("Chosen",a);
+        if(a.equals("Poker")||a.equals("Zorbing")||a.equals("Cricket Simulation")||a.equals("Vr Theatre")||a.equals("Paintball")
+                ||a.equals("Segway")){}else
         startActivity(intent);
             }
         });
