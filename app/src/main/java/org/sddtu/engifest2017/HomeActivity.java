@@ -4,6 +4,7 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -30,6 +31,8 @@ import android.widget.Toast;
 
 import org.sddtu.engifest2017.Adapters.FlipAdapter;
 import org.sddtu.engifest2017.DataProviders.FlipViewData;
+
+import java.util.List;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
 import se.emilsjolander.flipview.FlipView;
@@ -138,13 +141,35 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 Uri path= Uri.parse("https://www.facebook.com/engifest/");
-                Intent shareIntent = new Intent();
-                shareIntent.setAction(Intent.ACTION_SEND);
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "Testing");
-                shareIntent.putExtra(Intent.EXTRA_STREAM, path);
-                shareIntent.setType("image/*");
-                shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                startActivity(Intent.createChooser(shareIntent, "Share Using"));
+                Intent tweetIntent = new Intent(Intent.ACTION_SEND);
+                tweetIntent.putExtra(Intent.EXTRA_TEXT, "Check out engifest infinity \n" + path);
+                tweetIntent.setType("text/plain");
+
+                PackageManager packManager = getPackageManager();
+                List<ResolveInfo> resolvedInfoList = packManager.queryIntentActivities(tweetIntent,  PackageManager.MATCH_DEFAULT_ONLY);
+
+                boolean resolved = false;
+                for(ResolveInfo resolveInfo: resolvedInfoList){
+                    if(resolveInfo.activityInfo.packageName.startsWith("com.twitter.android")){
+                        tweetIntent.setClassName(
+                                resolveInfo.activityInfo.packageName,
+                                resolveInfo.activityInfo.name );
+                        resolved = true;
+                        break;
+                    }
+                }
+                if(resolved){
+                    startActivity(tweetIntent);
+                }else{
+                    Toast.makeText(HomeActivity.this, "Twitter app isn't found", Toast.LENGTH_LONG).show();
+                }
+//                Intent shareIntent = new Intent();
+//                shareIntent.setAction(Intent.ACTION_SEND);
+//                shareIntent.putExtra(Intent.EXTRA_TEXT, "Testing");
+//                shareIntent.putExtra(Intent.EXTRA_STREAM, path);
+//                shareIntent.setType("image/*");
+//                shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+//                startActivity(Intent.createChooser(shareIntent, "Share Using"));
 
             }
         });

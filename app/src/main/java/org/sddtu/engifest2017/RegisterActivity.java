@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class RegisterActivity extends AppCompatActivity {
 
     TextView textView;
@@ -18,6 +20,11 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_register);
+
+        getSupportActionBar().setTitle("Registration");
+        Calligrapher calligrapher = new Calligrapher(this);
+        calligrapher.setFont(this, "fonts/OpenSans-Regular.ttf", true);
+
         textView = (TextView) findViewById(R.id.steps);
         textView.setText(R.string.register);
         Button button = (Button) findViewById(R.id.click_here);
