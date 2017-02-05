@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Steps For Registraton"
+        android:text="Steps For Registration"
         android:textAppearance="?android:textAppearanceLarge"
         android:textAlignment="center"
         android:textColor="#e53f3f"
