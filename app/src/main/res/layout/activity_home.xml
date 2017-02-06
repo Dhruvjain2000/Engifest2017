@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
+            android:text="About Engifest"
             android:textSize="15dp"
             android:textColor="#000"
             android:layout_marginLeft="50dp"
@@ -148,11 +148,6 @@
                     />
             </LinearLayout>
 
-         <TextView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="Contact"
-             />
           <View
               android:layout_width="match_parent"
               android:layout_height="1dp"
@@ -174,7 +169,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="About Us"
+                android:text="Team Engi"
                 android:textSize="15dp"
                 android:textColor="#000"
                 android:layout_marginLeft="50dp"

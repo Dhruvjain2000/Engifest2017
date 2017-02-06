@@ -87,16 +87,15 @@ public class EngiActivity extends AppCompatActivity {
 
 //        Toast.makeText(getApplicationContext(),height + " ",Toast.LENGTH_LONG).show();
 
-        textView1 = (TextView) findViewById(R.id.web_url);
+//        textView1 = (TextView) findViewById(R.id.web_url);
         navigate = (FloatingActionButton) findViewById(R.id.nav_button);
-        Linkify.addLinks(textView1,Linkify.WEB_URLS);
-        textView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfDE9DQu8k-7vUop34rlmCDzLWTV5Xiyb2fmGZpfbPCr3YKKQ/viewform"));
-                startActivity(intent);
-            }
-        });
+//        Linkify.addLinks(textView1,Linkify.WEB_URLS);
+//        textView1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
 
         navigate.setOnClickListener(new View.OnClickListener() {
             @Override

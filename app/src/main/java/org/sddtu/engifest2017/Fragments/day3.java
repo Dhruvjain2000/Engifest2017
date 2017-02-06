@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import org.sddtu.engifest2017.Adapters.ListViewAdapter;
 import org.sddtu.engifest2017.DataProviders.ListViewData;
+import org.sddtu.engifest2017.Doremipa;
 import org.sddtu.engifest2017.MasterEventActivity;
 import org.sddtu.engifest2017.R;
 
@@ -102,33 +103,41 @@ public class day3 extends Fragment {
                 String a = textView1.getText().toString();
                 Log.d("A",a);
                 Intent intent = new Intent(getActivity(), MasterEventActivity.class);
+                Intent intent1 = new Intent(getActivity(),Doremipa.class);
                 switch (position){
                     case 0:
-                        intent.putExtra("Chosen","Two's A Show");
+                        intent1.putExtra("Chosen","Two's A Show");
+                        startActivity(intent1);
                         break;
                     case 1:
                         intent.putExtra("Chosen","Switch the funk up");
+                        startActivity(intent);
                         break;
                     case 2:
                         intent.putExtra("Chosen","War of Words");
+                        startActivity(intent);
                         break;
                     case 3:
                         intent.putExtra("Chosen","JAM(Just a Minute)");
+                        startActivity(intent);
                         break;
                     case 4:
                         intent.putExtra("Chosen","Natya");
+                        startActivity(intent);
                         break;
                     case 5:
                         intent.putExtra("Chosen","3 Dimensional Art");
+                        startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("Chosen","Acoustic Alchemy");
+                        intent1.putExtra("Chosen","Acoustic Alchemy");
+                        startActivity(intent1);
                         break;
                     case 7:
-                        intent.putExtra("Chosen","EDM Night-NUCLEYA");
+                        intent1.putExtra("Chosen","EDM Night-NUCLEYA");
+                        startActivity(intent1);
                         break;
                 }
-                startActivity(intent);
             }
         });
         return v;

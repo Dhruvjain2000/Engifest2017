@@ -42,9 +42,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     FlipView flipView;
     boolean b = false;
     LinearLayout home,events,places,schedule,sponsors,about;
-    String[] flipTitles = {"HOME","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS","ACCOMODATION",""};
-    String[] buttontext = {"ABOUT ENGIFEST","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS","CLICK HERE",""};
+    String[] flipTitles = {"","EVENTS","PLACES","SCHEDULE","ABOUT US","SPONSORS","ACCOMODATION",""};
+    String[] buttontext = {"ACCOMMODATION","VIEW EVENTS","EXPLORE PLACES","CHECK OUT THE SCHEDULE","CLICK TO KNOW US","MORE SPONSORS","CLICK HERE",""};
     String[] flipto = {"Swipe Up for more","Swipe Up for more","Swipe Up for more","Swipe Up for more","Swipe Up for more","","",""};
+    int[] images = {R.drawable.eng,R.drawable.eng1,R.drawable.eng1,R.drawable.eng1,R.drawable.eng1,R.drawable.eng1,R.drawable.eng1,
+            R.drawable.eng1,R.drawable.eng1,R.drawable.eng1,R.drawable.eng1};
     FloatingActionButton fabplus,fabfb,fabwapp,fabtwit;
     Animation fabopen,fabclose,rotateclock,rotateanti;
     Button button;
@@ -204,7 +206,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         for(int i=0;i<7;i++)
         {
-            FlipViewData data = new FlipViewData(flipTitles[i],buttontext[i],flipto[i]);
+            FlipViewData data = new FlipViewData(flipTitles[i],buttontext[i],flipto[i],images[i]);
             flipAdapter.add(data);
         }
 

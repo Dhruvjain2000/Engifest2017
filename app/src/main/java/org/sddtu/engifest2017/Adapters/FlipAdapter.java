@@ -40,7 +40,7 @@ public class FlipAdapter extends ArrayAdapter {
 
     static class Data {
         TextView title;
-       // ImageView background;
+        ImageView background;
         TextView exptext;
         TextView swipe;
     }
@@ -74,7 +74,7 @@ public class FlipAdapter extends ArrayAdapter {
             row = layoutInflater.inflate(R.layout.custom_flip_layout,parent,false);
             d = new Data();
             d.title = (TextView) row.findViewById(R.id.flip_text);
-          //  d.background = (ImageView)row.findViewById(R.id.background_work);
+            d.background = (ImageView)row.findViewById(R.id.background_work);
             d.exptext = (TextView) row.findViewById(R.id.exp_button);
             d.swipe = (TextView)row.findViewById(R.id.swipe_text);
             row.setTag(d);
@@ -85,7 +85,7 @@ public class FlipAdapter extends ArrayAdapter {
 
         FlipViewData flipViewData = (FlipViewData) this.getItem(position);
         d.title.setText(flipViewData.getPlace());
-        //d.background.setImageResource(flipViewData.getImagesrc());
+        d.background.setImageResource(flipViewData.getImagesrc());
         d.exptext.setText(flipViewData.getButtext());
 
         d.swipe.setText(flipViewData.getSwipetext());
@@ -105,9 +105,9 @@ public class FlipAdapter extends ArrayAdapter {
                 TextView textView = (TextView) v.findViewById(R.id.exp_button);
                 String s = textView.getText().toString();
                 switch (s) {
-                    case "ABOUT ENGIFEST" : {
+                    case "ACCOMMODATION" : {
                       //  Toast.makeText(getContext(),"EngiData here",Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(getContext(),EngiActivity.class);
+                        Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSfDE9DQu8k-7vUop34rlmCDzLWTV5Xiyb2fmGZpfbPCr3YKKQ/viewform"));
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         getContext().startActivity(intent);
                         break;

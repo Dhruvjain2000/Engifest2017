@@ -6,17 +6,18 @@
     >
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/background_work"
+        android:src="@drawable/eng"
         />
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:textColor="#fff"
-        android:text="HOME"
+        android:text=""
         android:gravity="center"
         android:textSize="50dp"
         android:id="@+id/flip_text"
