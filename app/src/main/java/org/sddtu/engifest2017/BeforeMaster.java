@@ -97,7 +97,15 @@ public class BeforeMaster extends AppCompatActivity {
         Intent intent = new Intent(BeforeMaster.this,MasterEventActivity.class);
         intent.putExtra("Chosen",a);
         if(a.equals("Poker")||a.equals("Zorbing")||a.equals("Cricket Simulation")||a.equals("Vr Theatre")||a.equals("Paintball")
-                ||a.equals("Segway")){}else
+                ||a.equals("Segway")){
+
+        }else if(a.equals("Engi-Idol")||a.equals("Vocalicious")||a.equals("BallaDeers")||a.equals("Vrind")||a.equals("Two's A Show")
+                ||a.equals("Acoustic Alchemy")||a.equals("Live Wire")||a.equals("EDM Night-NUCLEYA")||a.equals("Rock Night")){
+            Intent intent1 = new Intent(BeforeMaster.this,Doremipa.class);
+            intent1.putExtra("Chosen",a);
+            startActivity(intent1);
+        }
+        else
         startActivity(intent);
             }
         });

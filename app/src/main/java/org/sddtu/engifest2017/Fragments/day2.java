@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import org.sddtu.engifest2017.Adapters.ListViewAdapter;
 import org.sddtu.engifest2017.DataProviders.ListViewData;
+import org.sddtu.engifest2017.Doremipa;
 import org.sddtu.engifest2017.MasterEventActivity;
 import org.sddtu.engifest2017.R;
 
@@ -105,42 +106,53 @@ public class day2 extends Fragment {
                 String a = textView1.getText().toString();
                 Log.d("A",a);
                 Intent intent = new Intent(getActivity(), MasterEventActivity.class);
+                Intent intent1 = new Intent(getActivity(),Doremipa.class);
                 switch (position){
                     case 0:
-                        intent.putExtra("Chosen","Vrind");
+                        intent1.putExtra("Chosen","Vrind");
+                        startActivity(intent1);
                         break;
                     case 1:
                         intent.putExtra("Chosen","Spandan");
+                        startActivity(intent);
                         break;
                     case 2:
                         intent.putExtra("Chosen","Nukkad");
+                        startActivity(intent);
                         break;
                     case 3:
                         intent.putExtra("Chosen","Film-Maing KaleidoScope");
+                        startActivity(intent);
                         break;
                     case 4:
                         intent.putExtra("Chosen","Art & Furious");
+                        startActivity(intent);
                         break;
                     case 5:
                         intent.putExtra("Chosen","Kavyanjana");
+                        startActivity(intent);
                         break;
                     case 6:
-                        intent.putExtra("Chosen","Engi-Idol");
+                        intent1.putExtra("Chosen","Engi-Idol");
+                        startActivity(intent1);
                         break;
                     case 7:
                         intent.putExtra("Chosen","Creative Writing");
+                        startActivity(intent);
                         break;
                     case 8:
                         intent.putExtra("Chosen","Paridhan");
+                        startActivity(intent);
                         break;
                     case 9:
                         intent.putExtra("Chosen","Kavi Sammelan");
+                        startActivity(intent);
                         break;
                     case 10:
-                        intent.putExtra("Chosen","Rock Night");
+                        intent1.putExtra("Chosen","Rock Night");
+                        startActivity(intent1);
                         break;
                 }
-                startActivity(intent);
             }
         });
 

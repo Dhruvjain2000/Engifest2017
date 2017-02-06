@@ -33,7 +33,7 @@
                     android:layout_height="match_parent"
                     android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/eninfi"
+                    android:src="@drawable/sponengi"
                     app:layout_collapseMode="parallax" />
 
                 <!--<LinearLayout-->

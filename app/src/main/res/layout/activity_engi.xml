@@ -21,7 +21,7 @@
         >
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/engi_poster"
             android:scaleType="fitXY"
@@ -145,24 +145,6 @@ We present to you, your chance to be a part of the Engifest family and experienc
                 android:id="@+id/nav_button"
                 />
         </LinearLayout>
-        <TextView
-            android:padding="10dp"
-            android:textSize="11dp"
-            android:textColor="#e53f3f"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Accomodation Link"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginBottom="10dp"
-            android:autoLink="web"
-            android:id="@+id/web_url"
-            android:text="Engifest Infinity"
-            android:textColor="#4c7093"
-            />
     </LinearLayout>
     </LinearLayout>
     </ScrollView>

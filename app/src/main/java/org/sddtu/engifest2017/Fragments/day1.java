@@ -14,7 +14,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import org.sddtu.engifest2017.Adapters.ListViewAdapter;
+import org.sddtu.engifest2017.BeforeMaster;
 import org.sddtu.engifest2017.DataProviders.ListViewData;
+import org.sddtu.engifest2017.Doremipa;
 import org.sddtu.engifest2017.MasterEventActivity;
 import org.sddtu.engifest2017.R;
 
@@ -37,7 +39,7 @@ public class day1 extends Fragment {
 
 
     ListView listView;
-    String[] events = {"BallaDeers","Shoe Painting","Anushtaan","DrishtiKon","ShakeDown","Vocalicious"
+    String[] events = {"BallaDeers","Shoe painting","Anushtaan","DrishtiKon","ShakeDown","Vocalicious"
             ,"Mixed Bag","StandUp Comedy","Live Wire"};
     String[] venue = {"Convo Hall","EduSat Hall","Auditorium","SPS Hall","Hostel Road","Convo Hall","SPS Hall"
             ,"Auditorium","Sports Complex"};
@@ -103,36 +105,44 @@ public class day1 extends Fragment {
                 String a = textView1.getText().toString();
                 Log.d("A",a);
                 Intent intent = new Intent(getActivity(), MasterEventActivity.class);
+                Intent intent1 = new Intent(getActivity(),Doremipa.class);
                 switch (position){
                     case 0:
-                        intent.putExtra("Chosen","BallaDeers");
+                        intent1.putExtra("Chosen","BallaDeers");
+                        startActivity(intent1);
                         break;
                     case 1:
                         intent.putExtra("Chosen","Shoe Painting");
+                        startActivity(intent);
                         break;
                     case 2:
                         intent.putExtra("Chosen","Anushtaan");
+                        startActivity(intent);
                         break;
                     case 3:
                         intent.putExtra("Chosen","DrishtiKon");
+                        startActivity(intent);
                         break;
                     case 4:
                         intent.putExtra("Chosen","ShakeDown");
+                        startActivity(intent);
                         break;
                     case 5:
-                        intent.putExtra("Chosen","Vocalicious");
+                        intent1.putExtra("Chosen","Vocalicious");
+                        startActivity(intent1);
                         break;
                     case 6:
                         intent.putExtra("Chosen","Mixed Bag");
                         break;
                     case 7:
                         intent.putExtra("Chosen","StandUp Comedy");
+                        startActivity(intent);
                         break;
                     case 8:
-                        intent.putExtra("Chosen","Live Wire");
+                        intent1.putExtra("Chosen","Live Wire");
+                        startActivity(intent1);
                         break;
                 }
-                startActivity(intent);
             }
         });
 
