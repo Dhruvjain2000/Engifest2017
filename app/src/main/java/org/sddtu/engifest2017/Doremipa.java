@@ -40,6 +40,9 @@ public class Doremipa extends AppCompatActivity {
         getSupportActionBar().setTitle(s);
 
         if(s.equals("Engi-Idol")){
+            layoutParams.height = (int) (display.getHeight()*0.42);
+            layoutParams.width = display.getWidth();
+            imageView.setLayoutParams(layoutParams);
             imageView.setImageResource(R.drawable.doremipa);
             textView1.setText(R.string.EngiIdol);
             textView2.setText("19 Feb'17");
@@ -54,6 +57,9 @@ public class Doremipa extends AppCompatActivity {
             });
             textView6.setText(R.string.engiidolrules);
         } else if(s.equals("Vocalicious")){
+            layoutParams.height = (int) (display.getHeight()*0.42);
+            layoutParams.width = display.getWidth();
+            imageView.setLayoutParams(layoutParams);
             imageView.setImageResource(R.drawable.doremipa);
             textView1.setText(R.string.Vocalicious);
             textView2.setText("18 Feb'17");
@@ -68,6 +74,9 @@ public class Doremipa extends AppCompatActivity {
             });
             textView6.setText(R.string.vocaliciousrules);
         }else if(s.equals("BallaDeers")){
+            layoutParams.height = (int) (display.getHeight()*0.42);
+            layoutParams.width = display.getWidth();
+            imageView.setLayoutParams(layoutParams);
             imageView.setImageResource(R.drawable.doremipa);
             textView1.setText(R.string.Balladeers);
             textView2.setText("18 Feb'17");
@@ -82,6 +91,9 @@ public class Doremipa extends AppCompatActivity {
             });
             textView6.setText(R.string.Balladeersrules);
         }else if(s.equals("Vrind")){
+            layoutParams.height = (int) (display.getHeight()*0.42);
+            layoutParams.width = display.getWidth();
+            imageView.setLayoutParams(layoutParams);
             imageView.setImageResource(R.drawable.doremipa);
             textView1.setText(R.string.Vrind);
             textView2.setText("19 Feb'17");
@@ -96,6 +108,9 @@ public class Doremipa extends AppCompatActivity {
             });
             textView6.setText(R.string.Vrindrules);
         }else if(s.equals("Two's A Show")){
+            layoutParams.height = (int) (display.getHeight()*0.35);
+            layoutParams.width = display.getWidth();
+            imageView.setLayoutParams(layoutParams);
             imageView.setImageResource(R.drawable.doremipa);
             textView1.setText(R.string.twoAShow);
             textView2.setText("20 Feb'17");
@@ -110,6 +125,9 @@ public class Doremipa extends AppCompatActivity {
             });
             textView6.setText(R.string.twoashowrules);
         }else if(s.equals("Acoustic Alchemy")){
+            layoutParams.height = (int) (display.getHeight()*0.42);
+            layoutParams.width = display.getWidth();
+            imageView.setLayoutParams(layoutParams);
             imageView.setImageResource(R.drawable.doremipa);
             textView1.setText(R.string.Acoustic);
             textView2.setText("20 Feb'17");

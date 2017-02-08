@@ -80,35 +80,57 @@ public class SponsorsActivity extends AppCompatActivity {
 
     private void prepareAlbums() {
         int[] covers = new int[]{
+                R.drawable.stryker,
                 R.drawable.pepsico,
                 R.drawable.logo,
                 R.drawable.ntpcogo,
                 R.drawable.intexlogo,
                 R.drawable.red,
                 R.drawable.poker,
-                R.drawable.slap
+                R.drawable.slap,R.drawable.din,R.drawable.fc,R.drawable.jh,R.drawable.loyalcard,R.drawable.sbi,R.drawable.unk
         };
 
 
-        SponsorData a = new SponsorData("Pepsi",covers[0]);
+        SponsorData a = new SponsorData("Stryker",covers[0]);
         arrayList.add(a);
 
-        a = new SponsorData("Coding Ninja",covers[1]);
+        a = new SponsorData("Pepsi",covers[1]);
         arrayList.add(a);
 
-        a = new SponsorData("NTPC",covers[2]);
+        a = new SponsorData("Coding Ninja",covers[2]);
         arrayList.add(a);
 
-        a = new SponsorData("Intex",covers[3]);
+        a = new SponsorData("NTPC",covers[3]);
         arrayList.add(a);
 
-        a = new SponsorData("Red Carpet",covers[4]);
+        a = new SponsorData("Intex",covers[4]);
         arrayList.add(a);
 
-        a = new SponsorData("PokerBaazi",covers[5]);
+        a = new SponsorData("Red Carpet",covers[5]);
         arrayList.add(a);
 
-        a = new SponsorData("#Slap",covers[6]);
+        a = new SponsorData("PokerBaazi",covers[6]);
+        arrayList.add(a);
+
+        a = new SponsorData("#Slap",covers[7]);
+        arrayList.add(a);
+
+        a = new SponsorData("DOT In",covers[8]);
+        arrayList.add(a);
+
+        a = new SponsorData("Food Sponsor",covers[9]);
+        arrayList.add(a);
+
+        a = new SponsorData("Jawed habib",covers[10]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[11]);
+        arrayList.add(a);
+
+        a = new SponsorData("SBI",covers[12]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[13]);
         arrayList.add(a);
 
         adapter.notifyDataSetChanged();
