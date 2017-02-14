@@ -11,18 +11,22 @@
         >
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#000"
+            >
+
 
             <ImageView
                 android:id="@+id/thumbnail"
                 android:layout_centerHorizontal="true"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="160dp"
                 />
             <TextView
                 android:id="@+id/title1"
                 android:gravity="center"
                 android:text="Pepsi"
+                android:background="#fff"
                 android:layout_below="@+id/thumbnail"
                 android:textSize="20dp"
                 android:layout_width="match_parent"

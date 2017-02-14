@@ -11,7 +11,7 @@
     <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#1f1f1f</item>
         <item name="colorPrimaryDark">#000</item>
-        <item name="colorAccent">#404040</item>
+        <item name="colorAccent">#fff</item>
     </style>
 
     <style name="AppTheme1.NoActionBar">
@@ -28,7 +28,7 @@
     <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#e53f3f</item>
         <item name="colorPrimaryDark">#b81c1c</item>
-        <item name="colorAccent">#96261d</item>
+        <item name="colorAccent">#e53f3f</item>
     </style>
 
 

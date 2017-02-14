@@ -41,7 +41,6 @@
         android:gravity="center"
         android:text="EXPLORE"
         android:id="@+id/exp_button"
-        android:backgroundTint="#e53f3f"
         android:background="@drawable/shape_button"
         />
 </RelativeLayout>

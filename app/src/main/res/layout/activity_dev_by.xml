@@ -21,38 +21,7 @@
            android:layout_height="180dp"
            android:src="@drawable/sddtu"
            />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Krishna Rai"
-        android:layout_weight="1"
-        android:textColor="#2e6ca0"
-        android:padding="10dp"
-        android:textAppearance="?android:textAppearanceLarge"
-        />
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/github"
-        app:backgroundTint="#fff"
-        android:id="@+id/krishna_git"
-        />
-     <android.support.design.widget.FloatingActionButton
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         app:backgroundTint="#fff"
-         android:layout_marginLeft="20dp"
-         android:layout_gravity="right|end"
-         android:id="@+id/krishna_link"
-         android:src="@drawable/linkedin"
-         />
-    </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,6 +51,38 @@
                     android:id="@+id/mohit_link"
                     android:layout_marginLeft="20dp"
                     android:layout_gravity="right|end"
+                    android:src="@drawable/linkedin"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Krishna Rai"
+                    android:layout_weight="1"
+                    android:textColor="#2e6ca0"
+                    android:padding="10dp"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    />
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/github"
+                    app:backgroundTint="#fff"
+                    android:id="@+id/krishna_git"
+                    />
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="right|end"
+                    android:id="@+id/krishna_link"
                     android:src="@drawable/linkedin"
                     />
             </LinearLayout>

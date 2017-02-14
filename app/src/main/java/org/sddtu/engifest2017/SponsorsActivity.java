@@ -5,8 +5,6 @@ import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -33,7 +31,7 @@ public class SponsorsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+ //       this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_sponsors);
 
         Calligrapher calligrapher = new Calligrapher(this);
@@ -81,13 +79,21 @@ public class SponsorsActivity extends AppCompatActivity {
     private void prepareAlbums() {
         int[] covers = new int[]{
                 R.drawable.stryker,
-                R.drawable.pepsico,
+                R.drawable.pepsi,
                 R.drawable.logo,
                 R.drawable.ntpcogo,
                 R.drawable.intexlogo,
-                R.drawable.red,
+                R.drawable.redc,
                 R.drawable.poker,
-                R.drawable.slap,R.drawable.din,R.drawable.fc,R.drawable.jh,R.drawable.loyalcard,R.drawable.sbi,R.drawable.unk
+                R.drawable.slap,
+                R.drawable.din,
+                R.drawable.fc,
+                R.drawable.jh,
+                R.drawable.nestle,
+                R.drawable.loyalcard,
+                R.drawable.sbi,
+                R.drawable.unk,R.drawable.ioa,R.drawable.ignite,R.drawable.loveburgin,R.drawable.paytm,R.drawable.play,
+                R.drawable.bmtc,R.drawable.ddelhi,R.drawable.mankind
         };
 
 
@@ -124,13 +130,40 @@ public class SponsorsActivity extends AppCompatActivity {
         a = new SponsorData("Jawed habib",covers[10]);
         arrayList.add(a);
 
-        a = new SponsorData("",covers[11]);
+        a = new SponsorData("Nestle",covers[11]);
         arrayList.add(a);
 
-        a = new SponsorData("SBI",covers[12]);
+        a = new SponsorData("",covers[12]);
         arrayList.add(a);
 
-        a = new SponsorData("",covers[13]);
+        a = new SponsorData("SBI",covers[13]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[14]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[15]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[16]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[17]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[18]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[19]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[20]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[21]);
+        arrayList.add(a);
+
+        a = new SponsorData("",covers[22]);
         arrayList.add(a);
 
         adapter.notifyDataSetChanged();
