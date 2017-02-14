@@ -58,7 +58,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+ //       this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_home);
 
         Calligrapher calligrapher = new Calligrapher(this);
@@ -144,7 +144,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(View v) {
                 Uri path= Uri.parse("https://www.facebook.com/engifest/");
                 Intent tweetIntent = new Intent(Intent.ACTION_SEND);
-                tweetIntent.putExtra(Intent.EXTRA_TEXT, "Check out engifest infinity \n" + path);
+                tweetIntent.putExtra(Intent.EXTRA_TEXT, "In this world of technological advances, do you think we'd expect you to wait in queues and look for passes for one of the most happening and gladsome events of Delhi? Absolutely not!\n" +
+                        "After the successful launch of the website, we are now back with a bang!!\n" +
+                        "\n" +
+                        "Launching the Engifest app with all the unlimited fun right before you. Now it's just a click and you get to indulge in unlimited fun. Starting from formal and informal events to straight entry to star nights- all at once! \n" +
+                        "Download the app now at: https://play.google.com/store/apps/details?id=org.sddtu.engifest2017&hl=en\n" +
+                        "\n" +
+                        "#EngifestInfinity\n");
                 tweetIntent.setType("text/plain");
 
                 PackageManager packManager = getPackageManager();
@@ -184,7 +190,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
                     Intent waIntent = new Intent(Intent.ACTION_SEND);
                     waIntent.setType("text/plain");
-                    String text = "Welcome to ENGIFEST INFINITY " + "https://www.facebook.com/engifest/";
+                    String text = "In this world of technological advances, do you think we'd expect you to wait in queues and look for passes for one of the most happening and gladsome events of Delhi? Absolutely not!\n" +
+                            "After the successful launch of the website, we are now back with a bang!!\n" +
+                            "\n" +
+                            "Launching the Engifest app with all the unlimited fun right before you. Now it's just a click and you get to indulge in unlimited fun. Starting from formal and informal events to straight entry to star nights- all at once! \n" +
+                            "Download the app now at: https://play.google.com/store/apps/details?id=org.sddtu.engifest2017&hl=en\n" +
+                            "\n" +
+                            "#EngifestInfinity\n";
 
                     PackageInfo info=pm.getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
                     //Check if package exists or not. If not then code

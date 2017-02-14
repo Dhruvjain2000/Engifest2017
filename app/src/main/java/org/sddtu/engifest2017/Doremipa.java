@@ -108,7 +108,7 @@ public class Doremipa extends AppCompatActivity {
             });
             textView6.setText(R.string.Vrindrules);
         }else if(s.equals("Two's A Show")){
-            layoutParams.height = (int) (display.getHeight()*0.35);
+            layoutParams.height = (int) (display.getHeight()*0.42);
             layoutParams.width = display.getWidth();
             imageView.setLayoutParams(layoutParams);
             imageView.setImageResource(R.drawable.doremipa);
@@ -142,10 +142,10 @@ public class Doremipa extends AppCompatActivity {
             });
             textView6.setText(R.string.acousticrules);
         }else if(s.equals("EDM Night-NUCLEYA")){
-            layoutParams.height = (int) (display.getHeight()*0.35);
+            layoutParams.height = (int) (display.getHeight()*0.55);
             layoutParams.width = display.getWidth();
             imageView.setLayoutParams(layoutParams);
-            imageView.setImageResource(R.drawable.pnight);
+            imageView.setImageResource(R.drawable.nucleya);
             textView1.setText("Adhbudh. Anokha. Aelaan.\n" +
                     "\n" +
                     "Akkad Bakkad Bambe Bo.\n" +
@@ -168,10 +168,10 @@ public class Doremipa extends AppCompatActivity {
             button.setVisibility(View.GONE);
             textView8.setVisibility(View.GONE);
         }else if(s.equals("Live Wire")){
-            layoutParams.height = (int) (display.getHeight()*0.35);
+            layoutParams.height = (int) (display.getHeight()*0.53);
             layoutParams.width = display.getWidth();
             imageView.setLayoutParams(layoutParams);
-            imageView.setImageResource(R.drawable.pnight);
+            imageView.setImageResource(R.drawable.sunidhi);
             textView1.setText("Sunidhi Chauhan is there to enrich your night with their presence. All gonna rock n roll their bodies and join them with zest and enthusiam. So put your hands up and welcome engi'17!");
             textView2.setText("18th February");
             textView3.setText("7 PM");
@@ -180,10 +180,10 @@ public class Doremipa extends AppCompatActivity {
             button.setVisibility(View.GONE);
             textView8.setVisibility(View.GONE);
         }else if(s.equals("Rock Night")){
-            layoutParams.height = (int) (display.getHeight()*0.35);
+            layoutParams.height = (int) (display.getHeight()*0.47);
             layoutParams.width = display.getWidth();
             imageView.setLayoutParams(layoutParams);
-            imageView.setImageResource(R.drawable.pnight);
+            imageView.setImageResource(R.drawable.lagori);
             textView1.setText("“Rock and roll is a nuclear blast of reality in a mundane world where no-one is allowed to be magnificent.” -Kim Fowley \n" +
                     "Engifest’17 brings you Lagori for a sonically exhilarating experience that will leave your senses absolutely spellbound! You won’t be able to resist banging your heads to the powerful beats and tapping your feet with the intense music; so overwhelmingly influencing will be the aura at this event! \n");
             textView2.setText("19th February");

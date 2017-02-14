@@ -28,7 +28,7 @@ public class PlacesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+   //     this.overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_places);
 
         getSupportActionBar().setTitle("Explore DTU");

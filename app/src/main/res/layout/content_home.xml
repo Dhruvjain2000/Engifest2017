@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_marginTop="?actionBarSize"
     tools:context="org.sddtu.engifest2017.HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
@@ -54,10 +53,9 @@
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="50dp"
         android:src="@drawable/fb"
-    app:backgroundTint="#3B5998"
         android:id="@+id/fbbutt"
-        android:elevation="1dp"
         android:visibility="invisible"
+        android:elevation="1dp"
         />
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
@@ -65,17 +63,16 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="100dp"
-        app:backgroundTint="#48c139"
         android:id="@+id/wappbutt"
         android:elevation="1dp"
         android:visibility="invisible"
-        android:src="@drawable/whatsapp"
+
+        android:src="@drawable/wap1"
         />
     <android.support.design.widget.FloatingActionButton
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/plusbutt"
-        app:backgroundTint="#fff"
         android:elevation="1dp"
         android:src="@drawable/share1"
         android:layout_alignParentBottom="true"
@@ -86,9 +83,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/twitter"
-        app:backgroundTint="#fff"
-        android:visibility="invisible"
         android:elevation="1dp"
+        android:visibility="invisible"
         android:id="@+id/twitbutt"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
